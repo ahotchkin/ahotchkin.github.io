@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "From Mad Men to Silicon Valley"
-date:       2018-06-03 20:52:05 +0000
+date:       2018-06-03 16:52:05 -0400
 permalink:  from_mad_men_to_silicon_valley
 ---
 
@@ -20,4 +20,4 @@ Which brings us to late last summer. I was at dinner with a friend and she rando
 
 I’ve been working in Flatiron’s Full Stack Web Developer program for a few months now, and while I’ll admit it has been challenging, it’s also been enlightening. I’ve found myself approaching every day activities differently. Now when I’m playing Super Mario Run on my phone, I’m not just chasing after mushrooms and coins, I’m wondering how Mario knows to jump when I touch the screen. And when I use Google Maps, I no longer take it for granted. Thanks to the hard work of other people, I don’t need to have a sense of direction (which is good, because I never really did).
 
-I have found this journey to be incredibly fascinating, and honestly, a little scary. The possibilities are endless. I may never find myself out in California, in meetings with a bunch of well-dressed people, smoking (let’s be real, probably not cigarettes this time), pitching the next big app to investors. You know, like Silicon Valley (yeah…I’ve never seen that either…). But I’m excited that I’m giving myself a chance to try. The truth is, there were probably a lot of decent career options on that list 12 years ago. But I like to think that if I had bothered to get past the A’s, and all the way down to the W’s, I would have found “Web Developer”.
+I have found this journey to be incredibly fascinating, and honestly, a little scary. The possibilities are endless. I may never find myself out in California, in meetings with a bunch of well-dressed people, smoking (let’s be real, probably not cigarettes this time), pitching the next big app to investors. You know, like Silicon Valley (yeah…I’ve never seen that either…). But I’m excited that I’m giving myself a chance to try. The truth is, there were probably a lot of decent career options on that list 12 years ago. But I like to think that if I had bothered to get past the A’s, and *all* the way down to the W’s, I would have found “Web Developer”.
