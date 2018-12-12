@@ -5,6 +5,7 @@ date:       2018-12-12 09:55:09 -0500
 permalink:  sign_me_up
 ---
 
+# <h3>The flow signing up and logging in/out of an application</h3>
 
 As consumers of the Internet, we all sign into some sort of account on a daily basis. If you’re anything like me, it’s multiple accounts. For the most part, it’s a pretty seamless process. I type in my username and password and press “Enter”. And if everything goes according to plan (and I can remember my password), I’m logged in and I can go about my business (let’s be honest, probably online shopping). I don’t know about you, but I’ve never given much thought to what is happening behind the scenes. That is until recently. How is a website able to differentiate me from other users? What happens to my username and password after I log in? Or what about when I log out? Well, there’s actually a lot going on from databases to sessions to cookies, and everything in between. But what I want to focus on is the flow of information between the different routes and views of an application.
 
