@@ -12,10 +12,8 @@ The first question we need to answer is this: Is this a new user signing up for 
 
 We start at the root path: `get '/'`. This is where a user has the option to either sign up or log in.
 
-**Signing Up**
+Signing Up
 
-
-****
 
 If the user is signing up they’ll be taken to the `get '/registrations/signup'` route<sup>1</sup>, which renders a form for the user to enter the necessary information to create an account. At the very least this is probably their name, email, and password. Once the user submits this information, the form sends a `POST` request to the `post '/registrations'` route. The application knows to do this because the form’s method (*how* to send the form data) will be set to `POST`, and the action (*where* to send the form data) will be set to `/registrations`.
 
@@ -25,10 +23,7 @@ The route for the user’s home page (maybe something like `get '/users/home'`) 
 
 The “Log Out” link will be linked to a route, something like `get '/sessions/logout'`. In this route, the application will clear the session hash. This can be done just as you would clear any other hash (session.clear). This route can then redirect back to the initial route: `get '/'`, where the user will again see the option to either sign up or log in.
 
-**Logging In**
-
-
-****
+Logging In
 
 So how is logging in different, you ask? Well, the user’s account already exists so we can skip some of the steps from above. If the user selects “Log In”, they’ll be taken to the `get '/sessions/login'` route where they’ll input their login information (probably a username/email and a password). This form will `POST` to the `/sessions` route. Since the user already exists, this route is responsible for matching up the information entered by the user to an instance stored in the User database. This is done using the params hash (remember, we talked about that a little while ago?). After a match is found, this route sets the `session_id` equal to the `user_id` and then redirects the user to their home page. Hey, that sounds familiar. We had to do the same thing for a new user. That’s right, after a match is found the application follows the same flow for existing users as it does for new users.
 
