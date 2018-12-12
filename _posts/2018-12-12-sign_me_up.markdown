@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sign Me Up!"
-date:       2018-12-12 14:55:08 +0000
+date:       2018-12-12 09:55:09 -0500
 permalink:  sign_me_up
 ---
 
@@ -11,9 +11,7 @@ As consumers of the Internet, we all sign into some sort of account on a daily b
 The first question we need to answer is this: Is this a new user signing up for our application, or an existing user logging in? This impacts the beginning of the flow, but at a certain point the two flows will merge and follow the same path.
 
 We start at the root path: `get '/'`. This is where a user has the option to either sign up or log in.
-
 <br>
-
 **Signing Up**
 
 If the user is signing up they’ll be taken to the `get '/registrations/signup'` route<sup>1</sup>, which renders a form for the user to enter the necessary information to create an account. At the very least this is probably their name, email, and password. Once the user submits this information, the form sends a `POST` request to the `post '/registrations'` route. The application knows to do this because the form’s method (*how* to send the form data) will be set to `POST`, and the action (*where* to send the form data) will be set to `/registrations`.
@@ -23,9 +21,7 @@ This takes us to the `post '/registrations'` route, where there’s quite a bit 
 The route for the user’s home page (maybe something like `get '/users/home'`) finds the user by the `session_id` that was previously set. With this information the application is able to display a home page that is personalized to the user. For example, maybe there is a greeting that displays the user’s name. There also might be a navigation that allows the user to go to different areas of their account. And if the application is set up like it should be, there will be an option to log out.
 
 The “Log Out” link will be linked to a route, something like `get '/sessions/logout'`. In this route, the application will clear the session hash. This can be done just as you would clear any other hash (session.clear). This route can then redirect back to the initial route: `get '/'`, where the user will again see the option to either sign up or log in.
-
 <br>
-
 **Logging In**
 
 So how is logging in different, you ask? Well, the user’s account already exists so we can skip some of the steps from above. If the user selects “Log In”, they’ll be taken to the `get '/sessions/login'` route where they’ll input their login information (probably a username/email and a password). This form will `POST` to the `/sessions` route. Since the user already exists, this route is responsible for matching up the information entered by the user to an instance stored in the User database. This is done using the params hash (remember, we talked about that a little while ago?). After a match is found, this route sets the `session_id` equal to the `user_id` and then redirects the user to their home page. Hey, that sounds familiar. We had to do the same thing for a new user. That’s right, after a match is found the application follows the same flow for existing users as it does for new users.
@@ -37,7 +33,5 @@ Whew, that was a lot. You know what? A visual might help here. Below is a flow c
 
 
 And that’s it! I had no idea there was so much going on from the moment I type in my user info to the time I log out. I should probably go test this out in real time. And maybe do a little online shopping while I’m at it…
-
 <br>
-
-*<sup>1</sup>Route names may vary by application, but HTTP verbs will not*
+*<small><sup>1</sup>Route names may vary by application, but HTTP verbs will not*</small>
