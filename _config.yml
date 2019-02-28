@@ -1,15 +1,14 @@
 # Site settings
+author: Allyson Hotchkin
 title: Coding is Cool
 header-img: img/home-bg.png
 email: ahotchk1@yahoo.com
-copyright_name: ahotchkin
+copyright_name: Allyson Hotchkin
 description: > # this means to ignore newlines until "baseurl:"
   A Student's Journey
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  ahotchkin
-learn_profile: ahotchkin
-email_username: ahotchk1@yahoo.com
 
 # Build settings
 markdown: kramdown
