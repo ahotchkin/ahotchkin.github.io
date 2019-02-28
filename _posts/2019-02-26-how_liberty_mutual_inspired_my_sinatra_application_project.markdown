@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "How Liberty Mutual Inspired My Sinatra Application Project"
-date:       2019-02-27 03:36:42 +0000
+title:      "How Liberty Mutual Insurance Inspired My Sinatra Application Project"
+date:       2019-02-26 22:36:43 -0500
 permalink:  how_liberty_mutual_inspired_my_sinatra_application_project
 ---
 
@@ -59,17 +59,17 @@ end
 ```
 
 
-My third and final wish would require a little more outside help. Enter BCrypt. BCrypt is a Ruby gem that, in short, will store a salted, hashed version of a user’s password in a database. To put it simply, the password a user enters will be manipulated in such a way that it can’t be un-manipulated (that’s the hashing part). And to take it one step further, a salt, or a random string of characters, is also added to the hash. That way if two users happen to create the same password they’ll still end up with different hashes in the database. Three cheers for security! Hip hip…what? No one wants to join in? Okay, fine, let’s keep going. But you'll thank me later when your passwords aren't stolen.
+My third and final wish would require a little more outside help. Enter BCrypt. BCrypt is a Ruby gem that, in short, will store a salted, hashed version of a user’s password in a database. To put it simply, the password a user enters will be manipulated in such a way that it can’t be un-manipulated (that’s the hashing part). And to take it one step further, a salt, or a random string of characters, is also added to the hash. That way, if two users happen to create the same password they’ll still end up with different hashes in the database. Three cheers for security!
 
-Since users could now create an account and log in, it was time to work on the `items_controller`. I knew that within each route I wanted to first check to make sure the user was logged in before proceeding. Good thing I created that `#logged_in?` helper method! As for the routes themselves, users need to be able to create, read, update, and delete items. Prior to starting this project, I put together this handy little chart to ensure I created the necessary routes:
+Since users could now create an account and log in, it was time to work on the `items_controller`. I knew that within each route I wanted to first check to make sure the user was logged in before proceeding. Good thing I created that `#logged_in?` helper method! As for the routes themselves, users should be able to create, read, update, and delete items. Prior to starting this project, I put together this handy little chart to ensure I created the necessary routes:
 
 <img src="https://c2.staticflickr.com/8/7815/33348685738_97c453f5ec_c.jpg" width="800" height="313">
 
-This was going great! So great, in fact, that the time had come to attempt the impossible. Okay, that’s a little dramatic. What I wanted to do was very possible, but also slightly challenging. It was time to add a third model to my application. Remember that Category model I wanted to add to help sort a user’s items? As it turns out, “category” happens to be a Rails keyword and ended up causing some trouble. Minor roadblock, I’d just create a Group model instead. A group could have many items, and in turn an item could have many groups. Let’s say a user has an item called Couch and they want to store it in a group, but they are torn between the Living Room group and the Furniture group. Thanks to this many-to-many relationship, they don’t have to choose!
+This was going great! So great, in fact, that the time had come to attempt the impossible. Okay, that’s a little dramatic. What I wanted to do was very possible, but also slightly challenging. It was time to add a third model to my application. Remember that Category model I wanted to add to help sort a user’s items? As it turns out, “category” happens to be a Rails keyword and ended up causing some trouble. Minor roadblock, I’d just create a Group model instead. A group could have many items, and in turn, an item could have many groups. Let’s say a user has an item called Couch and they want to store it in a group, but they are torn between the Living Room group and the Furniture group. Thanks to this many-to-many relationship, they don’t have to choose!
 
 But let us not forget that whenever we see a many-to-many relationship, a joins table must be nearby. I created an ItemGroups table along with the corresponding model. Items have many item_groups, and many groups through item_groups. Similarly, groups have many item_groups, and many items through item_groups. And last, but most certainly not least, users have many groups through items.
 
-The trickiest part of this new addition was updating the current `items_controller` and items views to take it into account. Within the items new and edit views, I was able to add a checkbox for all of the current user’s existing groups. The user has the option of checking off anywhere from zero to all existing groups, in addition to creating a new group: 
+The trickiest part of this new addition was updating the `items_controller` and  views to take it into account. Within the items new and edit views, I added a checkbox for all of the current user’s existing groups. The user has the option of checking off anywhere from zero to all existing groups, in addition to creating a new group:&#x2028;
 ```
 <% if !@groups.empty? %>
     <label>Select an existing category:</label>
