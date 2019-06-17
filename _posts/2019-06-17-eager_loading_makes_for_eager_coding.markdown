@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Eager Loading Makes for Eager Coding"
-date:       2019-06-17 21:59:43 +0000
+date:       2019-06-17 17:59:44 -0400
 permalink:  eager_loading_makes_for_eager_coding
 ---
 
