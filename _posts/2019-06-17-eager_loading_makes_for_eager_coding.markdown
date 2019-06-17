@@ -58,7 +58,7 @@ SELECT  "movies".* FROM "movies" LIMIT ?  [["LIMIT", 20]]
 SELECT "directors".* FROM "directors" WHERE "directors"."id" IN (<director_ids from movies array would be listed here>)
 ```
 
-<img src="https://media.giphy.com/media/dQlgGuy4e2z8Rdk976/giphy.gif" width=“480px” height=“360px”>
+<img src="https://media.giphy.com/media/dQlgGuy4e2z8Rdk976/giphy.gif" width="384px" height="288px">
 
 After the queries run, you’re able to interact with the movies array just like you would any other array in Ruby. So you can run the same code we had above, and get all of the information you’re looking for without having to query the database again:
 
@@ -75,4 +75,4 @@ Movie.includes(:director, :genre)
 
 Believe it or not, that’s just scratching the surface of Active Record’s finder methods. And to be honest I’m sure there are a lot more things you can even do with just the `includes` method. Maybe I’ll do some more research after a quick movie break.
 
-<img src="https://media.giphy.com/media/Bzebpz5rnyBb2/giphy.gif" width=“480px” height=“232px”>
+<img src="https://media.giphy.com/media/Bzebpz5rnyBb2/giphy.gif" width="480px" height="232px">
