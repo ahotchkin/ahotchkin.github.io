@@ -6,9 +6,9 @@ permalink:  eager_loading_makes_for_eager_coding
 ---
 
 
-The deeper I get into Rails, the more I feel like a real-life Hermione Granger. It’s magic! From a command line that seemingly gives you the world (and that’s not a huge exaggeration), to helper methods that make your controllers and views very easy to read, Rails can seem like the gift that keeps on giving. It’s no different when it comes to querying databases.
+The deeper I get into Rails, the more I feel like a real-life Hermione Granger. It’s magic! From a command line that seemingly gives you the world (and that’s not a huge exaggeration), to helper methods that make your controllers and views very easy to read, Rails is the gift that keeps on giving. It’s no different when it comes to querying databases.
 
-Through ActiveRecord you can query databases without having to write out SQL, and you’ll get back Ruby objects (not just raw data). But it gets even better. Enter eager loading. Eager loading allows you to find an object of any given class, along with the associated records of that object from other classes, using as few queries as possible. That's a lot of words. Let's look at an example. Let’s say you have the following models and relationships:
+Through ActiveRecord you can query databases without having to write out SQL, and you’ll get back Ruby objects (not just raw data). But it gets even better. Enter eager loading. Eager loading allows you to find an object of any given class, along with its associated records from other classes, using as few queries as possible. That's a lot of words. Let's look at an example. Let’s say you have the following models and relationships:
 
 ```
 class Movie << ActiveRecord::Base
@@ -42,11 +42,11 @@ Then we’re iterating through the movies array that was returned by the first q
 SELECT  "directors".* FROM "directors" WHERE "directors"."id" = ? LIMIT ? [["id", 1], ["LIMIT", 1]]
 ```
 
-So that’s 21 queries in all—1 query to find the movies, and 1 query for each movie in the movies array to find the director. This is referred to as the N + 1 queries problem. In this case it’s only 21 queries, so the application would likely be able to find this information relatively quickly. But there are more than 20 movies in the world. I mean, there are 8 Harry Potter movies alone. Just this year over 40 movies have already been released, and we’re not even half way through. And that’s not counting Netflix! You get it, there are a lot of movies. Can you imagine querying a database for this information for 1000 movies? Or how about 10,000 movies? Honestly, who has the time?!
+So that’s 21 queries in all—1 query to find the movies, and 1 query for each movie in the movies array to find the director. This is referred to as the N + 1 queries problem. In this case it’s only 21 queries, so the application would likely be able to find this information relatively quickly. But there are more than 20 movies in the world. I mean, there are 8 Harry Potter movies alone. Just this year over 40 movies have already been released, and we’re not even half way through. And that’s not counting Netflix! You get it, there are a lot of movies. Can you imagine querying a database for this information for 1,000 movies? Or how about 10,000 movies? Honestly, who has the time?!
 
 <img src="https://media.giphy.com/media/3o7aD9XDWgEEsaIoog/giphy.gif" width="360px" height="289px">
 
-I said it before, but I really mean it this time: enter eager loading. A quick refresher—Eager loading allows you to find an object of any given class, along with the associated records of that object from other classes, using as few queries as possible. All through a very elegant solution: the `includes` finder method. To use `includes` to get the information we’re looking for, you’d simply write the below line of code:
+I said it before, but I really mean it this time: enter eager loading. A quick refresher—Eager loading allows you to find an object of any given class, along with its associated records from other classes, using as few queries as possible. All of this is taken care of with a very elegant solution: the `includes` finder method. To use `includes` to get the information we’re looking for, you’d simply write the below line of code:
 ```
 movies = Movie.includes(:director).limit(20)
 ```
