@@ -42,7 +42,7 @@ Then we’re iterating through the movies array that was returned by the first q
 SELECT  "directors".* FROM "directors" WHERE "directors"."id" = ? LIMIT ? [["id", 1], ["LIMIT", 1]]
 ```
 
-So that’s 21 queries in all—1 query to find the movies, and 1 query for each movie in the movies array to find the director. This is referred to as the N + 1 queries problem. In this case it’s only 21 queries, so the application should be able to find this information relatively quickly. But there are more than 20 movies out there. Just this year over 40 movies have already come out, and we’re still less than half way through. And that’s not even counting Netflix. Or Hallmark Movies! You get it, there are a lot of movies. How long would it take to query a database of 10,000 movies? Or 100,000 movies? That could take DAYS. Honestly, who has the time?!
+So that’s 21 queries in all—1 query to find the movies, and 1 query for each movie in the movies array to find the director. This is referred to as the N + 1 queries problem. In this case it’s only 21 queries, so the application should be able to find this information relatively quickly. But there are more than 20 movies out there. Just this year over 40 movies have already come out, and we’re still less than half way through. And that’s not even counting Netflix. Or Hallmark movies! You get it, there are a lot of movies. How long would it take to query a database of 10,000 movies? Or 100,000 movies? That could take DAYS. Honestly, who has the time?!
 
 <img src="https://media.giphy.com/media/LQvEYZn2g6KQ5NWPdz/giphy.gif" width="384px" height="384px">
 
