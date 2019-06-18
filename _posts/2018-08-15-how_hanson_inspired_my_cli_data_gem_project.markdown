@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How Hanson Inspired My CLI Data Gem Project"
-date:       2018-08-15 23:37:49 +0000
+date:       2018-08-15 19:37:50 -0400
 permalink:  how_hanson_inspired_my_cli_data_gem_project
 ---
 
@@ -16,6 +16,8 @@ Next, I needed to figure out how to set up my classes. Much of this project depe
 
 At this point I had a program that functioned pretty much as I wanted it to. I had a Scraper class to scrape data from a website, I had a Concert class to create instances of concerts, and I had a CLI class to allow for user interaction. Through the CLI, users could see a list of concerts and then select a concert for details (date, time, and URL). This was great and everything, but I wanted to find a way to give the user a little more information. I noticed that each URL led to a concert-specific webpage with a short biography of the band in question. What if I could find a way to scrape some of the band information for the user? As it turns out, all of the band bios were contained in `<p>` tags. Well, all except for Smokey Robinson’s, that is (dang you, Smokey, with your generic `<div>` tags and your voice of an angel). But with a little scraping practice and some sneaky use of regular expressions, I figured out how to scrape Smokey’s biography too. This was going great! At least until a few nights ago…
 
+<img src="https://media.giphy.com/media/RBeddeaQ5Xo0E/giphy.gif" width="384px" height="256px">
+
 Clearly, whoever is in charge of the Chevy Court Concerts website didn’t get the memo that I was using it for a project, and would prefer that no changes be made prior to me submitting said project. I was putting the finishing touches on my program and testing out some of the user interaction, when I received a new error message. Out of nowhere the program couldn’t scrape the biography for half the bands. I did a little more digging, only to discover that what had once been a list of 26 concerts was now a list of 54 concerts, parades, and other events. Upon further investigation I noticed that the concerts within the first half of the list still had their band bios in tact, while the concerts in the second half of the list no longer had any bios. This particular issue seemed like it might be a mistake. Spoiler alert: it was indeed a mistake and was fixed within 24 hours.
 
 So without having to put in much work at all, the majority of the program was working again. However, I still found myself in a bit of a predicament. While all of the bands had bios, none of the parades or other events had additional information. So if a user selected to see the details on one of those events, they would receive an error message. I had a couple of options. I could figure out a way to exclude any events from the list that weren’t part of the original 26 concerts. Or I could figure out a way to incorporate these events in a different way. I decided to accept the challenge and see how I could use this additional information in my CLI app. I started with the parades. These seemed to function pretty similar to the concerts, with the exception of the bios. So why not create a Parade class? It turns out this was pretty easy to manage since I had my scraping logic separate from my Concert class already (woohoo!).
@@ -23,3 +25,5 @@ So without having to put in much work at all, the majority of the program was wo
 I was then left with these oddball events that repeated themselves over and over throughout the duration of the fair. I know what you’re thinking. “Allyson, why didn’t you create an Other class and give the user the opportunity to select one of those events and see all of the dates and times that it’s taking place?” Funny you should ask, because that’s exactly what I did! It took some tinkering since the Other class had to function differently from Concerts and Parades, but with a little trial and error I managed to get it to work.
 
 Overall, this has been a very educational experience. I still can’t believe that I essentially built something from scratch that actually functions (although I’m sure could use some refactoring). Sure, it wasn’t exactly what I set out to do. But as frustrated as I was when the website changed, in the end I was grateful for it. For one, I’m sure this is the first of many (MANY) times where I’ll need to adapt my code because of something beyond my control. But it turned into a great opportunity to figure out how to incorporate this new information. I’m pretty pleased with the way everything turned out. I think as a reward to myself I might just have to go to the state fair this year. Maybe on August 30 to see Hanson?
+
+<img src="https://media.giphy.com/media/3o6fJ3HHejKAmRNd7i/giphy.gif" width="480px" height="270px">
