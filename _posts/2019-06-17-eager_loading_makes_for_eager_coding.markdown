@@ -46,7 +46,7 @@ So that’s 21 queries in all—1 query to find the movies, and 1 query for each
 
 <img src="https://media.giphy.com/media/LQvEYZn2g6KQ5NWPdz/giphy.gif" width="384px" height="384px">
 
-I said it before, but I really mean it this time: enter eager loading. A quick refresher—Eager loading allows you to find an object of any given class, along with its associated records from other classes, using as few queries as possible. All of this is taken care of with a very elegant solution: the `includes` finder method. To use `includes` to get the information we’re looking for, you’d simply write the below line of code:
+I said it before, but I really mean it this time: enter eager loading. A quick refresher—eager loading allows you to find an object of any given class, along with its associated records from other classes, using as few queries as possible. All of this is taken care of with a very elegant solution: the `includes` finder method. To use `includes` to get the information we’re looking for, you’d simply write the below line of code:
 ```
 movies = Movie.includes(:director).limit(20)
 ```
