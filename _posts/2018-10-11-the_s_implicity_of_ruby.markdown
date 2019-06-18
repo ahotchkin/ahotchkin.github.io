@@ -14,6 +14,8 @@ One of the nuances of Ruby that tripped me up at first, but that I now find help
 
 **Return Values**
 
+<img src="http://www.quickmeme.com/img/46/4600ac04191595c5d2685f19d0d073d1ca5b82b47b68a062b43c1af73b90b8fc.jpg" width="325px" height="325px">
+
 Fun Fact #1: In Ruby, when you want to return something, you don’t actually have to use the `return` keyword. This is because Ruby uses implicit returns and will always return the last line of a method. So you’d better be sure that the last line of your method is what you want returned. It’s also important to note that `puts` and `print` are very different from `return`. `puts` and `print` are used to display the results of evaluated Ruby code in your console (`puts` adds a new line after executing, while `print` does not). The return value is the value of the last statement in a method. Every method in Ruby has a return value.
 
 ```
@@ -51,7 +53,9 @@ end
 
 **Method Receivers**
 
-Fun Fact #2: Ruby has implicit method receivers. That’s right, every single method you write has a receiver, even if you don’t write it out. You can tell it’s implicit because you won’t use dot notation. For example, you’re probably very used to seeing something like this:
+<img src="https://media.giphy.com/media/w2KHfIlI3V7bi/giphy.gif" width="480px" height="251px">
+
+Fun Fact #2: Ruby has an implicit method receiver: `self`. That’s right, every single method you write has a receiver, even if you don’t write it out. You can tell it’s implicit because you won’t use dot notation. For example, you’re probably very used to seeing something like this:
 
 ```
 class Person
@@ -69,7 +73,10 @@ end
 
 You’re saying the exact same thing in both examples, but the first way is just a little bit cleaner. It’s always good to remember (so I'll say it just one more time, for good measure) that every method call has a receiver, whether it’s explicitly stated or not.
 
-Whenever you have an implicit method call, the receiver is `self`. `self` is the object you’re referring to at the time (let’s never forget that everything in Ruby is an object). `self` can be a class, or `self` can be an instance of a class. There’s a chance `self` can even be something beyond one of those two things and I just haven’t gotten there yet in my educational journey (which if you ask me, is kind of exciting).
+
+*Note to Self*
+
+The object `self` refers to is frequently changing based on the context (let’s never forget that everything in Ruby is an object). `self` can be a class, or `self` can be an instance of a class. There’s a chance `self` can even be something beyond one of those two things and I just haven’t gotten there yet in my educational journey (which if you ask me, is kind of exciting).
 
 
 One key takeaway, and something I didn’t anticipate as I started this whole thing — the code you’re not writing is just as important as the code that you are writing. Overall, I would say these nuances make Ruby easier to work with. At first I would get a little confused with what I needed to say and when (and sometimes I still do), but the more I’ve used Ruby the more I’ve begun to appreciate the (s)implicity of it. It’s definitely a lot to keep track of though. Maybe I can come up with a catchy song to help keep it all straight.
