@@ -73,6 +73,6 @@ By using the `includes` finder method, your application can give you the same re
 Movie.includes(:director, :genre)
 ```
 
-Believe it or not, that’s just scratching the surface of Active Record’s finder methods. And to be honest I’m sure there are a lot more things you can even do with just the `includes` method. Maybe I’ll do some more research after a quick movie break.
+Believe it or not, that’s just scratching the surface of Active Record’s finder methods. And to be honest, I’m sure there are a lot more things you can even do with just the `includes` method. Maybe I’ll do some more research after a quick movie break.
 
 <img src="https://media.giphy.com/media/Bzebpz5rnyBb2/giphy.gif" width="480px" height="232px">
