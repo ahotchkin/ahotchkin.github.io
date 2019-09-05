@@ -167,7 +167,7 @@ RSpec.describe Movie, :type => :model do
 end
 ```
 
-…And that's it! There’s no need to create any instances to test with, Should Matchers takes care of that for you. And it provides a beautiful framework for you to write in plain English what the model SHOULD do. Dang! Not only is it a fraction of the code, but you can be much more confident in the code you are writing. And if you do happen to have a typo somewhere, at least it will be easier to find. Dare I say, the developers behind Shoulda Matchers have changed all of our lives by making the right choice and the easy choice one and the same. Albus Dumbledore would be proud.
+…And that's it! There’s no need to create any instances to test with, Shoulda Matchers takes care of that for you. And it provides a beautiful framework for you to write in plain English what the model SHOULD do. Dang! Not only is it a fraction of the code, but you can be much more confident in the code you are writing. And if you do happen to have a typo somewhere, at least it will be easier to find. Dare I say, the developers behind Shoulda Matchers have changed all of our lives by making the right choice and the easy choice one and the same. Albus Dumbledore would be proud.
 
 <img src="http://giphygifs.s3.amazonaws.com/media/AOrThUuuOoDCg/giphy.gif" width="480px" height="285.474px">
 
