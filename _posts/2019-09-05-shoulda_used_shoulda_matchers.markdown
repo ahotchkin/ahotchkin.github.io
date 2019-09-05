@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Shoulda Used Shoulda Matchers"
-date:       2019-09-05 16:18:04 +0000
+date:       2019-09-05 12:18:05 -0400
 permalink:  shoulda_used_shoulda_matchers
 ---
 
@@ -172,5 +172,5 @@ end
 
 <img src="http://giphygifs.s3.amazonaws.com/media/AOrThUuuOoDCg/giphy.gif" width="480px" height="285.474px">
 
-For (much) more information on Shoulda Matchers, or if you are interested in perusing the source code, this <a href="https://github.com/thoughtbot/Shoulda Matchers">link</a> should have what you’re looking for.
+For (much) more information on Shoulda Matchers, or if you are interested in perusing the source code, this <a href="https://github.com/thoughtbot/shoulda-matchers">link</a> should have what you’re looking for.
 
