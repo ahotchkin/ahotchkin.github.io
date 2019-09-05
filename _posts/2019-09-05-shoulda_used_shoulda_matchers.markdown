@@ -10,7 +10,6 @@ permalink:  shoulda_used_shoulda_matchers
 
 At least it was something like that…
 
-<br>
 When it comes to writing code, there are few things more important than testing. While we all know this to be true, writing tests isn’t always easy and can be quite time-consuming. Not only that, if you’re writing them from scratch your tests can be just as error-prone as your code itself. It’s moments like these when we need to remember Dumbledore’s words and power through writing our tests. It’s the right thing to do. Luckily, there are some tools out there to make writing your tests a little bit easier. Ruby gives you access to a wonderful little gem called Shoulda Matchers. Shoulda Matchers allows you to write tests with very little code, making your tests easier to write AND read. Talk about a win-win! I’ll be the first to admit that there’s quite a bit of code in the gem and I’m still trying to break down how it all works. So I’ll save that explanation for another day. Instead, let’s just focus on an overview of what the gem allows you to do and how to add it to your code so you can start writing tests like a champ.
 
 <img src="https://media0.giphy.com/media/44gu1V41ejJni/giphy.gif?cid=790b7611f46683b0f8d83f31f35b3c5eafa09e4a97546d38&amp;rid=giphy.gif" width="480px" height="270.72px">
