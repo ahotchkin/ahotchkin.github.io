@@ -64,7 +64,6 @@ RSpec.describe Movie, :type => :model do
 		)
 	}
 
-
 	#create an instance of a movie to test
 	let(:harry_potter) {
 		Movie.create(
@@ -89,7 +88,6 @@ RSpec.describe Movie, :type => :model do
 			:last_name => “Grint”
 		)
 	}
-	
 ```
 	
 
@@ -164,6 +162,7 @@ RSpec.describe Movie, :type => :model do
 	    it { should have_many(:movie_actors) }
 	    it { should have_many(:actors).through(:movie_actors) }
     end
+		
 end
 ```
 
