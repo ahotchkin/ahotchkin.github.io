@@ -52,38 +52,38 @@ Your typical RSpec tests may look something like this:
 
 ```
 # Movie Tests
-require ‘rails_helper’
+require 'rails_helper'
 
 RSpec.describe Movie, :type => :model do
-	
-	#create an instance of a genre to test with since a movie belongs to a genre
-	let(:fantasy) {
-		Genre.create(
-			:name => “Fantasy”
-		)
-	}
 
-	#create an instance of a movie to test
-	let(:harry_potter) {
-		Movie.create(
-			:name => “Harry Potter and the Sorcerer’s Stone”,
-			:synopsis => “Meet Harry Potter, an 11-year-old boy who has spent his whole life living with his Aunt, Uncle, and Cousin, better known as the Dursleys, who simply don’t appreciate him (and that is putting it EXTREMELY mildly). As the clock strikes midnight on his 11th birthday Harry and the Dursleys are greeted by Rubeus Hagrid, an enormous man with an enormous heart, who has come to let Harry know he's been accepted to Hogwarts School of Witchcraft and Wizardry. Harry is quickly thrown into the magical world and, just as quickly, finds out he’s famous for something he doesn’t even remember. The Wizarding World is a magnificent one, but Harry will soon learn that not all witches and wizards can be trusted.”,
-			:year => “2001”,
+  #create an instance of a genre to test with since a movie belongs to a genre
+  let(:fantasy) {
+	  Genre.create(
+	    :name => "Fantasy"
+	 )
+  }
+	
+  #create an instance of a movie to test
+  let(:harry_potter) {
+	  Movie.create(
+		  :name => "Harry Potter and the Sorcerer’s Stone",
+		  :synopsis => "Meet Harry Potter, an 11-year-old boy who has spent his whole life living with his Aunt, Uncle, and Cousin, better known as the Dursleys, who simply don’t appreciate him (and that is putting it EXTREMELY mildly). As the clock strikes midnight on his 11th birthday Harry and the Dursleys are greeted by Rubeus Hagrid, an enormous man with an enormous heart, who has come to let Harry know he's been accepted to Hogwarts School of Witchcraft and Wizardry. Harry is quickly thrown into the magical world and, just as quickly, finds out he’s famous for something he doesn’t even remember. The Wizarding World is a magnificent one, but Harry will soon learn that not all witches and wizards can be trusted.",
+			:year => "2001",
 			:genre_id => fantasy.id
 		)
 	}
 
-	#create a couple of actors to use for testing associations
-	let(:daniel_radcliffe) {
-		Actor.create(
-			:first_name => “Daniel”,
+  #create a couple of actors to use for testing associations
+  let(:daniel_radcliffe) {
+	  Actor.create(
+		  :first_name => “Daniel”,
 			:last_name => “Radcliffe”
 		)
 	}
-
+	
 	let(:rupert_grint) {
-		Actor.create(
-			:first_name => “Rupert”,
+	  Actor.create(
+		  :first_name => “Rupert”,
 			:last_name => “Grint”
 		)
 	}
