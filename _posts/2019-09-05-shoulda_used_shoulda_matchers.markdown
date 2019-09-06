@@ -60,7 +60,7 @@ RSpec.describe Movie, :type => :model do
   let(:fantasy) {
     Genre.create(
       :name => "Fantasy"
-	 )
+    )
   }
 	
   #create an instance of a movie to test
