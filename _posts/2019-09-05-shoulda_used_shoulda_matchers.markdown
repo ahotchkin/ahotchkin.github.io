@@ -46,8 +46,7 @@ For the purposes of this post (and once again, because it’s what I have the mo
 
 When you’re testing database models you want to test both validations and associations. Let’s say we have classes for Movie, Actor, and Genre with the below relationships:
 
-<img src="https://live.staticflickr.com/65535/48683698751_565301fb5e_z.jpg" width="480" height="450" alt="Shoulda Blog Post Illustration">
-
+<img src="https://live.staticflickr.com/65535/48688011608_cd7ac579ce_z.jpg" width="480px" height="428.25px" alt="Shoulda Blog Post Illustration" class="img-responsive">
 
 Your typical RSpec tests may look something like this:
 
