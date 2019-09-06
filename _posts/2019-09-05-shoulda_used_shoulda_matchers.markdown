@@ -94,21 +94,21 @@ RSpec.describe Movie, :type => :model do
 Now let’s get into the tests, first testing the validations to make sure that all fields are filled in as they should be
 
 ```
-    it “is valid with a title, synopsis, and year” do
-	    expect(harry_potter).to be valid
-    end
+  it "is valid with a title, synopsis, and year" do
+    expect(harry_potter).to be valid
+  end
 
-    it “is not valid without a title” do
-    	expect(Movie.new(:synopsis => “Movie synopsis”, :year => “2000”, :genre_id => fantasy.id)).to_not be_valid
-    end
+  it "is not valid without a title" do
+    expect(Movie.new(:synopsis => "Movie synopsis", :year => "2000", :genre_id => fantasy.id)).to_not be_valid
+  end
 
-    it “is not valid without a synopsis” do
-	    expect(Movie.new(:title => “Movie Title”, :year => “2000”, :genre_id => fantasy.id)).to_not be_valid
-    end
+  it "is not valid without a synopsis" do
+    expect(Movie.new(:title => "Movie Title", :year => "2000", :genre_id => fantasy.id)).to_not be_valid
+  end
 
-    it “is not valid without a year” do
-    	expect(Movie.new(:title => “Movie Title”, :synopsis => “Movie synopsis”, :genre_id => fantasy.id)).to_not be_valid
-    end
+  it "is not valid without a year" do
+    expect(Movie.new(:title => "Movie Title", :synopsis => "Movie synopsis", :genre_id => fantasy.id)).to_not be_valid
+  end
 ```
 
 
@@ -118,20 +118,20 @@ Just a quick note—we don’t need to test for the genre_id because Active Reco
 Whew, okay, now let’s take a look at the associations tests:
 
 ```
-    it “has many movie_actors” do
-	    daniel_hp = MovieActor.create(:movie_id => harry_potter.id, :actor_id => daniel_radcliffe.id)
-	    rupert_hp = MovieActor.create(:movie_id => harry_potter.id, :actor_id =>rupert_grint.id)
-	    expect(harry_potter.movie_actors).to include(daniel_hp)
-	    expect(harry_potter.movie_actors).to include(rupert_hp)
-    end 
+  it "has many movie_actors" do
+    daniel_hp = MovieActor.create(:movie_id => harry_potter.id, :actor_id => daniel_radcliffe.id)
+    rupert_hp = MovieActor.create(:movie_id => harry_potter.id, :actor_id =>rupert_grint.id)
+    expect(harry_potter.movie_actors).to include(daniel_hp)
+    expect(harry_potter.movie_actors).to include(rupert_hp)
+  end 
 
 
-    it “has many actors through movie_actors” do
-	    MovieActor.create(:movie_id => harry_potter.id, :actor_id => daniel_radcliffe.id)
-	    MovieActor.create(:movie_id => harry_potter.id, :actor_id =>rupert_grint.id)
-	    expect(harry_potter.actors).to include(daniel_radcliffe)
-	    expect(harry_potter.actors).to include(rupert_grint)
-    end
+  it "has many actors through movie_actors" do
+    MovieActor.create(:movie_id => harry_potter.id, :actor_id => daniel_radcliffe.id)
+    MovieActor.create(:movie_id => harry_potter.id, :actor_id =>rupert_grint.id)
+    expect(harry_potter.actors).to include(daniel_radcliffe)
+    expect(harry_potter.actors).to include(rupert_grint)
+  end
 end
 ```
 
@@ -147,20 +147,20 @@ Take a look at those same tests using Shoulda Matchers:
 
 ```
 # Movie Tests
-require ‘rails_helper’
+require 'rails_helper'
 
 RSpec.describe Movie, :type => :model do
 
-    describe “validations” do
-	    it { should validate_presence_of(:title) }
-	    it { should validate_presence_of(:synopsis) }
-	    it { should validate_presence_of(:year) }
-    end
+  describe "validations" do
+    it { should validate_presence_of(:title) }
+    it { should validate_presence_of(:synopsis) }
+    it { should validate_presence_of(:year) }
+  end
 
-    describe “associations” do
-	    it { should have_many(:movie_actors) }
-	    it { should have_many(:actors).through(:movie_actors) }
-    end
+  describe "associations" do
+    it { should have_many(:movie_actors) }
+    it { should have_many(:actors).through(:movie_actors) }
+  end
 		
 end
 ```
