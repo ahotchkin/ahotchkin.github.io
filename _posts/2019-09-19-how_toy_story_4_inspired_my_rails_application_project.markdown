@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How Toy Story 4 Inspired My Rails Application Project"
-date:       2019-09-20 00:07:54 +0000
+date:       2019-09-19 20:07:55 -0400
 permalink:  how_toy_story_4_inspired_my_rails_application_project
 ---
 
