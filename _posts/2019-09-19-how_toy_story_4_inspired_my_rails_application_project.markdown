@@ -9,7 +9,7 @@ permalink:  how_toy_story_4_inspired_my_rails_application_project
 A few short months ago I saw a movie that changed my life. Toy Story 4 has it all. Love, friendship, life lessons, Forky. Never have I felt so many emotions in the span of an hour and 40 minutes. Well, at least not since I saw Toy Story 3. So it should come as no surprise to hear that several weeks after I saw the movie it was still on my mind. I was dying to tell anyone who would listen about the heartwarming tale. If only there was a way for me to share my thoughts and feelings on such a masterpiece with the world. I don’t know, like some sort of Rails application for movie reviews. Well, if no one else was going to create such a thing, I figured I may as well for my Rails project.
 
 <br>
-##### Where to begin?
+#### Where to begin?
 
 Admittedly, when I first read through the project requirements I was pretty overwhelmed.
 
@@ -25,14 +25,14 @@ With my idea in place, I was able to use my command line to create a nice skelet
 There are quite a few moving parts to the app, so it isn’t really feasible to give a step-by-step overview of my process from start to finish (not that I can actually remember it all anyway). Instead, I’ll focus on a few features I was able to implement that took some time and some research (and in rare cases some banging my head against the wall).
 
 <br>
-##### Testing
+#### Testing
 
 First things first, I really wanted to be able to test my models and validations to make sure I had everything set up properly. This was my first time writing tests so there was definitely a learning curve. My research eventually led me to the Shoulda Matchers gem, which proved to be very helpful in writing these tests. I learned so much, in fact, that I was inspired to write an entire post on <a href="http://allysonhotchkin.com/shoulda_used_shoulda_matchers">Shoulda Matchers</a> alone.
 
 Since I included a link to another blog post, I’m all set, right? Or does that not count? Oh, I still need to write more? Fine, I’ll keep going.
 
 <br>
-##### Using Partials and Helpers
+#### Using Partials and Helpers
 
 By this point I had enough code written for a user to log in and see their home page, which lists out the 10 most recent reviews. It wasn’t long before I realized that this information would probably be helpful on other pages. I might not need this exact code again, but maybe I’d want to list out ALL reviews, or even just one review. And I had a strong feeling that the code to do so would probably be pretty similar to the code I already had written. Enter partials. This was my first time using partials, but boy do they help keep your code DRY. I also wanted to make sure to have limited logic in my controllers and views, so I utilized helpers as well. In the case of the reviews display, I used partials and helpers together. The tricky part was that the review information needed to change depending on the view. For example, on the user’s show page, all review information should be present (title, movie, rating, author, and content). However, if you’re on the review show page, the review title should be the header, not part of the review. Or if you’re on the reviews index page for a particular user, the user’s name should appear as the header, not within the review itself. As you can probably tell, this required a lot of conditional statements. Perfect for a helper to handle. I ended up with the following methods in my reviews helper:
 
@@ -89,7 +89,7 @@ Rating: <%= review.rating %>
 ```
 
 <br>
-##### Admin Features
+#### Admin Features
 
 I waffled back and forth for quite a while on whether or not I wanted to incorporate admin users. Ultimately I decided admin would be able to interact with the app in ways regular users could not (although as it stands anyone can check off that they are an admin when they sign up, so I probably need to add some extra functionality in there…). By writing a helper method to check if a user is an admin, and calling it before applicable actions, I was able to give admin certain abilities beyond the normal functionality. For example, an admin user can add a movie to the database, while a regular user cannot.
 
@@ -117,7 +117,7 @@ It seemed like I had accomplished quite a bit up to this point. I must be almost
 
 
 <br>
-##### Searching and Sorting
+#### Searching and Sorting
 
 I knew I needed some sort of scope method to meet the project requirements, and one of the suggestions was to implement a search feature. So I gave it a try. While on the index pages for movies, actors, and genres, the user has the ability to search for a movie, actor, or genre accordingly. I started with the movies, and once I had the feature working there it was pretty easy to translate to the other models. I added a scope method to my movie model:
 
@@ -179,7 +179,7 @@ My hours of Google searching did seem to imply there are ways to call a function
 <img src="https://media.giphy.com/media/5kFWIJXf8vQPrGo1w9/giphy.gif" width="480px" height="202px">
 
 <br>
-##### Custom Validations
+#### Custom Validations
 
 Just in case this isn’t already clear, I take movie reviews very seriously. And the last thing I want is for one person to be able to manipulate something as precious as the average rating for a movie. So I definitely needed a way to ensure that a user could only leave one review per movie. But how to do this? As Avi has suggested on numerous occasions, it seemed appropriate to write the code I wished I had. I started with something like this…
 
