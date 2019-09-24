@@ -8,6 +8,7 @@ permalink:  how_toy_story_4_inspired_my_rails_application_project
 
 A few short months ago I saw a movie that changed my life. Toy Story 4 has it all. Love, friendship, life lessons, Forky. Never have I felt so many emotions in the span of an hour and 40 minutes. Well, at least not since I saw Toy Story 3. So it should come as no surprise to hear that several weeks after I saw the movie it was still on my mind. I was dying to tell anyone who would listen about the heartwarming tale. If only there was a way for me to share my thoughts and feelings on such a masterpiece with the world. I don’t know, like some sort of Rails application for movie reviews. Well, if no one else was going to create such a thing, I figured I may as well for my Rails project.
 
+<br>
 
 ### Where to begin?
 
@@ -24,6 +25,7 @@ With my idea in place, I was able to use my command line to create a nice skelet
 
 There are quite a few moving parts to the app, so it isn’t really feasible to give a step-by-step overview of my process from start to finish (not that I can actually remember it all anyway). Instead, I’ll focus on a few features I was able to implement that took some time and some research (and in rare cases some banging my head against the wall).
 
+<br>
 
 ### Testing
 
@@ -31,6 +33,7 @@ First things first, I really wanted to be able to test my models and validations
 
 Since I included a link to another blog post, I’m all set, right? Or does that not count? Oh, I still need to write more? Fine, I’ll keep going.
 
+<br>
 
 ### Using Partials and Helpers
 
@@ -89,7 +92,8 @@ Rating: <%= review.rating %>
 ```
 
 <br>
-#### Admin Features
+
+### Admin Features
 
 I waffled back and forth for quite a while on whether or not I wanted to incorporate admin users. Ultimately I decided admin would be able to interact with the app in ways regular users could not (although as it stands anyone can check off that they are an admin when they sign up, so I probably need to add some extra functionality in there…). By writing a helper method to check if a user is an admin, and calling it before applicable actions, I was able to give admin certain abilities beyond the normal functionality. For example, an admin user can add a movie to the database, while a regular user cannot.
 
@@ -115,6 +119,7 @@ It seemed like I had accomplished quite a bit up to this point. I must be almost
 
 <img src="https://media.giphy.com/media/J95IRJaXr7ZNm/giphy.gif" width="480px" height="269px">
 
+<br>
 
 ### Searching and Sorting
 
@@ -177,6 +182,7 @@ My hours of Google searching did seem to imply there are ways to call a function
 
 <img src="https://media.giphy.com/media/5kFWIJXf8vQPrGo1w9/giphy.gif" width="480px" height="202px">
 
+<br>
 
 ### Custom Validations
 
@@ -204,7 +210,10 @@ After some experimenting, I decided the best way to do this was to create an arr
   end
 ```
 
-<br><br>
+
+<br>
+
+### Is that everything?
 
 Truth be told, I could go on and on about the features I added, or more likely attempted to add, to this app, and what I learned along the way. But I’m afraid if I were to do that the post would never end, which means I’d never stop writing it and I’d never be able to submit my project. Even while writing this post I ended up experimenting with new/current code and found myself wanting to jump back in and update some things. While I know my code definitely isn’t perfect, it does seem to be working pretty well. Creating something from scratch that looks like it maybe, on some level, could be semi-legit is pretty cool. Time for the next section. To JavaScript and beyond!
 
