@@ -131,6 +131,7 @@ With the scope method in place, I just needed to add a search form to my view.
 
 ```
 # movies/index.html.erb
+
   <%= form_tag movies_path, :method => :get, :class => "search-form" do %>
     <%= label_tag "Search for a movie:", nil, :class => "col-form-label" %>
     <%= text_field_tag :title, params[:title] %>
@@ -168,6 +169,7 @@ This method calculates the average rating for each movie and I’m able to displ
 
 ```
 # movie.rb
+
   def self.reviewed_movies
     reviewed_movies = self.all.select { |movie| movie.reviews.size > 0 }
   end
@@ -190,6 +192,7 @@ Just in case this isn’t already clear, I take movie reviews very seriously. An
 
 ```
 # review.rb
+
   def one_review_per_user_per_movie
     # before review.save, take the user_id from that review
     # iterate over the reviews of that user to see if the movie_id for the new review already exists in the user's reviews 
@@ -201,6 +204,7 @@ After some experimenting, I decided the best way to do this was to create an arr
 
 ```
 # review.rb
+
   def one_review_per_user_per_movie
     movie_reviews = user.reviews.select { |review| review.movie_id == self.movie_id }
 
