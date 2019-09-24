@@ -215,7 +215,7 @@ After some experimenting, I decided the best way to do this was to create an arr
 
 ### Is that everything?
 
-Truth be told, I could go on and on about the features I added, or more likely attempted to add, to this app, and what I learned along the way. But I’m afraid if I were to do that the post would never end, which means I’d never stop writing it and I’d never be able to submit my project. Even while writing this post I ended up experimenting with new/current code and found myself wanting to jump back in and update some things. While I know my code definitely isn’t perfect, it does seem to be working pretty well. Creating something from scratch that looks like it maybe, on some level, could be semi-legit is pretty cool. Time for the next section. To JavaScript and beyond!
+No. No it is not. Truth be told, I could go on and on about the features I added, or more likely attempted to add, to this app, and what I learned along the way. But I’m afraid if I were to do that the post would never end, which means I’d never stop writing it and I’d never be able to submit my project. Even while writing this post I ended up experimenting with new/current code and found myself wanting to jump back in and update some things. While I know my code definitely isn’t perfect, it does seem to be working pretty well. Creating something from scratch that looks like it maybe, on some level, could be semi-legit is pretty cool. Time for the next section. To JavaScript and beyond!
 
 
 <img src="https://media.giphy.com/media/N7b54P9EMvK24/giphy.gif" width="480px" height="270px">
