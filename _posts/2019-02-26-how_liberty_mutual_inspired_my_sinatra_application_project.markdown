@@ -125,7 +125,7 @@ post '/items' do
 end
 ```
 
-Now, I’m sure my code could use some refactoring. I did run into a couple issues and had to get a little creative (like figuring out how to allow a user to create an item without selecting an existing group), but the functionality is there. It’s no surprise that completing this project has been a very educational experience. I not only became much more well versed in Sinatra and ActiveRecord, but also in Googling the right questions. Now that that’s done, I guess I’ll go buy a couch or something so I can add it to my Home Inventory.
+Now, I’m sure my code could use some refactoring. I did run into a couple issues and had to get a little creative (like figuring out how to allow a user to create an item without selecting an existing group), but the functionality is there. It’s no surprise that completing this project has been a very educational experience. I not only became much more well-versed in Sinatra and ActiveRecord, but also in Googling the right questions. Now that that’s done, I guess I’ll go buy a couch or something so I can add it to my Home Inventory.
 
 <img src="https://media1.giphy.com/media/2OP9jbHFlFPW/200w.gif?cid=5a38a5a25c78736d6e394b7163817b56" width="480" height="307">
 
