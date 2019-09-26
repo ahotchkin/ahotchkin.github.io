@@ -140,7 +140,7 @@ With the scope method in place, I just needed to add a search form to my view.
   <% end %>
 ```
 
-And with all of that set to go, I last piece was to set some rules around the params. The `@movies` array is determined by the parameters, if any, that are passed through in the search form.
+And with all of that set to go, the last piece was to set some rules around the params. The `@movies` array is determined by the parameters, if any, that are passed through in the search form.
 
 ```
 #movies_controller.rb
