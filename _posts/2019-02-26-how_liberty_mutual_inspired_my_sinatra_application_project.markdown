@@ -16,13 +16,13 @@ Let’s talk about the `application_controller` for a minute. This is where I se
 
 ```
 helpers do
- def logged_in?
-  !!session[:user_id]
- end
+  def logged_in?
+    !!session[:user_id]
+  end
 
- def current_user
-  User.find(session[:user_id])
- end
+  def current_user
+    User.find(session[:user_id])
+  end
 end
 ```
 
@@ -38,23 +38,23 @@ My `post ‘/signup’` route is also where I satisfied the second requirement. 
 
 ```
 post '/signup' do
- # the below code searches the database to make sure the username doesn’t exist
- # if it does, the user will see a message that will instruct them to enter a new username
- if User.find_by(username: params[:username])
-  flash[:message] = "This username is taken. Please enter a new username."
-  redirect “/signup”
- else
-  # if the params hash contains the necessary information, the User instance will be created and saved to the database
-  # if the user instance is saved to the database, the program logs them in by setting session[:user_id]= user.id
-  user = User.new(username: params[:username], email: params[:email], password: params[:password])
-  if user.save
-   session[:user_id] = user.id
-   redirect “/items"
+  # the below code searches the database to make sure the username doesn’t exist
+  # if it does, the user will see a message that will instruct them to enter a new username
+  if User.find_by(username: params[:username])
+    flash[:message] = "This username is taken. Please enter a new username."
+    redirect “/signup”
   else
-   flash[:message] = "Please enter a valid username, email, and password to create an account.”
-   redirect “/signup"
-  end
- end	
+    # if the params hash contains the necessary information, the User instance will be created and saved to the database
+    # if the user instance is saved to the database, the program logs them in by setting session[:user_id]= user.id
+    user = User.new(username: params[:username], email: params[:email], password: params[:password])
+    if user.save
+      session[:user_id] = user.id
+      redirect “/items"
+    else
+      flash[:message] = "Please enter a valid username, email, and password to create an account.”
+      redirect “/signup"
+    end
+  end	
 end			
 ```
 
@@ -75,23 +75,23 @@ The trickiest part of this new addition was updating the `items_controller` and 
 
 ```
 <% if !@groups.empty? %>
- <label>Select an existing category:</label>
+  <label>Select an existing category:</label>
 
- <br>
-
- <% @groups.each do |group| %>
-  <input type="hidden" id="hidden" name="item[group_ids][]" value="">
-  <input type="checkbox" id="<%= group.name %>" name="item[group_ids][]" value="<%= group.id %>"><%= group.name %></input>
   <br>
- <% end %>
 
- <br>
+  <% @groups.each do |group| %>
+    <input type="hidden" id="hidden" name="item[group_ids][]" value="">
+    <input type="checkbox" id="<%= group.name %>" name="item[group_ids][]" value="<%= group.id %>"><%= group.name %></input>
+    <br>
+  <% end %>
 
- <label for="group_name">And/or create a new category:</label>
- <input type="text" id="group_name" name="group_name">
+  <br>
+
+  <label for="group_name">And/or create a new category:</label>
+  <input type="text" id="group_name" name="group_name">
 <% else %>
- <label for="group_name">Create a new category for this item:</label>
- <input type="text" id="group_name" name="group_name">
+  <label for="group_name">Create a new category for this item:</label>
+  <input type="text" id="group_name" name="group_name">
 <% end %>
 ```
 
@@ -99,29 +99,29 @@ All that was left to do now was update the `post ‘/items’` and `patch ‘/it
 
 ```
 post '/items' do
- if logged_in? && !params[:item_name].empty? && !params[:cost].empty?
-  item = Item.new(name: params[:item_name], cost: params[:cost], date_purchased: params[:date_purchased])
-  item.user_id = current_user.id
+  if logged_in? && !params[:item_name].empty? && !params[:cost].empty?
+    item = Item.new(name: params[:item_name], cost: params[:cost], date_purchased: params[:date_purchased])
+    item.user_id = current_user.id
 
-  # code below is required to allow a user to create an item without selecting an existing category
-  groups = current_user.groups
-  if !groups.empty?
-   item.group_ids = params[:item][:group_ids]
+    # code below is required to allow a user to create an item without selecting an existing category
+    groups = current_user.groups
+    if !groups.empty?
+      item.group_ids = params[:item][:group_ids]
+    end
+
+    if !params[:group_name].empty?
+      item.groups << Group.create(name: params[:group_name])
+    end
+
+    item.save
+    flash[:message] = "Item successfully added."
+    redirect "/items"
+  elsif logged_in? && params[:item_name].empty? || logged_in? && params[:cost].empty?
+    flash[:message] = "Please enter a name and cost for the item."
+    redirect "/items/new"
+  else
+    redirect "/login"
   end
-
-  if !params[:group_name].empty?
-   item.groups << Group.create(name: params[:group_name])
-  end
-
-  item.save
-  flash[:message] = "Item successfully added."
-  redirect "/items"
- elsif logged_in? && params[:item_name].empty? || logged_in? && params[:cost].empty?
-  flash[:message] = "Please enter a name and cost for the item."
-  redirect "/items/new"
- else
-  redirect "/login"
- end
 end
 ```
 
