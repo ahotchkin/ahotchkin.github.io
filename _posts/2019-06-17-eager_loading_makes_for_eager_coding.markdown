@@ -69,6 +69,7 @@ end
 ```
 
 By using the `includes` finder method, your application can give you the same results with way fewer queries. And you’re not limited in the number of associations you can use, either. Say, for example, every movie also has a genre and you wanted to get that information as well. It’s as simple as adding the genre as one of the associations:
+
 ```
 Movie.includes(:director, :genre)
 ```
