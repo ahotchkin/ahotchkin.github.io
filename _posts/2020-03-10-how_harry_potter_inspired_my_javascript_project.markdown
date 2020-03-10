@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "How Harry Potter Inspired My JavaScript Project"
-date:       2020-03-10 19:28:27 +0000
+date:       2020-03-10 15:28:28 -0400
 permalink:  how_harry_potter_inspired_my_javascript_project
 ---
 
@@ -49,7 +49,7 @@ constructor(username) {
 }
 ```
 
-This User instance sets a lot of wheels in motion by connecting to the UsersAdapter and calling `userEventListerners()`, making it possible to take the user input and create an instance of User in the Rails database. We're off to a great start! But what would happen next? Well, a user would type in a username and click submit. And we're off...
+This User instance sets a lot of wheels in motion by connecting to the UsersAdapter and calling `userEventListeners()`, making it possible to take the user input and create an instance of User in the Rails database. We're off to a great start! But what would happen next? Well, a user would type in a username and click submit. And we're off...
 
 <img src="https://media.giphy.com/media/AV5y1BxRNEATK/giphy.gif" width="480px" height="200.64px">
 
@@ -119,7 +119,7 @@ def create
 end
 ```
 
-The fetch request in the adapter returns a promise. A promise is essentially a wrapper for code that might take a second to resolve. I'm actually not going to get into that too much here since I'll be writing another post with promises being the focus (I promise, it will happen soon...), but just know that they allow you to run synchronus code in an asynchronus language (like JavaScript). A fancy way of saying, "hold on just a second, I just gotta finish this one thing and then we can keep going". 
+The fetch request in the adapter returns a promise. A promise is essentially a wrapper for code that might take a second to resolve. I'm actually not going to get into that too much here since I'll be writing another post with promises being the focus (I promise, it will happen soon...), but just know that they allow you to run synchronous code in an asynchronous language (like JavaScript). A fancy way of saying, "Hold on just a second, I just gotta finish this one thing and then we can keep going."
 
 Okay, back to `createUser()` in user.js. This is where the JSON object is used when rendering the User's start page. Just in case you forgot or don't feel like scrolling up:
 
@@ -139,7 +139,7 @@ We now have that user’s information (their username) and can display it back t
 <img src="https://user-images.githubusercontent.com/33204849/76117072-1e4a5d80-5fb9-11ea-9756-84c8cbb007c8.png" width="800" height="388px">
 
 
-Whew, that was a lot. And that's just one example of a `POST` request. I managed to work out something similar with UserAnswers and UserRounds, since that information is important to determine if a user has successfully completed a round, but I won't bore you with the details since the `POST` requests function very similarly. I'll bore you with other details instead.
+Whew, that was a lot. And that's just one example of a `POST` request. UserAnswers and UserRounds work in a similar fashion. That information is important to determine if a user has successfully completed a round, but I won't bore you with the details since the `POST` requests aren’t much different. I'll bore you with other details instead.
 
 Once a user is created, they can start the first round. This brings us to the next type of request that is made.
 
@@ -178,7 +178,7 @@ end
 
 The JSON object returned from `getRound()` can then be used as an argument in the `renderRound()` method that is called in `fetchAndLoadRound(event)`.
 
-The individual questions belong to a round, so in the `renderRound()` method we loop through all of the round's questions and take the necessary steps to render the question information to the page. We'll take a look at this in a bit. But first, there's one last type of fetch request occuring in the game. In some instances, we aren’t looking to get information from the database or even post information, we’re looking to update information that already exists. Enter `PATCH` requests.
+The individual questions belong to a round, so in the `renderRound()` method we loop through all of the round's questions and take the necessary steps to render the question information to the page. We'll take a look at this in a bit. But first, there's one last type of fetch request occurring in the game. In some instances, we aren’t looking to get information from the database or even post information, we’re looking to update information that already exists. Enter `PATCH` requests.
 
 <br>
 
@@ -272,7 +272,7 @@ Wow, I'm wiped. And that doesn't even cover all of the communication that is occ
 
 ### The DOM
 
-Manipulating the DOM and rendering content was a major part of this project since it was a Single Page Application. Because of this I needed to make sure that the HTML was relatively organized, giving me the ability to easily find the elements I needed. I found utilizing IDs to be extremely helpful. If you'll remember, when I started building the app I had separated my JavaScript classes into different files. As a result, I found that I was having to repeat the same code if I was trying to access the same DOM elements in different files. There had to be a better way! And as in most cases, it turns out there was. I created a DomElements class that contained static getter methods for all of the DOM elements I would need to grab throughout the program. This way I only had to grab the element once, and I could call these methods in any of my other classes with `domElements.methodName()`. Here are a couple examples of those static getter methods, just for you:
+Manipulating the DOM and rendering content was a major part of this project since it was a Single Page Application. Because of this I needed to make sure that the HTML was relatively organized, giving me the ability to easily find the elements I needed. I found utilizing IDs to be extremely helpful. If you'll remember, when I started building the app I had separated my JavaScript classes into different files. As a result, I found that I was having to repeat the same code if I was trying to access the same DOM elements in different files. There had to be a better way! And as in most cases, it turns out there was. I created a DOMElements class that contained static getter methods for all of the DOM elements I would need to grab throughout the program. This way I only had to grab the element once, and I could call these methods in any of my other classes with `domElements.methodName()`. Here are a couple examples of those static getter methods, just for you:
 
 ```
 static get body() { return document.querySelector("body") };
