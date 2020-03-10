@@ -27,7 +27,9 @@ With all of that in place, I was able to create the necessary database tables an
 
 When it came to the JavaScript side of things, I truly had no idea where to start. Luckily, I was able to find an old video walkthrough of creating an app with a Rails API backend and a JavaScript frontend (hey, that’s what I was doing!). It seemed like the best place to start was to figure out just that—where would my app start? I knew I wanted my files to be as clean and DRY as possible, and I wanted to separate code concerning different elements into different files. So I started with my index.js file where I wrote one whole line of code:
 
-`const app = new App()`
+```
+const app = new App()
+```
 
 This, in turn, points to my app.js file, which has a whopping five lines of code:
 
