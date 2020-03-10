@@ -19,7 +19,7 @@ In short, Shoulda Matchers gives you the ability to write very clean and concise
 To use Shoulda Matchers with RSpec, the first thing you’ll need to do is include the gem within the test group in your gem file:
 ```
 group :test do
-  gem 'Shoulda Matchers'
+  gem 'shoulda-matchers'
 end
 ```
 
