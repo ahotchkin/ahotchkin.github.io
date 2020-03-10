@@ -37,7 +37,7 @@ This, in turn, points to my app.js file, which has a whopping five lines of code
 class App {
   constructor() {
     this.user = new User(username);
-	}
+  }
 }
 ```
 
@@ -69,7 +69,7 @@ createUser(event) {
     alert("Please enter a username.");
   } else {
     DOMElements.audio.play();
-		// take the below value and make a POST request using the adapter
+    // take the below value and make a POST request using the adapter
 		const value = DOMElements.username.value;
 
     this.adapter.createUser(value)
@@ -298,7 +298,7 @@ renderQuestion(question) {
 
   // loops through the 4 answer choices for the question
   for (let i = 1; i < 5; i++) {
-	  // creates DOM elements that are needed to display each answer choice
+    // creates DOM elements that are needed to display each answer choice
     const div = document.createElement("div");
     const answer = document.createElement("input");
     const answer_text = document.createElement("label");
