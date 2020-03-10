@@ -17,7 +17,8 @@ When it came time to start my JavaScript Project for Flatiron School, I’ll adm
 
 Knowing that I needed a Rails backend, I figured that was the place to start. I felt comfortable with the Rails requirements and understood how to implement what was needed. I’ve gotten in the habit of creating an outline to help me understand all of my models and relationships, and this project was no different.
 
-<img src="https://user-images.githubusercontent.com/33204849/76348938-76e26900-62df-11ea-9e38-12a7dfa45b98.jpg" width="800" height="655">
+<img src="https://user-images.githubusercontent.com/33204849/76363340-2f68d680-62f9-11ea-9416-d8060d442af9.jpg" width="800" height="655">
+
 
 With all of that in place, I was able to create the necessary database tables and corresponding models. I know what you’re thinking. "But Ally, why are we talking about Rails? This is your JavaScript project." And you’re right, we don’t need to get into the Rails details, we’ve already done that. So let’s move on.
 
