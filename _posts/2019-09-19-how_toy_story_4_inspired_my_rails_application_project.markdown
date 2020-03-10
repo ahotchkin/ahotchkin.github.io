@@ -18,8 +18,7 @@ Admittedly, when I first read through the project requirements I was pretty over
 
 How was I even supposed to start? I knew going into it that this would be the most intense project thus far. Before I started writing any code, I thought an outline would be helpful. Knowing that I would need several models and those models would relate to each other in all kinds of ways, this was the best way to keep track of it all.
 
-<a data-flickr-embed="true"  href="https://www.flickr.com/photos/184253453@N07/48760992796/in/dateposted-public/" title="Movie Review App Outline 8.27"><img src="https://live.staticflickr.com/65535/48760992796_c55420946b_c.jpg" width="800" height="592" alt="Movie Review App Outline 8.27"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-
+<img src="https://user-images.githubusercontent.com/33204849/76363856-42c87180-62fa-11ea-9859-35009308f1cd.jpg" width="800px" height="592px">
 
 With my idea in place, I was able to use my command line to create a nice skeleton for the app. You know, commands like `rails new AppName` and `rails g resource ResourceName`. The resource generator was very helpful since it generated files for the migrations, controllers, models, helpers, etc. Now that I had a nice structure for my app, it was time to implement some functionality.
 
