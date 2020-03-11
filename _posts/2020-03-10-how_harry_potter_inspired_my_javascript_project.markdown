@@ -71,7 +71,7 @@ createUser(event) {
   } else {
     DOMElements.audio.play();
     // take the below value and make a POST request using the adapter
-		const value = DOMElements.username.value;
+    const value = DOMElements.username.value;
 
     this.adapter.createUser(value)
       .then(user => {
