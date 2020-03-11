@@ -122,7 +122,7 @@ def create
 end
 ```
 
-The fetch request in the adapter returns a promise. A promise is essentially a wrapper for code that might take a second to resolve. I'm actually not going to get into that too much here since I'll be writing another post with promises being the focus (I promise, it will happen soon...), but just know that they allow you to run synchronous code in an asynchronous language (like JavaScript). A fancy way of saying, "Hold on just a second, I just gotta finish this one thing and then we can keep going."
+The fetch request in the adapter returns a promise. A promise is essentially a wrapper for code that might take a second to resolve. I'm actually not going to get into that too much here since I'll be writing another post with promises being the focus (I promise, it will happen soon...), but just know that they allow you to run synchronous code in an asynchronous language (like JavaScript). A fancy way of saying, "Hang on one second, I just gotta finish this one thing and then we can keep going."
 
 Okay, back to `createUser()` in user.js. This is where the JSON object is used when rendering the User's start page. Just in case you forgot or don't feel like scrolling up:
 
