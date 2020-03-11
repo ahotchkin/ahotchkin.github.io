@@ -128,12 +128,13 @@ Okay, back to `createUser()` in user.js. This is where the JSON object is used w
 
 ```
 createUser(event) {
-...
+  ...
     this.adapter.createUser(value)
       .then(user => {
       this.renderUserStartPage(user);
     });
-...
+  ...
+}
 ```
 
 We now have that user’s information (their username) and can display it back to them in `renderUserStartPage()`.
