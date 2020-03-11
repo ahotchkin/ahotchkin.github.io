@@ -163,7 +163,7 @@ fetchAndLoadRound(event) {
 }
 ```
 
-`fetchAndLoadRound()` calls the `getRound()` method on the adapter, which gets the round information and returns the JSON object:
+`fetchAndLoadRound()` calls the `getRound()` method on the adapter, which gets the round information and returns a promise, the value of which is a JSON object:
 
 ```
 getRound() {
