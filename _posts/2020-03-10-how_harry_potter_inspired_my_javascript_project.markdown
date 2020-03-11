@@ -284,7 +284,7 @@ static get header() { return document.getElementById("header") };
 static get newUserForm() { return document.getElementById("new_user_form") };
 ```
 
-Now that I had access to the DOM elements, I had to figure out how to manipulate them to display the information from the backend. The DOM can be really powerful, giving you the ability to add/change innerHTML, add elements, append elements, etc. After understanding that, it was just a matter of finding the DOM element I needed and setting the innerHTML equal to the appropriate attribute of the JSON object I had access to. Sure, in some instances I would need to create new elements, or update the IDs of current elements, but a lot of figuring that out was just trial and error. Remember how I said that for each round it was necessary to render the round's questions on the page? Well, in the end, the `renderQuestion()` method looked like this:
+Now that I had access to the DOM elements, I had to figure out how to manipulate them to display the information from the backend. The DOM can be really powerful, giving you the ability to add/change innerHTML, add elements, append elements, etc. After understanding that, it was just a matter of finding the DOM element I needed and setting the innerHTML equal to the appropriate attribute of the JSON object I had access to. Sure, in some instances I would need to create new elements or update the IDs of current elements, but a lot of figuring that out was just trial and error. Remember how I said that for each round it was necessary to render the round's questions on the page? Well, in the end, the `renderQuestion()` method looked like this:
 
 ```
 renderQuestion(question) {
@@ -346,7 +346,7 @@ All of that to display one question:
 
 ### Is that everything?
 
-Of course not! This project was a huge learning experience, delving into the JavaScript world for the first time. I’ve hardly even scratched the surface, which is both crazy and exciting. I feel like I could improve this project in a myriad of ways, and could probably spend a few solid weeks doing so. That being said, I think it all seems to be working okay as is, and at this point my time is probably better spent moving on and continuing my journey. So when it comes to Harry Potter Trivia, for now it's Mischief Managed.
+Of course not! This project was a huge learning experience, delving into the JavaScript world for the first time. I’ve hardly even scratched the surface, which is both crazy and exciting. I feel like I could improve this project in a myriad of ways, and could probably spend a few solid weeks (or months) doing so. That being said, I think it all seems to be working okay as is, and at this point my time is probably better spent moving on and continuing my journey. So when it comes to Harry Potter Trivia, for now it's Mischief Managed.
 
 <img src="https://media.giphy.com/media/qLHzYjlA2FW8g/giphy.gif" width="500px" height="218px">
 
