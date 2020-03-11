@@ -76,7 +76,7 @@ createUser(event) {
     this.adapter.createUser(value)
       .then(user => {
         this.renderUserStartPage(user);
-    });
+      });
   };
 }
 ```
