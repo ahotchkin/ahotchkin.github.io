@@ -159,7 +159,7 @@ fetchAndLoadRound(event) {
   this.adapter.getRound()
     .then(round => {
       this.renderRound(round);
-  });
+    });
 }
 ```
 
