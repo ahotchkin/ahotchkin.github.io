@@ -180,7 +180,7 @@ def show
 end
 ```
 
-The JSON object returned from `getRound()` can then be used as an argument in the `renderRound()` method that is called in `fetchAndLoadRound(event)`.
+Going back to `getRound()`, we pass a callback function to `.then`, which returns a response that we can then turn into JSON. This JSON object is used as an argument in the `renderRound()` method that is called in `fetchAndLoadRound(event)`.
 
 The individual questions belong to a round, so in the `renderRound()` method we loop through all of the round's questions and take the necessary steps to render the question information to the page. We'll take a look at this in a bit. But first, there's one last type of fetch request occurring in the game. In some instances, we aren’t looking to get information from the database or even post information, we’re looking to update information that already exists. Enter `PATCH` requests.
 
