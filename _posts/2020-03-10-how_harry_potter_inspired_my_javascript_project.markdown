@@ -239,7 +239,7 @@ updateUserRound() {
 }
 ```
 
-The above method makes a call to the adapter and passes in the new JavaScript instance of the UserRound (which remember, is the same as the previous instance of the UserRound, except the number of attempts has increased by 1) as well as the ID of that UserRound, so a patch request can be made from the adapter:
+The above method makes a call to the adapter and passes in the new JavaScript instance of the UserRound (which remember, is the same as the previous instance of the UserRound, except the number of attempts has increased by 1), as well as the ID of the UserRound being updated, so a patch request can be made:
 
 ```
 updateUserRound(userRound, id) {
