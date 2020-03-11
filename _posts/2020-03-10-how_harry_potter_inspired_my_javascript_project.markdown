@@ -190,7 +190,7 @@ The individual questions belong to a round, so in the `renderRound()` method we 
 
 Part of the HPT challenge is that a user only has 3 chances to successfully complete a round before Voldemort takes control of the Wizarding World. Part of the challenge of this project was figuring out how to make that work. When it comes to the UserRounds, the first step is to create an instance in the database. When a user clicks the button to start a round, an instance of UserRound is created with the current user's id, the round id, and the number of attempts (initially set equal to 1). If a user doesn't answer at least 5 questions correctly, they have a chance to retry the round. We don't want to create an entirely new instance of UserRound, we want to take that same UserRound that was just created and increase the number of attempts by 1. Doing so allows the program to cut off the user after 3 attempts in any given round, as well as display the number of attempts per round on the stats page. The process of creating the UserRound is pretty similar to what we’ve seen already.
 
-The start button is clicked, which triggers the Round class to begin the process of creating a UserRound:
+The start button is clicked, which triggers the Round class to begin said process:
 
 ```
 createUserRound(event) {
