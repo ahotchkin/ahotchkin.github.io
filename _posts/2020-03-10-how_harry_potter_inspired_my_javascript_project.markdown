@@ -346,7 +346,7 @@ All of that to display one question:
 
 ### Is that everything?
 
-Of course not! This project was a huge learning experience, delving into the JavaScript world for the first time. I’ve hardly even scratched the surface, which is both crazy and exciting. I feel like I could improve this project in a myriad of ways, and could probably spend a few solid weeks (or months) doing so. That being said, I think it all seems to be working okay as is, and at this point my time is probably better spent moving on and continuing my journey. So when it comes to Harry Potter Trivia, for now it's Mischief Managed.
+Of course not! This project was a huge learning experience, delving into the JavaScript world for the first time. I’ve hardly even scratched the surface, which is both crazy and exciting. I feel like I could improve this project in a myriad of ways, and could probably spend a few solid weeks (or months) doing so. That being said, I think it all seems to be working okay as is, and at this point my time is probably better spent moving on and continuing my journey. So when it comes to Harry Potter Trivia, for now I'll say Mischief Managed.
 
 <img src="https://media.giphy.com/media/qLHzYjlA2FW8g/giphy.gif" width="500px" height="218px">
 
