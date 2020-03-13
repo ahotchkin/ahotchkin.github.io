@@ -46,7 +46,7 @@ And this is where the app really takes off. Creating that User directs to the us
 
 ```
 constructor(username) {
-  this.username = username.username;
+  this.username = username;
   this.adapter = new UsersAdapter();
   this.userEventListeners();
 }
