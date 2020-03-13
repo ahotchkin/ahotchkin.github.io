@@ -26,7 +26,7 @@ With all of that in place, I was able to create the necessary database tables an
 
 ### But where to begin with JavaScript?
 
-When it came to the JavaScript side of things, I truly had no idea where to start. Luckily, I was able to find an old video walkthrough of creating an app with a Rails API backend and a JavaScript frontend (hey, that’s what I was doing!). As it turned out, the best place to start was to figure out just that—where would my app start? I knew I wanted my files to be as clean and DRY as possible, and I wanted to separate code concerning different elements into different files. So I started with my index.js file where I wrote one whole line of code:
+When it came to the JavaScript side of things, I truly had no idea where to start. Luckily, I was able to find an old video walkthrough of creating an app with a Rails API backend and a JavaScript frontend (hey, that’s what I was doing!). As it turned out, the best place to start was to figure out just that—where would my app start? Knowing that I wanted: 1. My code to be as clean and DRY as possible, and 2. Code concerning different elements to be separated into different files, I started with my index.js file. It was there where I wrote one whole line of code:
 
 ```
 const app = new App()
