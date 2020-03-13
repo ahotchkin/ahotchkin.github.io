@@ -81,7 +81,7 @@ createUser(event) {
 }
 ```
 
-When a user enters a username and clicks submit, `this.adapter.createUser()` is called. The value that is passed in is the user input. Let's take a look at what is happening in the adapter:
+As long as the user has entered a username, `this.adapter.createUser()` is called. The value that is passed in is the user input. Let's take a look at what is happening in the adapter:
 
 ```
 class UsersAdapter {
