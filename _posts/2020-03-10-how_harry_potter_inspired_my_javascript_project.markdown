@@ -7,7 +7,7 @@ permalink:  how_harry_potter_inspired_my_javascript_project
 
 
 
-When it came time to start my JavaScript Project for Flatiron School, I’ll admit I was pretty lost. JavaScript still felt very confusing and foreign to me, so how was I supposed to develop an entire project with a JavaScript frontend? Up to this point, creating a project that involved one of my interests had proven to be pretty successful. Given my lack of confidence in JavaScript, I needed to pick an interest where my confidence was overflowing. I know what you’re all thinking. "Is this it? Is this the project where Ally incorporates Harry Potter?" If you’ve read the title of this post, then you’ll already know the answer is a resounding yes! After careful consideration, I decided to test (and develop) my JavaScript (and Harry Potter) knowledge by creating a Harry Potter trivia game.
+When it came time to start my JavaScript Project for Flatiron School, I’ll admit I was pretty lost. JavaScript still felt very confusing and foreign to me, so how was I supposed to develop an entire project with a JavaScript frontend? Up to this point, combining a project with one of my interests had proven to be pretty successful. Given my lack of confidence in JavaScript, I needed to pick an interest where my confidence was overflowing. I know what you’re all thinking. "Is this it? Is this the project where Ally incorporates Harry Potter?" If you’ve read the title of this post, then you’ll already know the answer is a resounding yes! After careful consideration, I decided to test (and develop) my JavaScript (and Harry Potter) knowledge by creating a Harry Potter trivia game.
 
 <img src="https://media.giphy.com/media/DnR5sy5P3hcCk/giphy.gif" width="480px" height="192px">
 
