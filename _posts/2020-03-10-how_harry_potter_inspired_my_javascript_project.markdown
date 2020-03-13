@@ -60,7 +60,7 @@ This User instance sets a lot of wheels in motion by connecting to the UsersAdap
 
 ### Client-Server Communication — POST Request
 
-To start the game, a user has to enter a username and select their house. `userEventListeners()` adds an event listener to the submit button, so after they click on the submit button the `createUser()` method is called on the User instance:
+To start the game, a user has to enter a username and select their house. `userEventListeners()` adds an event listener to the submit button, so by clicking on this button the `createUser()` method is called on the User instance:
 
 ```
 createUser(event) {
