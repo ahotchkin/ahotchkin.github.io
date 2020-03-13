@@ -151,7 +151,7 @@ Once a user is created, they can start the first round. This brings us to the ne
 
 ### Client-Server Communication — GET Request
 
-The `GET` request isn’t as complicated as the `POST` request, since no new information is being created. The program is simply fetching information that already exists in the database. In HPT (Harry Potter Trivia, obvi), `GET` requests are used to fetch the rounds and questions for the game. When a user clicks on the button to Board the Hogwarts Express for Round 1, a new JavaScript instance of a Round is created. Similarly to a User, this binds an adapter to the instance of the Round, as well as calls the method `roundBindingsAndEventListeners()` on this new instance. `roundBindingsAndEventListeners()` includes instructions for what should happen when several different buttons are clicked. For example, calling `fetchAndLoadRound()` when the start button is clicked:
+The `GET` request isn’t as complicated as the `POST` request, since no new information is being created. The program is simply fetching information that already exists in the database. In HPT (Harry Potter Trivia, obvi), `GET` requests are used to fetch the rounds and questions for the game. When a user clicks on the button to start the game, a new JavaScript instance of a Round is created. Similarly to a User, this binds an adapter to the instance of the Round, as well as calls the method `roundBindingsAndEventListeners()` on this new instance. `roundBindingsAndEventListeners()` includes instructions for what should happen when several different buttons are clicked. For example, calling `fetchAndLoadRound()` when the start button is clicked:
 
 ```
 fetchAndLoadRound(event) {
