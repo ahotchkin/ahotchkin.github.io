@@ -259,7 +259,7 @@ updateUserRound(userRound, id) {
 }
 ```
 
-This patch request sends the information to the UserRounds URL to update the instance of the UserRound via the UserRounds Controller:
+This patch request sends the information to the UserRound's URL to update the instance of the UserRound via the UserRounds Controller:
 
 ```
 def update
@@ -270,7 +270,9 @@ def update
 end
 ```
 
-Wow, I'm wiped. And that doesn't even cover all of the communication that is occurring between the client and the server. But it does provide a nice overview of the range of ways in which the two are communicating and how they are working together to transfer information back and forth. Great, so we can get information from the client to the server and vice versa. But how do we actually display this information to the user, you ask? By all means, keep reading.
+Wow, I'm wiped. And that doesn't even cover all of the communication that is occurring between the client and the server. But it does provide a nice overview of the range of ways in which the two are communicating, and how they are working together to transfer information back and forth.
+
+Great, so we can get information from the client to the server and vice versa. But how do we actually display this information to the user, you ask? By all means, keep reading.
 
 <br>
 
@@ -284,7 +286,9 @@ static get header() { return document.getElementById("header") };
 static get newUserForm() { return document.getElementById("new_user_form") };
 ```
 
-Now that I had access to the DOM elements, I had to figure out how to manipulate them to display the information from the backend. The DOM can be really powerful, giving you the ability to add/change innerHTML, add elements, append elements, etc. After understanding that, it was just a matter of finding the DOM element I needed and setting the innerHTML equal to the appropriate attribute of the JSON object I had access to. Sure, in some instances I would need to create new elements or update the IDs of current elements, but a lot of figuring that out was just trial and error. Remember how I said that for each round it was necessary to render the round's questions on the page? Well, in the end, `renderQuestion()` looked like this:
+Now that I had access to the DOM elements, I had to figure out how to manipulate them to display the information from the backend. The DOM can be really powerful, giving you the ability to add/change innerHTML, add elements, append elements, etc. After understanding that, it was just a matter of finding the DOM element I needed and setting the innerHTML equal to the appropriate attribute of the JSON object I had access to. Sure, in some instances I would need to create new elements or update the IDs of current elements, but a lot of figuring that out was just trial and error. 
+
+Remember how I said that for each round it was necessary to render the round's questions on the page? Well, in the end, `renderQuestion()` looked like this:
 
 ```
 renderQuestion(question) {
