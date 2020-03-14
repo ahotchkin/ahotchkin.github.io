@@ -60,7 +60,7 @@ This User instance sets a lot of wheels in motion by connecting to the UsersAdap
 
 ### Client-Server Communication — POST Request
 
-To start the game, a user has to enter a username and select their house. `userEventListeners()` adds an event listener to the submit button, so by clicking on this button the `createUser()` method is called on the User instance:
+To start the game, a user has to enter a username and select their house. `userEventListeners()` adds an event listener to the submit button, so by clicking on this button `createUser()` is called on the User instance:
 
 ```
 createUser(event) {
@@ -151,7 +151,7 @@ Once a user is created, they can start the first round. This brings us to the ne
 
 ### Client-Server Communication — GET Request
 
-The `GET` request isn’t as complicated as the `POST` request, since no new information is being created. The program is simply fetching information that already exists in the database. In HPT (Harry Potter Trivia, obvi), `GET` requests are used to fetch the rounds and questions for the game. When a user clicks on the button to start the game, a new JavaScript instance of a Round is created. Similarly to a User, this binds an adapter to the instance of the Round, as well as calls the method `roundBindingsAndEventListeners()` on this new instance. `roundBindingsAndEventListeners()` includes instructions for what should happen when several different buttons are clicked. For example, calling `fetchAndLoadRound()` when the start button is clicked:
+The `GET` request isn’t as complicated as the `POST` request, since no new information is being created. The program is simply fetching information that already exists in the database. In HPT (Harry Potter Trivia, obvi), `GET` requests are used to fetch the rounds and questions for the game. When a user clicks on the button to start the game, a new JavaScript instance of a Round is created. Similarly to a User, this binds an adapter to the instance of the Round, and calls `roundBindingsAndEventListeners()` on this new instance. `roundBindingsAndEventListeners()` includes instructions for what should happen when several different buttons are clicked (and even creates some new buttons). A great example, especially since we're talking about `GET` requests, is calling `fetchAndLoadRound()` when the start button is clicked:
 
 ```
 fetchAndLoadRound(event) {
@@ -163,7 +163,7 @@ fetchAndLoadRound(event) {
 }
 ```
 
-`fetchAndLoadRound()` calls the `getRound()` method on the adapter, which gets the round information and returns a promise, the value of which is a JSON object:
+`fetchAndLoadRound()` calls `getRound()` on the adapter, which gets the round information and returns a promise, the value of which is a JSON object:
 
 ```
 getRound() {
@@ -180,9 +180,9 @@ def show
 end
 ```
 
-Going back to `getRound()`, we pass a callback function to `.then`, which returns a response that we can then turn into JSON. This JSON object is used as an argument in the `renderRound()` method that is called in `fetchAndLoadRound(event)`.
+Going back to `getRound()`, we pass a callback function to `.then`, which returns a response that we can then turn into JSON. This JSON object is used as an argument in `renderRound()`, which is called in `fetchAndLoadRound()`.
 
-The individual questions belong to a round, so in the `renderRound()` method we loop through all of the round's questions and take the necessary steps to render the question information to the page. We'll take a look at this in a bit. But first, there's one last type of fetch request occurring in the game. In some instances, we aren’t looking to get information from the database or even post information, we’re looking to update information that already exists. Enter `PATCH` requests.
+The individual questions belong to a round, so in `renderRound()` we loop through all of the round's questions and take the necessary steps to render the question information to the page. We'll take a look at this in a bit. But first, there's one last type of fetch request occurring in the game. In some instances, we aren’t looking to get information from the database or even post information, we’re looking to update information that already exists. Enter `PATCH` requests.
 
 <br>
 
@@ -284,7 +284,7 @@ static get header() { return document.getElementById("header") };
 static get newUserForm() { return document.getElementById("new_user_form") };
 ```
 
-Now that I had access to the DOM elements, I had to figure out how to manipulate them to display the information from the backend. The DOM can be really powerful, giving you the ability to add/change innerHTML, add elements, append elements, etc. After understanding that, it was just a matter of finding the DOM element I needed and setting the innerHTML equal to the appropriate attribute of the JSON object I had access to. Sure, in some instances I would need to create new elements or update the IDs of current elements, but a lot of figuring that out was just trial and error. Remember how I said that for each round it was necessary to render the round's questions on the page? Well, in the end, the `renderQuestion()` method looked like this:
+Now that I had access to the DOM elements, I had to figure out how to manipulate them to display the information from the backend. The DOM can be really powerful, giving you the ability to add/change innerHTML, add elements, append elements, etc. After understanding that, it was just a matter of finding the DOM element I needed and setting the innerHTML equal to the appropriate attribute of the JSON object I had access to. Sure, in some instances I would need to create new elements or update the IDs of current elements, but a lot of figuring that out was just trial and error. Remember how I said that for each round it was necessary to render the round's questions on the page? Well, in the end, `renderQuestion()` looked like this:
 
 ```
 renderQuestion(question) {
