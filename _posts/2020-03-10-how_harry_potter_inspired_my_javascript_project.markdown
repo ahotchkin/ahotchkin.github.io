@@ -20,7 +20,7 @@ Knowing that I needed a Rails backend, I figured that was the place to start. I 
 <img src="https://user-images.githubusercontent.com/33204849/76363340-2f68d680-62f9-11ea-9416-d8060d442af9.jpg" width="800" height="655">
 
 
-With all of that in place, I was able to create the necessary database tables and corresponding models. I know what you’re thinking. "But Ally, why are we talking about Rails? This is your JavaScript project." And you’re right, we don’t need to get into the Rails details, we’ve already done that. So let’s move on.
+With all of that in place, I was able to create the necessary database tables and corresponding models. At this point you're probably thinking, "But Ally, why are we talking about Rails? This is your JavaScript project." And you’re right, we don’t need to get into the Rails details, we’ve already done that. So let’s move on.
 
 <br>
 
