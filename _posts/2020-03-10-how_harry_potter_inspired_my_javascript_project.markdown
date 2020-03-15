@@ -218,7 +218,7 @@ One unique thing to note about the above is that we are appending UserRound data
 
 <img width="800" alt="Screen Shot 2020-03-10 at 2 43 23 PM" src="https://user-images.githubusercontent.com/33204849/76347817-98daec00-62dd-11ea-8b23-7ba812874ab5.png">
 
-If a user answers at least 5 questions correctly, they click the start button for the next round and `createUserRound()` is triggered again, creating a new instance of UserRound with the new round ID. However, if a user does not answer at least 5 questions correctly they'll have the option to try the round again. Clicking the “Try Again” button (as shown above) triggers `updateUserRound()` in the Round class. This is where we create a new JavaScript instance of a UserRound, giving it all of the same elements as the last UserRound, but increasing the attempts by 1:
+If a user answers at least 5 questions correctly, they click the start button for the next round and `createUserRound()` is triggered again, creating a new instance of UserRound with the new Round ID. However, if a user does not answer at least 5 questions correctly they'll have the option to try the round again. Clicking the “Try Again” button (as shown above) triggers `updateUserRound()` in the Round class. This is where we create a new JavaScript instance of a UserRound, giving it all of the same elements as the last UserRound, but increasing the attempts by 1:
 
 ```
 updateUserRound(event) {
