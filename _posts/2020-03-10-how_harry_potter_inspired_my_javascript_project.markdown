@@ -214,7 +214,7 @@ createUserRound() {
 }
 ```
 
-One unique thing to note about the above is that we are appending UserRound data to the “Try Again” button so we can have access to it, if needed. If there's a chance we'll need to update the UserRound, we have to be able to access that UserRound.
+What's happening here is we're appending UserRound data to the “Try Again” button so we can have access to it, if needed. If there's a chance we'll need to update the UserRound, we have to be able to access that UserRound.
 
 <img width="800" alt="Screen Shot 2020-03-10 at 2 43 23 PM" src="https://user-images.githubusercontent.com/33204849/76347817-98daec00-62dd-11ea-8b23-7ba812874ab5.png">
 
