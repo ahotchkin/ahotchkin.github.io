@@ -171,7 +171,7 @@ getRound() {
 }
 ```
 
-This is a fetch request to the round's URL which is connected to the `show` action in the Rounds Controller:
+This is a fetch request to the Round's URL, which is connected to the `show` action in the Rounds Controller:
 
 ```
 def show
