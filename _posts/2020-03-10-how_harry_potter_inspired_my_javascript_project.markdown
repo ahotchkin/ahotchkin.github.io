@@ -140,7 +140,7 @@ createUser(event) {
 We now have that user’s information (their username) and can display it back to them in `renderUserStartPage()`.
 
 
-<img src="https://user-images.githubusercontent.com/33204849/76117072-1e4a5d80-5fb9-11ea-9756-84c8cbb007c8.png" width="800" height="388px">
+<img src="https://user-images.githubusercontent.com/33204849/76708707-5c3d3500-66cf-11ea-9785-536fff4cdce2.png" width="800" height="388px">
 
 
 Whew, that was a lot. And that's just one example of a `POST` request. UserAnswers and UserRounds work in a similar fashion. That information is important to determine if a user has successfully completed a round, but I won't bore you with the details since the `POST` requests aren’t much different. I'll bore you with other details instead.
