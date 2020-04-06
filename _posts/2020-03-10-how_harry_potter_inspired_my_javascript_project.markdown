@@ -7,7 +7,7 @@ permalink:  how_harry_potter_inspired_my_javascript_project
 
 
 
-When it came time to start my JavaScript Project for Flatiron School, I’ll admit I was pretty lost. JavaScript still felt very confusing and foreign to me, so how was I supposed to develop an entire project with a JavaScript frontend? Up to this point, combining a project with one of my interests had proven to be pretty successful. Given my lack of confidence in JavaScript, I needed to pick an interest where my confidence was overflowing. I know what you’re all thinking. "Is this it? Is this the project where Ally incorporates Harry Potter?" If you’ve read the title of this post, then you’ll already know the answer is a resounding yes! After careful consideration, I decided to test (and develop) my JavaScript (and Harry Potter) knowledge by creating a Harry Potter trivia game.
+When it came time to start my JavaScript Project for Flatiron School, I’ll admit I was pretty lost. JavaScript still felt very confusing and foreign to me, so how was I supposed to develop an entire project with a JavaScript frontend? Up to this point, combining a project with one of my interests had proven to be pretty successful. Given my lack of confidence in JavaScript, I needed to pick an interest where my confidence was overflowing. I know what you’re all thinking. "Is this it? Is this the project where Ally incorporates Harry Potter?" If you’ve read the title of this post, then you’ll already know the answer is a resounding yes! After careful consideration, I decided to test (and develop) my JavaScript (and Harry Potter) knowledge by creating a Harry Potter Trivia game.
 
 <img src="https://media.giphy.com/media/DnR5sy5P3hcCk/giphy.gif" width="480px" height="192px">
 
@@ -60,7 +60,7 @@ This User instance sets a lot of wheels in motion by connecting to the UsersAdap
 
 ### Client-Server Communication — POST Request
 
-To start the game, a user has to enter a username and select their house. `userEventListeners()` adds an event listener to the submit button, so by clicking on this button `createUser()` is called on the User instance:
+To start the game, a user has to enter a username and select their house. `userEventListeners()` adds an event listener to the submit button, so by clicking on this button `createUser()` is called on the User instance<sup>1</sup>:
 
 ```
 createUser(event) {
@@ -122,7 +122,7 @@ def create
 end
 ```
 
-The fetch request in the adapter returns a promise. A promise is essentially a wrapper for code that might take a second to resolve. I'm actually not going to get into that too much here since I'll be writing another post with promises being the focus (I promise, it will happen soon...), but just know that they allow you to run synchronous code in an asynchronous language (like JavaScript). A fancy way of saying, "Hang on a second, I just gotta finish this one thing and then we can keep going."
+The fetch request in the adapter returns a promise. A promise is essentially a wrapper for code that might take a second to resolve. I'm actually not going to get into that too much here since I wrote another <a href="http://allysonhotchkin.com/await_what">post</a> focusing on promises, but just know that they allow you to run synchronous code in an asynchronous language (like JavaScript). A fancy way of saying, "Hang on a second, I just gotta finish this one thing and then we can keep going."
 
 Okay, back to `createUser()` in user.js. This is where the JSON object is used when rendering the User's start page. Just in case you forgot or don't feel like scrolling up:
 
@@ -186,7 +186,7 @@ The individual questions belong to a round, so in `renderRound()` we loop throug
 
 <br>
 
-### Client-Server Communication - PATCH Request
+### Client-Server Communication — PATCH Request
 
 Part of the HPT challenge is that a user only has 3 chances to successfully complete a round before Voldemort takes control of the Wizarding World. Part of the challenge of this project was figuring out how to make that work. When it comes to the UserRounds, the first step is to create an instance in the database. When a user clicks the button to Board the Hogwarts Express for a round, an instance of UserRound is created with the current User's ID, the Round ID, and the number of attempts (initially set equal to 1). If a user doesn't answer at least 5 questions correctly, they have a chance to retry the round. Should this occur, we don't want to create an entirely new instance of UserRound, we want to take the UserRound that was just created and increase the number of attempts by 1. Doing so allows the program to cut off the user after 3 attempts in any given round, as well as display the number of attempts per round on the stats page. The process of creating the UserRound is pretty similar to what we’ve seen already.
 
@@ -353,6 +353,8 @@ All of that to display one question:
 Of course not! This project was a huge learning experience, delving into the JavaScript world for the first time. I’ve hardly even scratched the surface, which is both crazy and exciting. I feel like I could improve this project in a myriad of ways, and could probably spend a few solid weeks (or months) doing so. That being said, I think it all seems to be working okay as is, and at this point my time is probably better spent moving on and continuing my journey. So when it comes to Harry Potter Trivia, for now I'll say Mischief Managed.
 
 <img src="https://media.giphy.com/media/qLHzYjlA2FW8g/giphy.gif" width="500px" height="218px">
+
+*<sup>1</sup>Code has since been updated to use async/await instead of `then()` in all instances*
 
 
 
