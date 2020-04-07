@@ -27,7 +27,7 @@ If a `Promise` is fulfilled or rejected the appropriate `then` method is called 
 
 <br>
 
-### Then() what?
+### `then()` what?
 
 Okay, now that we have somewhat of an understanding of what `Promise`s are, let’s talk a little bit about `then()`. This is the old school way of dealing with `Promise`s. `then()` returns a `Promise` and can take up to two arguments: 1. What to do if the `Promise` is fulfilled, and 2. What to do if the `Promise` is rejected. These are passed in as callback functions. So here's the thing. In my project I only passed in a callback function for what to do if the `Promise` was fulfilled. Obviously my code would work perfectly every time and it was not necessary to provide a callback function for a failure, right? Well…probably not. But one can hope.
 
