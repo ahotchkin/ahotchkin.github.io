@@ -16,14 +16,14 @@ I found myself in an interesting predicament. My project met all the requirement
 
 ### I'll make this quick, I `Promise`.
 
-First, what is a `Promise`? Essentially, a `Promise` is a wrapper for code that might take a second to resolve. It allows you to run synchronous code in an asynchronous language (like JavaScript) by telling the code to pause until the `Promise` resolves. You see, with an asynchronous language multiple things can be happening at the same time and code can be executed out of order for efficiency. In a synchronous language, however, one line of code needs to execute before the program can move onto the next. In most cases an asynchronous language is great and will allow everything to move a bit faster, but sometimes you need to wait for one line of code to finish executing before moving onto the next. For example, in my project I was fetching data from my API backend and was passing that data as arguments to other methods. This allowed me to do things like display the username and the trivia questions. 
+First, what is a `Promise`? Essentially, a `Promise` is a wrapper for code that might take a second to resolve. It allows you to run synchronous code in an asynchronous language (like JavaScript) by telling the code to pause until the `Promise` resolves. You see, with an asynchronous language multiple things can be happening at the same time and code can be executed out of order for efficiency. In a synchronous language, however, one line of code needs to execute before the program can move onto the next. In most cases an asynchronous language is great and will allow everything to move a bit faster, but sometimes you need to wait for one line of code to finish executing before moving onto the next. For example, in my project I was fetching data from my API backend and was passing that data as arguments to other functions. This allowed me to do things like display the username and the trivia questions. But I needed to make sure I had that data before executing those functions.
 
 That’s where `Promise`s come in. They allow you to kind of turn your asynchronous code into synchronous code, just for a little bit, so you can get those return values that you need. A `Promise` is in one of three states:
 1. Pending: neither fulfilled nor rejected
 2. Fulfilled: the operation was successful
 3. Rejected: the operation failed
 
-If a `Promise` is fulfilled or rejected the appropriate `then` method is called on the `Promise`.
+If a `Promise` is fulfilled or rejected the appropriate `then()` method is called on the `Promise`.
 
 <br>
 
@@ -86,7 +86,7 @@ updateUserRound(userRound, id) {
 }
 ```
 
-Once these methods are in place we’re able to access them in our other files:
+Once these functions are in place we’re able to access them in our other files:
 
 ```
 // userRounds.js
@@ -126,7 +126,7 @@ updateUserRound() {
 }
 ```
 
-Like I said, all of this code works as it should and provides a relatively seamless experience for the user. However, there are some drawbacks. While this code isn’t terribly complex, it has the potential to be if you were to continue chaining more instances of `then()`. That could result in confusing nesting and more code than necessary. Even though my code is separated into different files and methods, I’ve chained multiple instances of `then()` to each fetch request. While you can chain `then()` as many times as you want, it's better if you can avoid doing so. One of the problems you may run into, aside from having code that is somewhat difficult to follow, is that if your program throws an error it will not tell you exactly where it is coming from. Speaking of errors, remember how I said I didn’t include any code to handle errors when from using `then()` should there be any? It's something I definitely should have included, but it would result in more chaining.
+Like I said, all of this code works as it should and provides a relatively seamless experience for the user. However, there are some drawbacks. While this code isn’t terribly complex, it has the potential to be if you were to continue chaining more instances of `then()`. That could result in confusing nesting and more code than necessary. Even though my code is separated into different files and functions, I’ve chained multiple instances of `then()` to each fetch request. While you can chain `then()` as many times as you want, it's better if you can avoid doing so. One of the problems you may run into, aside from having code that is somewhat difficult to follow, is that if your program throws an error it will not tell you exactly where it is coming from. Speaking of errors, remember how I said I didn’t include any code to handle errors when from using `then()` should there be any? It's something I definitely should have included, but it would result in more chaining.
 
 I was about halfway through my project when I learned there was a much better way to handle `Promise`s.
 
