@@ -105,7 +105,7 @@ fetchAndLoadUserRounds() {
 // userRound.js
 
 createUserRound() {
-  // calling createUserRound() on this.adapter to create an in instance of userRound and chaining then() to it
+  // calling createUserRound() on this.adapter to create an instance of userRound and chaining then() to it
   // gives us the ability to assign the userRound data (the JSON object) to the tryAgain button so we have access to it later
   this.adapter.createUserRound(this)
     .then(userRound => {
