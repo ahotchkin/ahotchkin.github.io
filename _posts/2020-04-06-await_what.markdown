@@ -39,7 +39,7 @@ Here’s a snippet of what you would have seen in my project. It all starts with
 getUserRounds() {
   // FETCH REQUEST #1: request to the API backend to get all userRounds
   return fetch(this.baseUrl)
-  // take the data that is returned and turn it into JSON
+  // take the data that is returned and turn it into JSON, by chaining then()
   .then(response => response.json());
 }
 
@@ -62,7 +62,7 @@ createUserRound(userRound) {
       user_round
     })
   })
-  // take the data that is returned and turn it into JSON
+  // take the data that is returned and turn it into JSON, by chaining then()
   .then(response => response.json())
 }
 
@@ -81,7 +81,7 @@ updateUserRound(userRound, id) {
       attempts: userRound.attempts
     })
   })
-  // take the data that is returned and turn it into JSON
+  // take the data that is returned and turn it into JSON, by chaining then()
   .then(response => response.json())
 }
 ```
@@ -92,8 +92,8 @@ Once these methods are in place we’re able to access them in our other files:
 // userRounds.js
 
 fetchAndLoadUserRounds() {
-  // calling getUserRounds() on this.adapter and chaining then() to it
-  // gives us the ability to pass userRounds (the JSON object) as an argument to renderUserRounds()
+  // call getUserRounds() on this.adapter and chain then() to it
+  // pass userRounds (the JSON object) as an argument to renderUserRounds()
   this.adapter.getUserRounds()
     .then(userRounds => {
       this.renderUserRounds(userRounds);
@@ -105,8 +105,8 @@ fetchAndLoadUserRounds() {
 // userRound.js
 
 createUserRound() {
-  // calling createUserRound() on this.adapter to create an instance of userRound and chaining then() to it
-  // gives us the ability to assign the userRound data (the JSON object) to the tryAgain button so we have access to it later
+  // call createUserRound() on this.adapter to create an instance of userRound and chain then() to it
+  // assign data from the userRound (the JSON object) to the tryAgain button so we have access to it later
   this.adapter.createUserRound(this)
     .then(userRound => {
       DOMElements.tryAgain.dataset.userRoundId = userRound.id;
@@ -117,8 +117,8 @@ createUserRound() {
 }
 
 updateUserRound() {
-  // calling updateUserRound() on this.adapter (this = the current instance of userRound) and chaining then() to it
-  // gives us the ability to update the userRound data (the JSON object) on the tryAgain button (# of attempts)
+  // call updateUserRound() on this.adapter (this = the current instance of userRound) and chain then() to it
+  // update data from the userRound (the JSON object) on the tryAgain button (# of attempts)
   this.adapter.updateUserRound(this, parseInt(DOMElements.tryAgain.dataset.userRoundId))
     .then(userRound => {
       DOMElements.tryAgain.dataset.attempts = userRound.attempts;
@@ -126,7 +126,7 @@ updateUserRound() {
 }
 ```
 
-Like I said, all of this code works as it should and provides a relavitely seamless experience for the user. However, there are some drawbacks. While this code isn’t terribly complex, it has the potential to be if you were to continue chaining more instances of `then()`. That could result in confusing nesting and more code than necessary. Even though my code is separated into different files and methods, I’ve chained multiple instances of `then()` to each fetch request. While you can chain `then()` as many times as you want, it's better if you can avoid doing so. One of the problems you may run into, aside from having code that is somewhat difficult to follow, is that if your program throws an error it will not tell you exactly where it is coming from. Speaking of errors, remember how I said I didn’t include any code to handle errors from the fetch requests, should there be any? It's something I definitely should have included, but it would result in more chaining.
+Like I said, all of this code works as it should and provides a relavitely seamless experience for the user. However, there are some drawbacks. While this code isn’t terribly complex, it has the potential to be if you were to continue chaining more instances of `then()`. That could result in confusing nesting and more code than necessary. Even though my code is separated into different files and methods, I’ve chained multiple instances of `then()` to each fetch request. While you can chain `then()` as many times as you want, it's better if you can avoid doing so. One of the problems you may run into, aside from having code that is somewhat difficult to follow, is that if your program throws an error it will not tell you exactly where it is coming from. Speaking of errors, remember how I said I didn’t include any code to handle errors when from using `then()` should there be any? It's something I definitely should have included, but it would result in more chaining.
 
 I was about halfway through my project when I learned there was a much better way to handle `Promise`s.
 
@@ -156,7 +156,7 @@ The other great thing about using async/await—error handling! When using async
 async getUserRounds() {
   // FETCH REQUEST #1: request to the API backend to get all userRounds
   const response = await fetch(this.baseUrl);
-  // take the data that is returned and turn it into JSON
+  // take the data that is returned and turn it into JSON, no chaining of then() is necessary
   return await response.json();
 }
 
@@ -178,7 +178,7 @@ async createUserRound(userRound) {
       user_round
     })
   });
-  // take the data that is returned and turn it into JSON
+  // take the data that is returned and turn it into JSON, no chaining of then() is necessary
   return await response.json();
 }
 
@@ -196,7 +196,7 @@ async updateUserRound(userRound, id) {
       attempts: userRound.attempts
     })
   });
-  // take the data that is returned and turn it into JSON
+  // take the data that is returned and turn it into JSON, no chaining of then() is necessary
   return await response.json();
 }
 ```
@@ -205,9 +205,9 @@ async updateUserRound(userRound, id) {
 // userRounds.js
 
 async fetchAndLoadUserRounds() {
-  // calling getUserRounds() on this.adapter, no chaining of then() is necessary
-  // pass userRounds (the JSON object) as an argument to renderUserRounds()
+  // call getUserRounds() on this.adapter, no chaining of then() is necessary
   const userRounds = await this.adapter.getUserRounds();
+  // pass userRounds (the JSON object) as an argument to renderUserRounds()
   this.renderUserRounds(userRounds);
 }
 ```
@@ -216,9 +216,9 @@ async fetchAndLoadUserRounds() {
 // userRound.js
 
 async createUserRound() {
-  // calling createUserRound() on this.adapter to create an in instance of userRound, no chaining of then() is necessary
-  // assign the userRound data (the JSON object) to the tryAgain button so we have access to it later
+  // call createUserRound() on this.adapter to create an in instance of userRound, no chaining of then() is necessary
   const userRound = await this.adapter.createUserRound(this);
+  // assign data from the userRound (the JSON object) to the tryAgain button so we have access to it later
   DOMElements.tryAgain.dataset.userRoundId = userRound.id;
   DOMElements.tryAgain.dataset.userId = userRound.user_id;
   DOMElements.tryAgain.dataset.roundId = userRound.round_id;
@@ -226,9 +226,9 @@ async createUserRound() {
 }
 
 async updateUserRound() {
-  // calling updateUserRound() on this.adapter (this = the current instance of userRound), no chaining of then() is necessary
-  // update the userRound data (the JSON object) on the tryAgain button (# of attempts)
+  // call updateUserRound() on this.adapter (this = the current instance of userRound), no chaining of then() is necessary
   const userRound = await this.adapter.updateUserRound(this, parseInt(DOMElements.tryAgain.dataset.userRoundId));
+  // update data from the userRound (the JSON object) on the tryAgain button (# of attempts)
   DOMElements.tryAgain.dataset.attempts = userRound.attempts;
 }
 ```
