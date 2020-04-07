@@ -10,7 +10,7 @@ I recently completed a <a href="https://youtu.be/rpA5Lei2CPc">Harry Potter Trivi
 
 <img src="https://media.giphy.com/media/3o7TKA3ypeMbOXSrp6/giphy.gif" width="480px" height="330px">
 
-I found myself in an interesting predicament. My project met all the requirements and I had passed my assessment. As far as my progress in the course, there was no reason to go back and try to change anything. But what about my progress in my coding journey? Ultimately, I decided it could be a beneficial exercise to update to async/await (the preferred way to handle `Promise`s in JavaScript). To do so, I really wanted to make sure I understood what was happening. Let’s go back to the beginning. Well, not ALL the way back to the beginning. Let’s go back to the part where I started dealing with `Promise`s.
+I found myself in an interesting predicament. My project met all the requirements and I had passed my assessment. As far as my progress in the course, there was no reason to go back and try to change anything. But what about my progress in my coding journey? Ultimately, I decided it could be a beneficial exercise to update to async/await (the preferred way to handle `Promise`s in JavaScript). To do so, I really wanted to make sure I understood what was happening. Let’s go back to the beginning. Well, not *all* the way back to the beginning. Let’s go back to the part where I started dealing with `Promise`s.
 
 <br>
 
