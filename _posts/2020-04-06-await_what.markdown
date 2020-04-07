@@ -18,7 +18,7 @@ I found myself in an interesting predicament. My project met all the requirement
 
 First, what is a `Promise`? Essentially, a `Promise` is a wrapper for code that might take a second to resolve. It allows you to run synchronous code in an asynchronous language (like JavaScript) by telling the code to pause until the `Promise` resolves. You see, with an asynchronous language multiple things can be happening at the same time and code can be executed out of order for efficiency. In a synchronous language, however, one line of code needs to execute before the program can move onto the next. In most cases an asynchronous language is great and will allow everything to move a bit faster, but sometimes you need to wait for one line of code to finish executing before moving onto the next (for example, if the return value of that line is pertinent to executing the next line). 
 
-That’s where `Promise`s come in. They allow you to kind of turn your asynchronous code into synchronous code, just for a little bit, so you can get those return values that you need. In my case, I was fetching data from my backend API and was passing that data as arguments to other methods. This allowed me to do things like display the username and the trivia questions. A `Promise` is in one of three states:
+That’s where `Promise`s come in. They allow you to kind of turn your asynchronous code into synchronous code, just for a little bit, so you can get those return values that you need. In my case, I was fetching data from my API backend and was passing that data as arguments to other methods. This allowed me to do things like display the username and the trivia questions. A `Promise` is in one of three states:
 1. Pending: neither fulfilled nor rejected
 2. Fulfilled: the operation was successful
 3. Rejected: the operation failed
@@ -37,7 +37,7 @@ Here’s a snippet of what you would have seen in my project. It all starts with
 // userRoundsAdapter.js
 
 getUserRounds() {
-  // FETCH REQUEST #1: request to the backend API to get all userRounds
+  // FETCH REQUEST #1: request to the API backend to get all userRounds
   return fetch(this.baseUrl)
   // take the data that is returned and turn it into JSON
   .then(response => response.json());
@@ -51,7 +51,7 @@ createUserRound(userRound) {
     attempts: userRound.attempts
   };
 
-  // FETCH REQUEST #2: request to the backend API to post a new instance of userRound
+  // FETCH REQUEST #2: request to the API backend to post a new instance of userRound
   return fetch(this.baseUrl, {
     method: "POST",
     headers: {
@@ -70,7 +70,7 @@ createUserRound(userRound) {
 updateUserRound(userRound, id) {
   let attempts = userRound.attempts;
 
-  // FETCH REQUEST #3: request to the backend API to update the current instance of userRound
+  // FETCH REQUEST #3: request to the API backend to update the current instance of userRound
   return fetch(this.baseUrl + `/${id}`, {
     method: "PATCH",
     headers: {
@@ -154,7 +154,7 @@ The other great thing about using async/await—error handling! When using async
 // userRoundsAdapter.js
 
 async getUserRounds() {
-  // FETCH REQUEST #1: request to the backend API to get all userRounds
+  // FETCH REQUEST #1: request to the API backend to get all userRounds
   const response = await fetch(this.baseUrl);
   // take the data that is returned and turn it into JSON
   return await response.json();
@@ -167,7 +167,7 @@ async createUserRound(userRound) {
     attempts: userRound.attempts
   };
 
-  // FETCH REQUEST #2: request to the backend API to post a new instance of userRound
+  // FETCH REQUEST #2: request to the API backend to post a new instance of userRound
   const response = await fetch(this.baseUrl, {
     method: "POST",
     headers: {
@@ -185,7 +185,7 @@ async createUserRound(userRound) {
 async updateUserRound(userRound, id) {
   let attempts = userRound.attempts;
 	
-  // FETCH REQUEST #3: request to the backend API to update the current instance of userRound
+  // FETCH REQUEST #3: request to the API backend to update the current instance of userRound
   const response = await fetch(this.baseUrl + `/${id}`, {
     method: "PATCH",
     headers: {
