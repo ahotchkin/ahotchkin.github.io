@@ -132,7 +132,7 @@ It was about halfway through my project that I learned there was a much better w
 
 <br>
 
-### The moment you've all been (a)waiting for....
+### The moment you've all been `await`ing for...
 
 It's time. Let’s talk about `async` and `await`.
 
