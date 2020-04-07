@@ -31,7 +31,7 @@ If a `Promise` is fulfilled or rejected the appropriate `then()` method is calle
 
 Okay, now that we have somewhat of an understanding of what `Promise`s are, let’s talk a little bit about `then()`. This is the old school way of dealing with `Promise`s. `then()` returns a `Promise` and can take up to two arguments: 1. What to do if the `Promise` is fulfilled, and 2. What to do if the `Promise` is rejected. These are passed in as callback functions. So here's the thing. In my project I only passed in a callback function for what to do if the `Promise` was fulfilled. Obviously my code would work perfectly every time and it was not necessary to provide a callback function for a failure, right? Well…probably not. But one can hope.
 
-Here’s a snippet of what you would have seen in my project. It all starts with the fetch requests in the adapters. I used adapters to exclusively talk to the Rails API backend and then the JavaScript classes could work with those adapters. Just a way to help out with separation of concerns. I’ll go ahead and use the userRounds as an example since several types of fetch requests occur within this one adapter:
+Here’s a snippet of what you would have seen in my project. It all starts with the fetch requests in the adapters. I used adapters to exclusively talk to the Rails API backend and then the JavaScript classes could work with those adapters. Just a way to help out with separation of concerns. I’ll go ahead and use the userRounds as an example, since several types of fetch requests occur within this one adapter:
 
 ```
 // userRoundsAdapter.js
@@ -126,9 +126,9 @@ updateUserRound() {
 }
 ```
 
-Like I said, all of this code works as it should and provides a relatively seamless experience for the user. However, there are some drawbacks. While this code isn’t terribly complex, it has the potential to be if you were to continue chaining more instances of `then()`. That could result in confusing nesting and more code than necessary. Even though my code is separated into different files and functions, I’ve chained multiple instances of `then()` to each fetch request. While you can chain `then()` as many times as you want, it's better if you can avoid doing so. One of the problems you may run into, aside from having code that is somewhat difficult to follow, is that if your program throws an error it will not tell you exactly where it is coming from. Speaking of errors, remember how I said I didn’t include any code to handle errors when from using `then()` should there be any? It's something I definitely should have included, but it would result in more chaining.
+Like I said, all of this code works as it should and provides a relatively seamless experience for the user. However, there are some drawbacks. While this code isn’t terribly complex, it has the potential to be if you were to continue chaining more instances of `then()`. That could result in confusing nesting and more code than necessary. Even though my code is separated into different files and functions, I’ve chained multiple instances of `then()` to each fetch request. While you can chain `then()` as many times as you want, it's better if you can avoid doing so. One of the problems you may run into, aside from having code that is somewhat difficult to follow, is that if your program throws an error it will not tell you exactly where it is coming from. Speaking of errors, remember how I said I didn’t include any code to handle errors when using `then()`, should there be any? It's something I definitely should have included, but it would result in more chaining.
 
-I was about halfway through my project when I learned there was a much better way to handle `Promise`s.
+I was about halfway through my project when I first learned there was a much better way to handle `Promise`s.
 
 <br>
 
@@ -235,7 +235,7 @@ async updateUserRound() {
 
 We no longer have all of the nesting we did before when using `then()`, and we even ended up with slightly fewer lines of code. Just imagine if I had included code for how to handle errors when I was using `then()`. We’d see an even bigger difference in number of lines!
 
-The general consensus is that async/await is much easier to write and use than `then()`. A huge bonus was that it wasn’t even that difficult to change over. Granted it took a little research, but once I got the hang of it, it was smooth sailing. Now I’m even more confident that my project is in great shape, and even though I’ve already done my assessment, I can move on with clean code and a clear conscience.
+The general consensus is that async/await is much easier to write and use than `then()`. And it wasn’t even that difficult to switch over. Granted it took a little research, but once I got the hang of it, it was smooth sailing. Now I can feel confident that my project is in better shape, and even though I’ve already done my assessment, I can move on with clean code and a clear conscience.
 
 <img src="https://media.giphy.com/media/7XZEvQlmM3DJm/giphy.gif" width="400px" height="400px">
 
