@@ -37,7 +37,7 @@ Here’s a snippet of what you would have seen in my project. It all starts with
 // userRoundsAdapter.js
 
 getUserRounds() {
-  // FETCH REQUEST #1: request to the server to get all userRounds
+  // FETCH REQUEST #1: request to the backend API to get all userRounds
   return fetch(this.baseUrl)
   // take the data that is returned and turn it into JSON
   .then(response => response.json());
@@ -51,7 +51,7 @@ createUserRound(userRound) {
     attempts: userRound.attempts
   };
 
-  // FETCH REQUEST #2: request to the server to post a new instance of userRound
+  // FETCH REQUEST #2: request to the backend API to post a new instance of userRound
   return fetch(this.baseUrl, {
     method: "POST",
     headers: {
@@ -70,7 +70,7 @@ createUserRound(userRound) {
 updateUserRound(userRound, id) {
   let attempts = userRound.attempts;
 
-  // FETCH REQUEST #3: request to the server to update the current instance of userRound
+  // FETCH REQUEST #3: request to the backend API to update the current instance of userRound
   return fetch(this.baseUrl + `/${id}`, {
     method: "PATCH",
     headers: {
@@ -154,7 +154,7 @@ The other great thing about using async/await—error handling! When using async
 // userRoundsAdapter.js
 
 async getUserRounds() {
-  // FETCH REQUEST #1: request to the server to get all userRounds
+  // FETCH REQUEST #1: request to the backend API to get all userRounds
   const response = await fetch(this.baseUrl);
   // take the data that is returned and turn it into JSON
   return await response.json();
@@ -167,7 +167,7 @@ async createUserRound(userRound) {
     attempts: userRound.attempts
   };
 
-  // FETCH REQUEST #2: request to the server to post a new instance of userRound
+  // FETCH REQUEST #2: request to the backend API to post a new instance of userRound
   const response = await fetch(this.baseUrl, {
     method: "POST",
     headers: {
@@ -185,7 +185,7 @@ async createUserRound(userRound) {
 async updateUserRound(userRound, id) {
   let attempts = userRound.attempts;
 	
-  // FETCH REQUEST #3: request to the server to update the current instance of userRound
+  // FETCH REQUEST #3: request to the backend API to update the current instance of userRound
   const response = await fetch(this.baseUrl + `/${id}`, {
     method: "PATCH",
     headers: {
