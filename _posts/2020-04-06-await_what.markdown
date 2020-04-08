@@ -144,6 +144,8 @@ First up, `async`. If you put the `async` keyword in front of a function, that f
 async function fn() {
   return "This returns a promise";
 }
+
+fn();
 ```
 
 Pretty cool, right? So now that we know an `async function` returns a `Promise`, how do we work with it, you ask? That’s where `await` comes in. The `await` keyword tells JavaScript to wait until the `Promise` is resolved (fulfilled or rejected) before moving on. `await` only works when wrapped in an `async function`.
