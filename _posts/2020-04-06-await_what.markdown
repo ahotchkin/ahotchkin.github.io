@@ -126,7 +126,7 @@ updateUserRound() {
 }
 ```
 
-Like I said, all of this code works as it should and provides a relatively seamless experience for the user. However, there are some drawbacks. While this code isn’t terribly complex, it has the potential to be if you were to continue chaining more instances of `then()`. That could result in confusing nesting and more code than necessary. Even though my code is separated into different files and functions, I’ve chained multiple instances of `then()` to each fetch request. While you can chain `then()` as many times as you want, it's better if you can avoid doing so. One of the problems you may run into, aside from having code that is somewhat difficult to follow, is that if your program throws an error it will not tell you exactly where it is coming from. Speaking of errors, remember how I said I didn’t include any code to handle errors when using `then()`, should there be any? It's something I definitely should have included, but it would result in more chaining.
+While all of this code works as it should and provides a relatively seamless experience for the user, there are some drawbacks. While this code isn’t terribly complex, it has the potential to be if you were to continue chaining more instances of `then()`. That could result in confusing nesting and more code than necessary. Even though my code is separated into different files and functions, I’ve chained multiple instances of `then()` to each fetch request. While you can chain `then()` as many times as you want, it's better if you can avoid doing so. One of the problems you may run into, aside from having code that is somewhat difficult to follow, is that if your program throws an error it will not tell you exactly where it is coming from. Speaking of errors, remember how I said I didn’t include any code to handle errors when using `then()`, should there be any? It's something I definitely should have included, but it would result in more chaining.
 
 I was about halfway through my project when I first learned there was a much better way to handle `Promise`s.
 
@@ -237,5 +237,5 @@ We no longer have all of the nesting we did before when using `then()`, and we e
 
 The general consensus is that async/await is much easier to write and use than `then()`. And it wasn’t even that difficult to switch over. Granted it took a little research, but once I got the hang of it, it was smooth sailing. Now I can feel confident that my project is in better shape, and even though I’ve already done my assessment, I can move on with clean code and a clear conscience.
 
-<img src="https://media.giphy.com/media/7XZEvQlmM3DJm/giphy.gif" width="400px" height="400px">
+<img src="https://media.giphy.com/media/m2Q7FEc0bEr4I/giphy.gif" width="480px" height="360px">
 
