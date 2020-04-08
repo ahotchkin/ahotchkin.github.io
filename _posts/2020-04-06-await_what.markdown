@@ -148,7 +148,7 @@ async function fn() {
 
 Pretty cool, right? So now that we know an `async function` returns a `Promise`, how do we work with it, you ask? That’s where `await` comes in. The `await` keyword tells JavaScript to wait until the `Promise` is resolved (fulfilled or rejected) before moving on. `await` only works when wrapped in an `async function`.
 
-The other great thing about using async/await—error handling! When using async/await there is no longer a need to explicitly say how to catch and handle errors, which is great because if you’ll remember I never did that in the first place… Also, if the program does throw an error, it will tell you exactly in which function and line the error was thrown, which will undoubtedly make your life easier. Let’s take a look at my code now, using async/await:
+The other great thing about using async/await—error handling! If the program throws an error, it will tell you exactly in which function and line the error was thrown, which will undoubtedly make your life easier. Plus, when using async/await there is no longer a need to explicitly say how to catch and handle rejected `Promise`s, which is great because if you’ll remember I never did that in the first place… Let’s take a look at my code now, using async/await:
 
 ```
 // userRoundsAdapter.js
