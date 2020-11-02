@@ -9,7 +9,7 @@ permalink:  how_harry_potter_inspired_my_javascript_project
 
 When it came time to start my JavaScript Project for Flatiron School, I’ll admit I was pretty lost. JavaScript still felt very confusing and foreign to me, so how was I supposed to develop an entire project with a JavaScript frontend? Up to this point, combining a project with one of my interests had proven to be pretty successful. Given my lack of confidence in JavaScript, I needed to pick an interest where my confidence was overflowing. I know what you’re all thinking. "Is this it? Is this the project where Ally incorporates Harry Potter?" If you’ve read the title of this post, then you’ll already know the answer is a resounding yes! After careful consideration, I decided to test (and develop) my JavaScript (and Harry Potter) knowledge by creating a Harry Potter Trivia game.
 
-<img src="https://media.giphy.com/media/DnR5sy5P3hcCk/giphy.gif" width="480px" height="192px">
+<iframe src="https://giphy.com/embed/l3q2VTSmfyXXaBR1m" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-hagrid-l3q2VTSmfyXXaBR1m">via GIPHY</a></p>
 
 <br>
 
@@ -54,7 +54,7 @@ constructor(username) {
 
 This User instance sets a lot of wheels in motion by connecting to the UsersAdapter and calling `userEventListeners()`, making it possible to take the user input and create an instance of User in the Rails database. We're off to a great start! But what would happen next? Well, a user would type in a username and click submit. And we're off...
 
-<img src="https://media.giphy.com/media/AV5y1BxRNEATK/giphy.gif" width="480px" height="200.64px">
+<iframe src="https://giphy.com/embed/AV5y1BxRNEATK" width="480" height="201" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-cos-AV5y1BxRNEATK">via GIPHY</a></p>
 
 <br>
 
@@ -352,7 +352,7 @@ All of that to display one question:
 
 Of course not! This project was a huge learning experience, delving into the JavaScript world for the first time. I’ve hardly even scratched the surface, which is both crazy and exciting. I feel like I could improve this project in a myriad of ways, and could probably spend a few solid weeks (or months) doing so. That being said, I think it all seems to be working okay as is, and at this point my time is probably better spent moving on and continuing my journey. So when it comes to Harry Potter Trivia, for now I'll say Mischief Managed.
 
-<img src="https://media.giphy.com/media/qLHzYjlA2FW8g/giphy.gif" width="500px" height="218px">
+<iframe src="https://giphy.com/embed/qLHzYjlA2FW8g" width="480" height="209" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-graduation-qLHzYjlA2FW8g">via GIPHY</a></p>
 
 *<sup>1</sup>Code has since been updated to use async/await instead of `then()` in all instances*
 
