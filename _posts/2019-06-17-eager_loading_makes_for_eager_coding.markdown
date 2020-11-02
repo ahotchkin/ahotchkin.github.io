@@ -44,7 +44,7 @@ SELECT  "directors".* FROM "directors" WHERE "directors"."id" = ? LIMIT ? [["id"
 
 So that’s 21 queries in all—1 query to find the movies, and 1 query for each movie in the movies array to find the director. This is referred to as the N + 1 queries problem. In this case it’s only 21 queries, so the application should be able to find this information relatively quickly. But there are more than 20 movies out there. Just this year over 40 movies have already come out, and we’re still less than half way through. And that’s not even counting Netflix. Or Hallmark movies! You get it, there are a lot of movies. How long would it take to query a database of 10,000 movies? Or 100,000 movies? That could take DAYS. Honestly, who has the time?!
 
-<img src="https://media.giphy.com/media/LQvEYZn2g6KQ5NWPdz/giphy.gif" width="384px" height="384px">
+<iframe src="https://giphy.com/embed/LQvEYZn2g6KQ5NWPdz" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/patriotact-hasan-minhaj-patriot-act-digital-exclusive-LQvEYZn2g6KQ5NWPdz">via GIPHY</a></p>
 
 I said it before, but I really mean it this time: enter eager loading. A quick refresher—eager loading allows you to find an object of any given class, along with its associated records from other classes, using as few queries as possible. All of this is taken care of with a very elegant solution: the `includes` finder method. To use `includes` to get the information we’re looking for, you’d simply write the below line of code:
 ```
@@ -58,7 +58,7 @@ SELECT  "movies".* FROM "movies" LIMIT ?  [["LIMIT", 20]]
 SELECT "directors".* FROM "directors" WHERE "directors"."id" IN (<director_ids from movies array would be listed here>)
 ```
 
-<img src="https://media.giphy.com/media/dQlgGuy4e2z8Rdk976/giphy.gif" width="384px" height="288px">
+<iframe src="https://giphy.com/embed/dQlgGuy4e2z8Rdk976" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/nickjonas-nick-jonas-dQlgGuy4e2z8Rdk976">via GIPHY</a></p>
 
 After the queries run, you’re able to interact with the movies array just like you would any other array in Ruby. So you can run the same code we had above, and get all of the information you’re looking for without having to query the database again:
 
@@ -76,4 +76,4 @@ Movie.includes(:director, :genre)
 
 Believe it or not, that’s just scratching the surface of Active Record’s finder methods. And to be honest, I’m sure there are a lot more things you can even do with just the `includes` method. Maybe I’ll do some more research after a quick movie break.
 
-<img src="https://media.giphy.com/media/Bzebpz5rnyBb2/giphy.gif" width="480px" height="232px">
+<iframe src="https://giphy.com/embed/Bzebpz5rnyBb2" width="480" height="232" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/popcorn-emmys-2013-Bzebpz5rnyBb2">via GIPHY</a></p>
