@@ -14,7 +14,7 @@ A few short months ago I saw a movie that changed my life. Toy Story 4 has it al
 
 Admittedly, when I first read through the project requirements I was pretty overwhelmed.
 
-<img src="https://media.giphy.com/media/uWL38GO7vhqkj4qd44/giphy.gif" width="480px" height="202px">
+<iframe src="https://giphy.com/embed/uWL38GO7vhqkj4qd44" width="480" height="202" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/disney-trailer-toy-story-4-uWL38GO7vhqkj4qd44">via GIPHY</a></p>
 
 How was I even supposed to start? I knew going into it that this would be the most intense project thus far. Before I started writing any code, I thought an outline would be helpful. Knowing that I would need several models and those models would relate to each other in all kinds of ways, this was the best way to keep track of it all.
 
@@ -116,7 +116,7 @@ I waffled back and forth for quite a while on whether or not I wanted to incorpo
 
 It seemed like I had accomplished quite a bit up to this point. I must be almost done! Wait, I'm sorry, what's that? There are more requirements?! Oh dear...
 
-<img src="https://media.giphy.com/media/J95IRJaXr7ZNm/giphy.gif" width="480px" height="269px">
+<iframe src="https://giphy.com/embed/J95IRJaXr7ZNm" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/toy-story-disney-pixar-J95IRJaXr7ZNm">via GIPHY</a></p>
 
 <br>
 
@@ -181,7 +181,7 @@ This method calculates the average rating for each movie and I’m able to displ
 My hours of Google searching did seem to imply there are ways to call a function by clicking on a link using Javascript, but I’m not there yet. So as much as it pains me to say it, I had to settle for not being able to sort the movies table by Average Rating. 
 
 
-<img src="https://media.giphy.com/media/5kFWIJXf8vQPrGo1w9/giphy.gif" width="480px" height="202px">
+<iframe src="https://giphy.com/embed/5kFWIJXf8vQPrGo1w9" width="480" height="202" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/disney-trailer-toy-story-4-5kFWIJXf8vQPrGo1w9">via GIPHY</a></p>
 
 <br>
 
@@ -221,4 +221,4 @@ After some experimenting, I decided the best way to do this was to create an arr
 No. No it is not. Truth be told, I could go on and on about the features I added, or more likely attempted to add, to this app, and what I learned along the way. But I’m afraid if I were to do that the post would never end, which means I’d never stop writing it and I’d never be able to submit my project. Even while writing this post I ended up experimenting with new/current code and found myself wanting to jump back in and update some things. While I know my code definitely isn’t perfect, it does seem to be working pretty well. Creating something from scratch that looks like it maybe, on some level, could be semi-legit is pretty cool. Time for the next section. To JavaScript and beyond!
 
 
-<img src="https://media.giphy.com/media/N7b54P9EMvK24/giphy.gif" width="480px" height="270px">
+<iframe src="https://giphy.com/embed/j7MHP1jJyhGla" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/disney-disney-pixar-buzz-lightyear-and-beyond-j7MHP1jJyhGla">via GIPHY</a></p>
