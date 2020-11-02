@@ -12,7 +12,7 @@ At least it was something like that…
 
 When it comes to writing code, there are few things more important than testing. While we all know this to be true, writing tests isn’t always easy and can be quite time-consuming. Not only that, if you’re writing them from scratch your tests can be just as error-prone as your code itself. It’s moments like these when we need to remember Dumbledore’s words and power through writing our tests. It’s the right thing to do. Luckily, there are some tools out there to make writing your tests a little bit easier. Ruby gives you access to a wonderful little gem called Shoulda Matchers. Shoulda Matchers allows you to write tests with very little code, making your tests easier to write AND read. Talk about a win-win! I’ll be the first to admit that there’s quite a bit of code in the gem and I’m still trying to break down how it all works. So I’ll save that explanation for another day. Instead, let’s just focus on an overview of what the gem allows you to do and how to add it to your code so you can start writing tests like a champ.
 
-<img src="https://media0.giphy.com/media/44gu1V41ejJni/giphy.gif?cid=790b7611f46683b0f8d83f31f35b3c5eafa09e4a97546d38&amp;rid=giphy.gif" width="480px" height="270.72px">
+<iframe src="https://giphy.com/embed/44gu1V41ejJni" width="480" height="271" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/44gu1V41ejJni">via GIPHY</a></p>
 
 In short, Shoulda Matchers gives you the ability to write very clean and concise tests to test a whole slew of things in your app (models, controllers, routes, and more). Shoulda Matchers can be used with both MiniTest and RSpec. For the sake of this post I’ll focus on RSpec because, well, I’m still pretty new to all this and I’ve never used MiniTest so I probably shouldn’t try and talk about it.
 
@@ -138,7 +138,7 @@ end
 	
 I don’t know about you, but I’m EXHAUSTED.
 
-<img src="https://media.giphy.com/media/l46CBEVQjSJG6mCnC/giphy.gif" width="480px" height="269.76px">
+<iframe src="https://giphy.com/embed/l46CBEVQjSJG6mCnC" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/veephbo-hbo-veep-julia-louis-dreyfus-l46CBEVQjSJG6mCnC">via GIPHY</a></p>
 
 Sure, the tests are relatively straightforward when you read through them, but it was pretty time-consuming to write them. Can you imagine if I had the smallest of typos? It might take hours to find. And that’s just dealing with the Movie model of a simple app. I’d also want to test the Actor and Genre models. And what happens if I add a User model? And if I then want to give users the opportunity to write movie reviews? You can see how it can quickly get out of hand. 
 
@@ -167,7 +167,7 @@ end
 
 …And that's it! There’s no need to create any instances to test with, Shoulda Matchers takes care of that for you. And it provides a beautiful framework for you to write in plain English what the model SHOULD do. Dang! Not only is it a fraction of the code, but you can be much more confident in the code you are writing. And if you do happen to have a typo somewhere, at least it will be easier to find. Dare I say, the developers behind Shoulda Matchers have changed all of our lives by making the right choice and the easy choice one and the same. Albus Dumbledore would be proud.
 
-<img src="http://giphygifs.s3.amazonaws.com/media/AOrThUuuOoDCg/giphy.gif" width="480px" height="285.474px">
+<iframe src="https://giphy.com/embed/AOrThUuuOoDCg" width="480" height="285" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/harry-potter-applause-AOrThUuuOoDCg">via GIPHY</a></p>
 
 For (much) more information on Shoulda Matchers, or if you are interested in perusing the source code, this <a href="https://github.com/thoughtbot/shoulda-matchers">link</a> should have what you’re looking for.
 
