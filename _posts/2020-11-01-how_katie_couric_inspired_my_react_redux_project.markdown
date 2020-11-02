@@ -18,7 +18,7 @@ As always, it all started with an outline to help keep me organized and plan how
 
 <img src="https://user-images.githubusercontent.com/33204849/97806051-b15e9480-1c27-11eb-8c1d-7f3e968bd539.jpg" width="800" height="831">
 
-I also spent a bit of time planning my frontend so I had a clear idea of what I wanted my user experience to be:
+I also spent a bit of time planning my frontend to have a clear idea of what I wanted my user experience to be:
 
 <img src="https://user-images.githubusercontent.com/33204849/97806170-48c3e780-1c28-11eb-8a9e-b29b6c615aa6.jpg" width="800" height="745">
 
