@@ -61,7 +61,7 @@ end
 
 My third and final wish would require a little more outside help. Enter BCrypt. BCrypt is a Ruby gem that, in short, will store a salted, hashed version of a user’s password in a database. To put it simply, the password a user enters will be manipulated in such a way that it can’t be un-manipulated (that’s the hashing part). And to take it one step further, a salt, or a random string of characters, is also added to the hash. That way, if two users happen to create the same password they’ll still end up with different hashes in the database. Three cheers for security!
 
-<img src="https://media0.giphy.com/media/10NPdN6z9vTYWI/200w.gif?cid=5a38a5a25c786e1265346e4c77018b0c" width="480" height="214">
+<iframe src="https://giphy.com/embed/10NPdN6z9vTYWI" width="480" height="214" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cheezburger-police-10NPdN6z9vTYWI">via GIPHY</a></p>
 
 Since users could now create an account and log in, it was time to work on the `items_controller`. I knew that within each route I wanted to first check to make sure the user was logged in before proceeding. Good thing I created that `#logged_in?` helper method! As for the routes themselves, users should be able to create, read, update, and delete items. Prior to starting this project, I put together this handy little chart to ensure I created the necessary routes:
 
@@ -127,6 +127,6 @@ end
 
 Now, I’m sure my code could use some refactoring. I did run into a couple issues and had to get a little creative (like figuring out how to allow a user to create an item without selecting an existing group), but the functionality is there. It’s no surprise that completing this project has been a very educational experience. I not only became much more well-versed in Sinatra and ActiveRecord, but also in Googling the right questions. Now that that’s done, I guess I’ll go buy a couch or something so I can add it to my Home Inventory.
 
-<img src="https://media1.giphy.com/media/2OP9jbHFlFPW/200w.gif?cid=5a38a5a25c78736d6e394b7163817b56" width="480" height="307">
+<iframe src="https://giphy.com/embed/2OP9jbHFlFPW" width="480" height="307" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/friends-2OP9jbHFlFPW">via GIPHY</a></p>
 
 
