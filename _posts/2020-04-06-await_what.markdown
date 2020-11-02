@@ -8,7 +8,7 @@ permalink:  await_what
 
 I recently completed a <a href="https://youtu.be/rpA5Lei2CPc">Harry Potter Trivia</a> project with a Rails API backend and a JavaScript frontend. The project had several moving parts, including a handful of fetch requests and chains on chains of `then()`s. When I finally finished the project I was feeling really good about the code, it seemed clean and easy to read. And then I heard that `then()` is no longer the preferred method to use when dealing with `Promise`s. Ummm…excuse me? So you’re telling me my project that I just worked tirelessly on for months is not as cutting edge as I thought? Dang.
 
-<img src="https://media.giphy.com/media/3o7TKA3ypeMbOXSrp6/giphy.gif" width="480px" height="330px">
+<iframe src="https://giphy.com/embed/10o3Um2U3wa4DK" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/television-frustrated-seinfeld-10o3Um2U3wa4DK">via GIPHY</a></p>
 
 I found myself in an interesting predicament. My project met all the requirements and I had passed my assessment. As far as my progress in the course, there was no reason to go back and try to change anything. But what about my progress in my coding journey? Ultimately, I decided it could be a beneficial exercise to update to async/await (the preferred way to handle `Promise`s in JavaScript). To do so, I really wanted to make sure I understood what was happening. Let’s go back to the beginning. Well, not *all* the way back to the beginning. Let’s go back to the part where I started dealing with `Promise`s.
 
@@ -136,7 +136,7 @@ I was about halfway through my project when I first learned there was a much bet
 
 It's time. Let’s talk about `async` and `await`.
 
-<img src="https://media.giphy.com/media/jVStxzak9yk2Q/giphy.gif" width="400px" height="356px">
+<iframe src="https://giphy.com/embed/uLGs2Enp9RYze" width="480" height="428" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/about-time-uLGs2Enp9RYze">via GIPHY</a></p>
 
 First up, `async`. If you put the `async` keyword in front of a function, that function will return a `Promise`, regardless of whether or not you explicitly tell it to. Return values are automatically wrapped in a resolved `Promise`. Go ahead and try this out in your console:
 
@@ -241,5 +241,5 @@ We no longer have all of the nesting we did before when using `then()`, and we e
 
 The general consensus is that async/await is much easier to write and use than `then()`. And it wasn’t even that difficult to switch over. Granted it took a little research, but once I got the hang of it, it was smooth sailing. Now I can feel confident that my project is in better shape, and even though I’ve already done my assessment, I can move on with clean code and a clear conscience.
 
-<img src="https://media.giphy.com/media/m2Q7FEc0bEr4I/giphy.gif" width="480px" height="360px">
+<iframe src="https://giphy.com/embed/m2Q7FEc0bEr4I" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/m2Q7FEc0bEr4I">via GIPHY</a></p>
 
