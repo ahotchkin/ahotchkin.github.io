@@ -1,14 +1,14 @@
 ---
 layout: post
 title:      "How Katie Couric Inspired My React Redux Project"
-date:       2020-11-01 16:34:47 +0000
+date:       2020-11-01 11:34:47 -0500
 permalink:  how_katie_couric_inspired_my_react_redux_project
 ---
 
 
 The time had finally come, after months (and months) of learning and coding, to build my final project. This was my chance to show off everything I had learned up to this point, all the way from the beginning days of Ruby to the final days of React and Redux. And what a journey it has been! The only question that remained: What could I possibly create to showcase my newfound talents? As usual, Katie Couric had the answer.
 
-A little context: While quarantining I stumbled across the 2014 documentary Fed Up, a deep-dive into the American Food Industry and the negative effects it may or may not be having on our health. It was eye-opening and, to be honest, quite alarming. Long-story short, we have a bit of a problem here in America with our diets, and I was no exception. At the end of the documentary Ms. Couric challenged me to go 10 days without added sugar. That seemed unreasonable, so instead I decided on trying to go one week without any processed foods. While seven days without Cheez-Its would be grueling, to say the least, I figured I would give it a shot. One week went by, and I surprisingly felt pretty good, so I tried for a second week. Essentially this catapulted me into a health documentary rabbit hole that <strike>scared</strike> inspired me to start eating cleaner.
+A little context: While quarantining I stumbled across the 2014 documentary Fed Up, a deep-dive into the American Food Industry and the negative effects it may or may not be having on our health. It was eye-opening and, to be honest, quite alarming. Long-story short, we have a bit of a problem here in America with our diets, and I was no exception. At the end of the documentary Ms. Couric challenged me to go 10 days without added sugar. That seemed unreasonable, so instead I decided to attempt one week without any processed foods. Although seven days without Cheez-Its was pretty grueling, the week passed, and I surprisingly felt pretty good. I decided to try for week two. Essentially this catapulted me into a health documentary rabbit hole that <strike>scared</strike> inspired me to start eating cleaner.
 
 <iframe src="https://giphy.com/embed/RKRqGJinGNjIzNRy4P" width="480" height="247" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/ron-swanson-so-what-whats-your-point-RKRqGJinGNjIzNRy4P">via GIPHY</a></p>
 
