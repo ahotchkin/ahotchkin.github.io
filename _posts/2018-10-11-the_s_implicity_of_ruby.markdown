@@ -12,9 +12,9 @@ So needless to say I was a little apprehensive when I decided to take on the cha
 
 One of the nuances of Ruby that tripped me up at first, but that I now find helpful, is that you don’t always need to spell everything out word for word. A lot of times, what you want to say is actually implied. This is the case when it comes to return values and, in some cases, method receivers.
 
-**Return Values**
+### Return Values
 
-<img src="http://www.quickmeme.com/img/46/4600ac04191595c5d2685f19d0d073d1ca5b82b47b68a062b43c1af73b90b8fc.jpg" width="325px" height="325px">
+<iframe src="https://giphy.com/embed/C9pYsj3Lk0ET0Y9JUu" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cbc-schittscreek-schitts-creek-C9pYsj3Lk0ET0Y9JUu">via GIPHY</a></p>
 
 Fun Fact #1: In Ruby, when you want to return something, you don’t actually have to use the `return` keyword. This is because Ruby uses implicit returns and will always return the last line of a method. So you’d better be sure that the last line of your method is what you want returned. It’s also important to note that `puts` and `print` are very different from `return`. `puts` and `print` are used to display the results of evaluated Ruby code in your console (`puts` adds a new line after executing, while `print` does not). The return value is the value of the last statement in a method. Every method in Ruby has a return value.
 
@@ -51,9 +51,9 @@ end
 ```
 
 
-**Method Receivers**
+### Method Receivers
 
-<img src="https://media.giphy.com/media/w2KHfIlI3V7bi/giphy.gif" width="480px" height="251px">
+<iframe src="https://giphy.com/embed/w2KHfIlI3V7bi" width="480" height="251" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/baby-make-austin-w2KHfIlI3V7bi">via GIPHY</a></p>
 
 Fun Fact #2: Ruby has an implicit method receiver: `self`. That’s right, every single method you write has a receiver, even if you don’t write it out. You can tell it’s implicit because you won’t use dot notation. For example, you’re probably very used to seeing something like this:
 
