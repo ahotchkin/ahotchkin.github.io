@@ -25,7 +25,7 @@ I also spent a bit of time planning my frontend to have a clear idea of what I w
 A couple of rails g resource commands and one create-react-app command later, and I was on my way.
 
 ### Props to React
-I was excited to dive deep into building my first React App, taking advantage of all of its great features, performance and components among them. Since I was using a new framework, and really because it's best practice, I knew organization would be key to keeping track of my code. Modeling my project after a few select Flatiron labs, I came up with a basic file structure, starting with a container component for each model on my backend. I knew that I would be connecting these components to my Redux store to get any necessary information to pass down to their respective children. For example, I created an ExercisesContainer, within which I rendered three child components in the appropriate routes: Exercises, ExerciseInput, and ExerciseUpdate. ExerciseInput and ExerciseUpdate would be responsible for rendering the "new" and "update" forms for a user's exercise. Exercises.js was used rendered each individual exercise as an ExerciseCard component. I used this basic structure for each model in my application to stay consistent, and as a result I'm able to locate all of my code with ease.
+I was excited to dive deep into building my first React App, taking advantage of all its great features, performance and components among them. Since I was using a new framework, and really because it's best practice, I knew organization would be key to keeping track of my code. Modeling my project after a few select Flatiron labs, I came up with a basic file structure, starting with a container component for each model on my backend. I would connect these components to my Redux store to get any necessary information to pass down to their respective children. For example, I created an ExercisesContainer, within which I rendered three child components in the appropriate routes: Exercises, ExerciseInput, and ExerciseUpdate. ExerciseInput and ExerciseUpdate would be responsible for rendering the "new" and "update" forms for a user's exercise. Exercises.js would render each individual exercise as an ExerciseCard component. I used this basic structure for each model in my application to stay consistent, and as a result I was able to locate all of my code with ease.
 
 By making use of `mapStateToProps()` and `mapDispatchToProps()` I could get all of the necessary information from the Redux store to pass to these child components.
 
@@ -109,7 +109,7 @@ Okay, now that I had that all set up, I had to actually create my reducers and a
 2. Add to store
 3. Build action creator
 
-Using Exercises as an example, there were a few things I wanted to accomplish overall: I wanted to set a user’s exercises on login and clear a user’s exercises on logout, in addition to allowing a user to add, update, and delete exercises from the database. That's a lot to think about all at once, so I took it one step at a time, starting with building a reducer:
+Using Exercises as an example, there were a few things I wanted to accomplish: I wanted to set a user’s exercises on login and clear a user’s exercises on logout, in addition to allowing a user to add, update, and delete exercises from the database. That's a lot to think about all at once, so I took it one step at a time, starting with building a reducer:
 
 ```
 //src/reducers/exercises.js
@@ -255,7 +255,7 @@ So I pretty much could just follow that pattern for all the other models and I w
 
 
 ### Theres a Package For That
-Let's take a break from all of the requirements and talk about some of the fun features I was able to add (not that the requirements aren't fun...). A couple of times I found myself wanting to include a feature, but I had no idea where to begin. If there’s one thing I’ve learned, it’s that there is quite a bit of open source code out there that can really help bring your project to the next level. With a bit of Googling and a few YouTube tutorials, I was able to add some really cool elements to my frontend. For one, I wanted the user to be able to select a date to and see all information (nutrition, meals, exercises, etc.) for that date, past, present, or future. React DatePicker to the rescue. This is a great package that pretty much does exactly what I wanted it to do. 
+Let's take a break from all of the requirements and talk about some of the fun features I was able to add (not that the requirements aren't fun...). A couple of times I found myself wanting to include a feature, but I had no idea where to begin. If there’s one thing I’ve learned, it’s that there is quite a bit of open source code out there that can really help bring your project to the next level. With a bit of Googling and a few YouTube tutorials, I was able to add some really cool elements to my frontend. For one, I wanted the user to be able to change the date and see all relevant information for that date (nutrition, meals, exercises, etc.). React DatePicker to the rescue. This is a great package that allowed me to accomplish just that. 
 
 <img width="255" alt="date-picker" src="https://user-images.githubusercontent.com/33204849/97806205-76a92c00-1c28-11eb-9b66-93188ac2b761.png">
 
@@ -263,7 +263,7 @@ Another idea I had was to display a user’s macronutrient information in doughn
 
 <img width="410" alt="macronutrients-chart" src="https://user-images.githubusercontent.com/33204849/97806224-917ba080-1c28-11eb-8559-19ae57b671bd.png">
 
-Throughout this project and course I've learned that if there is a feature I’ve either seen somewhere before or am having a heck of a time implementing, there is absolutely no shame in seeing what already exists that I might be able to make use of. In the end it just frees up my time to focus on something else.
+Throughout this project and course I've learned that if there is a feature I’ve either seen somewhere before or am having a heck of a time implementing, there is absolutely no shame in seeing what already exists that I might be able to make use of. In the end, it just frees up my time to focus on something else.
 
 
 ### Is that everything?
