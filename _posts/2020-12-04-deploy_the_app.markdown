@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Deploy the App!"
-date:       2020-12-04 22:41:02 +0000
+date:       2020-12-04 17:41:03 -0500
 permalink:  deploy_the_app
 ---
 
@@ -37,7 +37,9 @@ When you’re looking for a load balancer to use, if your application requires a
 
 <iframe src="https://giphy.com/embed/81xwEHX23zhvy" width="480" height="260" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/81xwEHX23zhvy">via GIPHY</a></p>
 
-Let’s face it, the World Wide Web can be a shady place. And a traffic cop probably isn’t going to be quite enough to handle everything. You’re going to want to make sure you have security covered at every stop. The last thing I want is for one of my 1 million friends to log in to their account and input their exercise for the day, only to find that the information they entered has been stolen and now everyone knows how many calories they burned on their morning run (Not enough, that’s how many! Run faster!). Or you know, maybe there’s a website out there where someone is entering information that is a bit more sensitive, like credit card numbers, bank account numbers, social security numbers, just all sorts of numbers. Most web hosting services will tout their level of security and data encryption since it is such a concern these days. On top of this security, load balancers can work in conjunction with firewalls to block unauthorized access to and from your internal network. The firewalls sit behind the load balancer and, much like how the load balancer directs traffic to different servers based on capacity, they can do the same with firewalls to filter out the unauthorized users that are trying to sneak in.<sup>1</sup>
+Let’s face it, the World Wide Web can be a shady place. And a traffic cop probably isn’t going to be quite enough to handle everything. You’re going to want to make sure you have security covered at every stop. The last thing I want is for one of my 1 million friends to log in to their account and input their exercise for the day, only to find that the information they entered has been stolen and now everyone knows how many calories they burned on their morning run (Not enough, that’s how many! Run faster!). Or you know, maybe there’s a website out there where someone is entering information that is a bit more sensitive, like credit card numbers, bank account numbers, social security numbers, just all sorts of numbers.
+
+Most web hosting services will tout their level of security and data encryption since it is such a concern these days. On top of this security, load balancers can work in conjunction with firewalls to block unauthorized access to and from your internal network. The firewalls sit behind the load balancer and, much like how the load balancer directs traffic to different servers based on capacity, they can do the same with firewalls to filter out the unauthorized users that are trying to sneak in.<sup>1</sup>
 
 
 ### What's next?
