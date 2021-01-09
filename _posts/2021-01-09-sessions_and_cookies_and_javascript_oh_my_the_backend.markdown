@@ -1,10 +1,11 @@
 ---
 layout: post
-title:      "Sessions and Cookies and JavaScript, Oh My! - Part 1: The Backend"
+title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
 date:       2021-01-09 14:09:28 -0500
 permalink:  sessions_and_cookies_and_javascript_oh_my_the_backend
 ---
 
+## Part 1: The Backend
 
 
 You're here. You've made it. You're ready to create a full stack application with a Rails API backend and a JavaScript frontend. Congratulations! What features are you going to add?! Will it be responsive? Will it be secure? Will it allow for user interaction? The possibilities are truly endless. One thing you may want to add is the ability for a user to sign up and log in. You'll likely need this functionality if you want a user to be able to personalize anything or save any information. And it's not like you aren't familiar with this. If you're anything like me you have dozens, if not hundreds, of different accounts on different websites. So how would you go about adding this functionality?
