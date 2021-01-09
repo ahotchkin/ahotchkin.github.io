@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Sessions and Cookies and JavaScript, Oh My!: The Backend"
-date:       2021-01-09 19:09:27 +0000
+title:      "Sessions and Cookies and JavaScript, Oh My! - Part 1: The Backend"
+date:       2021-01-09 14:09:28 -0500
 permalink:  sessions_and_cookies_and_javascript_oh_my_the_backend
 ---
 
