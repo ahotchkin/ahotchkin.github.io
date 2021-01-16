@@ -101,14 +101,14 @@ If everything checks out, our user will be logged in! But, of course, we're miss
 
 <iframe src="https://giphy.com/embed/3a9aRPThXvHuU" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/vevo-vevo-3a9aRPThXvHuU">via GIPHY</a></p>
 
-<br></br>
+<br>
 
 ##### Sources
 <a href="https://guides.rubyonrails.org/command_line.html">Rails Command Line</a>
-<br></br>
+<br>
 <a href="https://guides.rubyonrails.org/api_app.html">Rails for an API</a>
-<br></br>
+<br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS</a>
-<br></br>
+<br>
 <a href="https://instruction.learn.co/student/video_lectures#/463">Flatiron School React App Build</a>
 
