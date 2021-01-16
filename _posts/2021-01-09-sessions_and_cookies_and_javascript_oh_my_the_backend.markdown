@@ -19,13 +19,13 @@ When working with JavaScript, there are a couple different ways to set up user s
 As I mentioned, I'll be using a Rails API backend (with a React frontend, but that fun will come later). Just in case you don't already have your backend set up, take a couple minutes now to do this. I'll wait...
 
 And if you need a reminder, this is a good place to start:
-* Run rails new app-name-backend --api (creates your backend)
+* Run `rails new <app-name-backend --api>` (creates your backend)
 * In your Gemfile, add bcrypt (gives you access to has_secure_password)
 * Hang out in that Gemfile for just one more minute and add rack-cors (you're going to need this to allow the backend to talk to the frontend)
-* Run bundle install to load up those gems
-* Run rails g resource user username password_digest (this will generate a very basic users table)
-* In your users model, add has_secure_password
-* Run rails db:migrate
+* Run `bundle install` to load up those gems
+* Run `rails g resource user username password_digest` (this will generate a very basic users table)
+* In your users model, add `has_secure_password`
+* Run `rails db:migrate`
 
 Whew! You just accomplished a lot in a matter of minutes. There's just one last thing to do. Even though we don't have the frontend set up yet, let's change the default Rails port so we don't run into any server issues when the time comes. Take a trip to your puma.rb file (you can find it in the config folder) and find this line: `port        ENV.fetch("PORT") { 3000 }`. Change that port to 3001: `port        ENV.fetch("PORT") { 3001 }`. Now your Rails API will run on localhost:3001 and there won’t be a conflict with your frontend. Hot diggity!
 
