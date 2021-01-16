@@ -96,6 +96,7 @@ Whew! We did it! I know what you're thinking. "What does any of this have to do 
 
 <iframe src="https://giphy.com/embed/l3q2umc327t2nzSOQ" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/target-bullseye-targetstyle-l3q2umc327t2nzSOQ">via GIPHY</a></p>
 
+<br>
 
 #### Sources:
 <a href="https://reactjs.org/docs/create-a-new-react-app.html">create-react-app</a>
