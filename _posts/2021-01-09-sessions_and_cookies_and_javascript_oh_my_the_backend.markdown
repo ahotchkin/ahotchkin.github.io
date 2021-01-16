@@ -76,7 +76,7 @@ For now, let's pretend we have the frontend and a user can enter their informati
 
 Yes! We want to check the database to see if the information, in this case a username, matches information that already exists in the database. The information that the user enters on the frontend will be sent to the backend via the fetch request we have yet to write, and will be available available in the params object as an object called "session". This session object consists of the key value pairs of the information inputted by the user. So we can search the database with something like this: `user = User.find_by(:username => params[:session][:username])`
 
-And since we're dealing with user log in, we want to authenticate the password to make sure the user is who they say they are. If not, we want to alert the user that their credentials are invalid. As a whole, the create method would look like this:
+And since we're dealing with user login, we want to authenticate the password to make sure the user is who they say they are. If not, we want to alert the user that their credentials are invalid. As a whole, the create method would look like this:
 
 ```
 def create
