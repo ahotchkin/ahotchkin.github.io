@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
-date:       2021-01-16 17:47:31 +0000
+date:       2021-01-16 12:47:32 -0500
 permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series
 ---
 
@@ -99,15 +99,17 @@ Whew! We did it! I know what you're thinking. "What does any of this have to do 
 
 ##### Sources:
 <a href="https://reactjs.org/docs/create-a-new-react-app.html">create-react-app</a>
-<br></br>
+<br>
 <a href="https://www.npmjs.com/package/redux">Redux documentation</a>
-<br></br>
+<br>
 <a href="https://react-redux.js.org/api/provider">Provider</a>
-<br></br>
+<br>
 <a href="https://redux.js.org/api/combinereducers">combineReducers</a>
-<br></br>
+<br>
 <a href="https://redux.js.org/api/compose">compose</a>
-<br></br>
+<br>
 <a href="https://redux.js.org/api/createstore">createStore</a>
-<br></br>
+<br>
+<a href="https://github.com/reduxjs/redux-thunk">Thunk</a>
+<br>
 <a href="https://instruction.learn.co/student/video_lectures#/463">Flatiron School React App Build</a>
