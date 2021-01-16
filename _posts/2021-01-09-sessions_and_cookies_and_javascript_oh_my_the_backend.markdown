@@ -103,7 +103,7 @@ If everything checks out, our user will be logged in! But, of course, we're miss
 
 <br>
 
-##### Sources
+#### Sources
 <a href="https://guides.rubyonrails.org/command_line.html">Rails Command Line</a>
 <br>
 <a href="https://guides.rubyonrails.org/api_app.html">Rails for an API</a>
