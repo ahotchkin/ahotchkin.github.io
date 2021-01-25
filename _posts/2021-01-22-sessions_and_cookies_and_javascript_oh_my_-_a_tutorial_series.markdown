@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
-date:       2021-01-22 22:08:52 +0000
+date:       2021-01-22 17:08:53 -0500
 permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series
 ---
 
@@ -289,6 +289,8 @@ Okay, do you have your user? Now head over to your form in your browser and type
 That was A LOT of work for one day. We have one more tutorial before we finish up. A few things to add to really get this working nicely. For example, you probably want to go to the user's home page once they log in. Also, if you refresh the page, you'll notice that the user is no longer logged in. We should fix that. And we should have a way for a user to sign up for an account because not everyone is going to have access to our Rails console. And finally, we need to give users a way to log out. We will cover all of that in the last tutorial, at which point you will have built a fully functioning sign up, log in, and log out feature in your application.
 
 You did great today. Stay awesome!
+
+<iframe src="https://giphy.com/embed/tEaDT85En43i8" width="480" height="344" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/awesome-colin-mochrie-whose-line-is-it-anyways-tEaDT85En43i8">via GIPHY</a></p>
 
 <br>
 
