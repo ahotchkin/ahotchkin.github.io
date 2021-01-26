@@ -16,7 +16,7 @@ Since we're going to be doing a lot of work in the browser today, let's get our 
 
 ### The Component
 
-Now for the login functionalilty. There is more than one way to set this up, of course. We have the option to maintain all state within the Redux store. However, since we just need a simple form to handle the user input, we'll handle that state change in a react component.
+Now for the login functionality. There is more than one way to set this up, of course. We have the option to maintain all state within the Redux store. However, since we just need a simple form to handle the user input, we'll handle that state change in a react component.
 
 Let's start by creating our Login form. This will be our first component (wahoo!), so we'll put it in the components folder. For now, we know we need to import React, so let's add that to the top of our Login component: `import React, { Component } from 'react';`. There are a couple of additional things we'll want to import, but we'll wait until the time comes to add those so we fully understand the "why".
 
@@ -258,7 +258,7 @@ const mapDispatchToProps = {
 }
 ```
  
-And the final step — yes, the FINAL step (kind of) — is to pass your exported component as an parameter to the function returned from `connect`. Let’s step back for a second. We want to export `connect`, which will take `mapStateToProps` as its first argument (or null, if not being used) and `mapDispatchToProps` as its second argument. This will return a function, and that function will take our Login component as a parameter and return to us a beefed up Login component that has access to any state that we passed through with `mapStateToProps` and any actions we passed through with `mapDispatchToProps` through props. It will look like this: `export default connect(null, mapDispatchToProps)(Login);`.
+And the final step — yes, the FINAL step (kind of) — is to pass your exported component as a parameter to the function returned from `connect`. Let’s step back for a second. We want to export `connect`, which will take `mapStateToProps` as its first argument (or null, if not being used) and `mapDispatchToProps` as its second argument. This will return a function, and that function will take our Login component as a parameter and return to us a beefed up Login component that has access to any state that we passed through with `mapStateToProps` and any actions we passed through with `mapDispatchToProps` through props. It will look like this: `export default connect(null, mapDispatchToProps)(Login);`.
 
 Now we have access to our `login` action that we returned in `mapDispatchToProps` and we can access it through props. If we head to `handleOnSubmit` function we can call `login`, which will log the user in! I swear! Let’s take a look:
 
