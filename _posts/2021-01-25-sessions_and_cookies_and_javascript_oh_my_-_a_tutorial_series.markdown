@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
-date:       2021-01-26 01:04:56 +0000
+date:       2021-01-25 20:04:57 -0500
 permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series
 ---
 
@@ -199,7 +199,7 @@ This will require some changes to App.js. Now, I know there are new and improved
 3. Move your return statement to inside your `render` function (every class component in React needs a `render` function that returns JSX)
 
 
-Okay fine, it’s as simple as 1, 2, 3, 4: 
+Okay fine, it’s as simple as 1, 2, 3, 4:&#x2028;
 4. Update all instances of `props` to `this.props`
 
 If things still aren’t working right, make sure if you have any `console.log`s they are being called inside your render function, before your return statement.
@@ -245,6 +245,8 @@ export default connect(mapStateToProps, mapDispatchToProps)(App);
 Now, go back to your browser. If you’re not already logged in, do so now. If you are, try refreshing the page. Are you still logged in? Fantastic! We did it! This is going to make our user experience so much better! Obviously there is still work to be done. Next week we’ll work on signing up and logging out. Until then, breathe a sigh of relief and keep coding!
 
 <iframe src="https://giphy.com/embed/TI9HXsiQr4eU9hdxgC" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cbc-schittscreek-catherine-ohara-moira-TI9HXsiQr4eU9hdxgC">via GIPHY</a></p>
+
+<br>
 
 #### Sources
 <a href="https://reactjs.org/docs/react-component.html">ComponentDidMount</a>
