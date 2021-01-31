@@ -155,7 +155,7 @@ Great! Now we can use these methods in our other controllers and it will make wr
       render json: current_user
     else
       render json: {
-        notice: "No user is logged in”
+        error: "No user is logged in”
       }
     end
   end
