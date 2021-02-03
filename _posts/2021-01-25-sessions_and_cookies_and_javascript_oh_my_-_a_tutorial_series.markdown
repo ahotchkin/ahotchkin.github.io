@@ -242,7 +242,7 @@ const mapDispatchToProps = {
 export default connect(mapStateToProps, mapDispatchToProps)(App);
 ```
 
-Now, go back to your browser. If you’re not already logged in, do so now. If you are, try refreshing the page. Are you still logged in? Fantastic! We did it! This is going to make our user experience so much better! Obviously there is still work to be done. Next week we’ll work on signing up and logging out. Until then, breathe a sigh of relief and keep coding!
+Now, go back to your browser. If you’re not already logged in, do so now. If you are, try refreshing the page. Are you still logged in? Fantastic! We did it! This is going to make our user experience so much better! Obviously there is still work to be done. Next week we’ll work on logging out. Until then, breathe a sigh of relief and keep coding!
 
 <iframe src="https://giphy.com/embed/TI9HXsiQr4eU9hdxgC" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cbc-schittscreek-catherine-ohara-moira-TI9HXsiQr4eU9hdxgC">via GIPHY</a></p>
 
