@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
-date:       2021-02-03 18:25:37 +0000
+date:       2021-02-03 13:25:38 -0500
 permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series
 ---
 
@@ -11,9 +11,9 @@ Hello again! We have come a long way. At this point, our user is able to log in,
 
 Let’s get to it!
 
-If you’ve been following along with this tutorial, then you are currently logged in to your application, with no clear way to log out. Let's fix this. To log out, we’re going to need to do some work on the frontend and the backend. I like to start with the backend, but whatever works for you will be just fine. 
-
 <iframe src="https://giphy.com/embed/kaBU6pgv0OsPHz2yxy" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/jake-gyllenhaal-bye-kaBU6pgv0OsPHz2yxy">via GIPHY</a></p>
+
+If you’ve been following along with this tutorial, then you are currently logged in to your application, with no clear way to log out. Let's fix this. To log out, we’re going to need to do some work on the frontend and the backend. I like to start with the backend, but whatever works for you will be just fine. 
 
 
 ### Logging Out: The Backend
