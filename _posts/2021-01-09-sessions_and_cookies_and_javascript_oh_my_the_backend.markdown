@@ -41,6 +41,8 @@ config.middleware.use ActionDispatch::Cookies
 config.middleware.use ActionDispatch::Session::CookieStore, key: '_cookie_name'
 ```
 
+And we want to let ApplicationController know that we’ve turned these things on, so in application_controller.rb you can add: `include ::ActionController::Cookies`.
+
 We are off to a great start! Next, we need to make some changes to our cors.rb file. Remember how I had you add the rack-cors gem to your Gemfile? We're all set to use the cors.rb file now. You're welcome! Remember, <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS">CORS (Cross-Origin Resource Sharing)</a> is what allows our backend and frontend to talk to each other. 
 
 Okay, back to cors.rb. First you’ll want to uncomment the block of code that is already there:
