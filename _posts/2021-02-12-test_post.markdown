@@ -1,0 +1,22 @@
+---
+layout: post
+title:      "Test Post"
+date:       2021-02-12 11:50:38 -0500
+permalink:  test_post
+---
+
+This is a test.
+
+<iframe src="https://giphy.com/embed/QWjFSsvUPCUncq6ItU" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Bounce-TV-yes-finally-at-last-QWjFSsvUPCUncq6ItU">via GIPHY</a></p>
+
+```
+code snippet
+```
+
+#### Sources:
+
+<a href="https://guides.rubyonrails.org/action_controller_overview.html#strong-parameters">Strong Parameters</a>
+<br>
+<a href="https://guides.rubyonrails.org/v5.0.0.1/getting_started.html">Getting Started with Rails</a>
+<br>
+<a href="https://instruction.learn.co/student/video_lectures#/463">Flatiron School React App Build</a>
