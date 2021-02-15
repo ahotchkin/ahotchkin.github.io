@@ -172,7 +172,7 @@ Now it’s time to import this action in our SignUp component and call it in `ha
 
 Did you make all the necessary updates to your SignUp component? If so, you should be able to sign up for a new account! 
 
-Now, this is by no means perfect. Next week we’ll work on cleaning up a few things. I’m thinking we’ll refactor our form into its own component and render it in our SignUp and Login components to avoid so much repeated code. We also may want to consider using serializers in our API to avoid exposing users’ passwords, because right now that information is definitely vulnerable. Once we tie up a few loose ends, our sign up and login functionality will be in a really good place. As always, great work today! See you next week.
+Now, this is by no means perfect. Next week we’ll look at using serializers in our API to avoid exposing users’ passwords, because right now that information is definitely vulnerable. And we don’t want that! As always, great work today! See you next week.
 
 
 #### Sources:
