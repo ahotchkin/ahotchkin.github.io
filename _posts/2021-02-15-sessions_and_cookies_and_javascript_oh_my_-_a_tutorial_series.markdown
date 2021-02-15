@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
-date:       2021-02-15 20:18:37 +0000
+date:       2021-02-15 15:18:37 -0500
 permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series
 ---
 
@@ -69,8 +69,7 @@ In actions/currentUser.js we just need to find anywhere where we are dispatching
 
 You may be wondering, "What else can I do with serializers?" You are full of great questions today! There is so much you can do to control the data that is being sent to the frontend. We’ll go over a quick example, just to give you an idea. Let’s say your user had attributes for first name and last name, but on the frontend, you just wanted to display this as full name. With a serializer you can do that! I’m not going to go through a detailed code along, but I will walk you through the steps if you want to give it a shot.
 
-For this example, we're just going to work on the backend. First, you would need to add columns to your Users table for `first_name` and `last_name` and run `rails db:migrate`. If you drop into your Rails console you can add a `first_name` and `last_name` to the user instance you’ve been working with. 
-In the Redux DevTools, you’ll notice that you don’t see any changes in your state. That’s because even though we've added this information to the user instance, we haven't changed anything in UserSerializer, so UserSerializer is still only sending username. If you add `:first_name` and `:last_name` to the list of attributes in UserSerializer you will see those populated in the state in the browser. Now let’s try to display the full name. We’re going to create a custom attribute called `full_name`, and this attribute is going to be a block that combines the `first_name` and `last_name` of our user object. Overall, my UserSerializer currently looks like this:
+For this example, we're just going to work on the backend. First, you would need to add columns to your Users table for `first_name` and `last_name` and run `rails db:migrate`. If you drop into your Rails console you can add a `first_name` and `last_name` to the user instance you’ve been working with. In the Redux DevTools, you’ll notice that you don’t see any changes in your state. That’s because even though we've added this information to the user instance, we haven't changed anything in UserSerializer, so UserSerializer is still only sending username. If you add `:first_name` and `:last_name` to the list of attributes in UserSerializer you will see those populated in the state in the browser. Now let’s try to display the full name. We’re going to create a custom attribute called `full_name`, and this attribute is going to be a block that combines the `first_name` and `last_name` of our user object. Overall, my UserSerializer currently looks like this:
 
 ```
 class UserSerializer
