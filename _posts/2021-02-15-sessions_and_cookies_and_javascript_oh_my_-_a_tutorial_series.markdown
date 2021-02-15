@@ -18,7 +18,7 @@ This is happening because when we grab our user instance from the backend we are
 
 ### Serialization
 
-We’re going to use a process called serialization. You may be thinking, "What is serialization?". That's a great question! <a href=“https://en.wikipedia.org/wiki/Serialization”>Serialization</a> is the process of taking a data structure or object and translating it into a format that can be stored so that it can be reconstructed later. You're probably thinking, "How the heck will I be able to do that?!" Luckily, to help us with this process, we can use a serializer. As always, there are several options out there. We’re going to work with a gem called <a href=“https://github.com/jsonapi-serializer/jsonapi-serializer”>jsonapi-serializer</a>.
+We’re going to use a process called serialization. You may be thinking, "What is serialization?". That's a great question! <a href="https://en.wikipedia.org/wiki/Serialization">Serialization</a> is the process of taking a data structure or object and translating it into a format that can be stored so that it can be reconstructed later. You're probably thinking, "How the heck will I be able to do that?!" Luckily, to help us with this process, we can use a serializer. As always, there are several options out there. We’re going to work with a gem called <a href="https://github.com/jsonapi-serializer/jsonapi-serializer">jsonapi-serializer</a>.
 
 #### jsonapi-serializer
 
