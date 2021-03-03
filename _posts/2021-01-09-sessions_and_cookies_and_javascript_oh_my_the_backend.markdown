@@ -2,7 +2,7 @@
 layout: post
 title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
 date:       2021-01-09 14:09:28 -0500
-permalink:  sessions_and_cookies_and_javascript_oh_my_the_backend
+permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series_1
 ---
 
 ## Part 1: The Backend
