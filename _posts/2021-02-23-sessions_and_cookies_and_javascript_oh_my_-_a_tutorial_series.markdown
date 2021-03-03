@@ -1,8 +1,8 @@
 ---
 layout: post
-title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series 8"
+title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
 date:       2021-02-23 21:16:35 -0500
-permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series
+permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series_8
 ---
 
 ## Part 8: It’s Refactoring Time!
