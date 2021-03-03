@@ -2,7 +2,7 @@
 layout: post
 title:      "Sessions and Cookies and JavaScript, Oh My! - A Tutorial Series"
 date:       2021-02-08 16:05:38 -0500
-permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series
+permalink:  sessions_and_cookies_and_javascript_oh_my_-_a_tutorial_series_6
 ---
 
 ## Part 6: Signing Up
