@@ -11,7 +11,7 @@ const Project = () => {
   }
 
   return (
-    <div>
+    <div className="content-section">
       <h1 className="project-title-heading">{project.name}</h1>
       <p className="project-github-link">View on <a target="_blank" rel="noopener noreferrer" href={project.githubUrl}>Github</a></p>
       <div>
