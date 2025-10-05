@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0c6b49ea.css",
-    "main.js": "/static/js/main.fec436e9.js",
+    "main.js": "/static/js/main.0373ad51.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/hp_trivia_welcome.png": "/static/media/hp_trivia_welcome.49e5722ada6e4bf08e01.png",
     "static/media/hp_trivia_round.png": "/static/media/hp_trivia_round.54254476eebd109f8b8a.png",
@@ -35,11 +35,11 @@
     "static/media/2019-06-17-eager_loading_makes_for_eager_coding.md": "/static/media/2019-06-17-eager_loading_makes_for_eager_coding.9f9caf652d41a32f9d06.md",
     "index.html": "/index.html",
     "main.0c6b49ea.css.map": "/static/css/main.0c6b49ea.css.map",
-    "main.fec436e9.js.map": "/static/js/main.fec436e9.js.map",
+    "main.0373ad51.js.map": "/static/js/main.0373ad51.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0c6b49ea.css",
-    "static/js/main.fec436e9.js"
+    "static/js/main.0373ad51.js"
   ]
 }
