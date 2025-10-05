@@ -10,7 +10,7 @@ permalink:  e_mail_time
   <p class="blog-giphy-link"><a target="_blank" rel="noopener noreferrer" href="https://giphy.com/gifs/mail-jGA9FxogzpaJa">via GIPHY</a></p>
 </div>
 
-It should come as no surprise that as someone who spent several years working in direct marketing that I would want to attempt to implement some email sends within an application. Like when a user signs up for an account, it would be great to send them an Welcome email. Or maybe I want to send them a weekly summary of their activity. Or remind them about something. There are plenty of times when sending an email to your users can be really valuable. Luckily, Rails has a handy tool to help with just that: Action Mailer
+It should come as no surprise that as someone who spent several years working in direct marketing that I would want to attempt to implement some email sends within an application. Like when a user signs up for an account, it would be great to send them a welcome email. Or maybe I want to send them a weekly summary of their activity. Or remind them about something. There are plenty of times when sending an email to your users can be really valuable. Luckily, Rails has a handy tool to help with just that: Action Mailer
 
 
 ### Go Configure
