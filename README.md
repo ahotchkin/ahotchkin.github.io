@@ -75,3 +75,85 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# 🧑‍💻 Allyson's Portfolio
+
+## ✨ Welcome\! (Quick Look)
+
+This repository holds the source code for my professional portfolio. It is designed to be a central hub to showcase my skills, experience, and key projects.
+
+**The best place to view my work is the live site:**
+
+## 🚀 [VIEW LIVE PORTFOLIO HERE](https://www.allysonhotchkin.com)
+
+<br>
+
+| Aspect | Details |
+| :--- | :--- |
+| **Focus** | **Frontend Development** |
+| **Contact** | allyson.hotchkin@gmail.com |
+| **LinkedIn** | [https://www.linkedin.com/in/allyrh/](https://www.linkedin.com/in/allyrh/) |
+| **Code Repo** | You're already here\! |
+
+-----
+
+## 💡 About the Project
+
+This portfolio demonstrates my proficiency in **[List 3-4 Key Skills]** (e.g., **React component architecture**, **responsive design**, **REST API integration**, **modern CSS methodologies**).
+
+### Key Features:
+
+  * **Modular Component Design:** Built with **React** following a component-driven approach for scalability.
+  * **Fully Responsive:** Optimized layout using **CSS Media Queries** to ensure a perfect viewing experience on all devices (mobile-first approach).
+  * **[Add a unique technical feature]:** (e.g., Client-side routing with React Router, custom-built reusable UI components.)
+  * **[Add a unique design feature]:** (e.g., Clean, minimal aesthetic with a focus on fast load times.)
+
+-----
+
+## 🛠️ Tech Stack
+
+This project was built using a minimal, modern stack:
+
+| Category | Technologies Used |
+| :--- | :--- |
+| **Framework** | **React** (v18+) |
+| **Styling** | **Plain CSS** (Component-Based Approach) |
+| **Tooling** | **Create React App** |
+| **Routing** | React Router DOM |
+| **Deployment** | **[Vercel / Netlify / GitHub Pages]** |
+
+-----
+
+## 📚 Technical Setup (For Developers)
+
+To clone and inspect the project locally, follow these steps:
+
+### Installation
+
+1.  **Clone the Repository**
+
+    ```
+    git clone https://github.com/ahotchkin/ahotchkin.github.io.git
+    cd ahotchkin.github.io
+    ```
+
+2.  **Install Dependencies**
+
+    ```
+    npm install
+    ```
+
+3.  **Run the App**
+
+    ```
+    npm start
+    ```
+
+    The app runs in development mode at `http://localhost:3000`.
+
+-----
+
+## 📜 License
+
+This project is **[Licensed under the MIT License / All Rights Reserved]**.

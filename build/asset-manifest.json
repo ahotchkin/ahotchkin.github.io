@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c6b49ea.css",
-    "main.js": "/static/js/main.0373ad51.js",
+    "main.css": "/static/css/main.e5dfe260.css",
+    "main.js": "/static/js/main.68ac7f01.js",
     "static/js/453.ace21015.chunk.js": "/static/js/453.ace21015.chunk.js",
     "static/media/hp_trivia_welcome.png": "/static/media/hp_trivia_welcome.49e5722ada6e4bf08e01.png",
     "static/media/hp_trivia_round.png": "/static/media/hp_trivia_round.54254476eebd109f8b8a.png",
@@ -21,7 +21,7 @@
     "static/media/2019-09-19-how_toy_story_4_inspired_my_rails_application_project.md": "/static/media/2019-09-19-how_toy_story_4_inspired_my_rails_application_project.fd8773a36087a134bf9f.md",
     "static/media/2021-02-08-sessions_and_cookies_and_javascript_oh_my_part_6.md": "/static/media/2021-02-08-sessions_and_cookies_and_javascript_oh_my_part_6.e241d218de25d603946a.md",
     "static/media/2020-04-06-await_what.md": "/static/media/2020-04-06-await_what.b99e41340f28af3a06ff.md",
-    "static/media/2021-03-03-e_mail_time.md": "/static/media/2021-03-03-e_mail_time.c571cf84b673ee29aa29.md",
+    "static/media/2021-03-03-e_mail_time.md": "/static/media/2021-03-03-e_mail_time.1989e918c10318aa46bb.md",
     "static/media/2021-01-09-sessions_and_cookies_and_javascript_oh_my_part_1.md": "/static/media/2021-01-09-sessions_and_cookies_and_javascript_oh_my_part_1.c0c443b5bad0398b761f.md",
     "static/media/2021-02-15-sessions_and_cookies_and_javascript_oh_my_part_7.md": "/static/media/2021-02-15-sessions_and_cookies_and_javascript_oh_my_part_7.dbbca3e91d89fa85b5fb.md",
     "static/media/2019-02-26-how_liberty_mutual_inspired_my_sinatra_application_project.md": "/static/media/2019-02-26-how_liberty_mutual_inspired_my_sinatra_application_project.5aeb89dad9fe0dfb86ce.md",
@@ -34,12 +34,12 @@
     "static/media/2018-12-12-sign_me_up.md": "/static/media/2018-12-12-sign_me_up.43833a588a36a93d87b0.md",
     "static/media/2019-06-17-eager_loading_makes_for_eager_coding.md": "/static/media/2019-06-17-eager_loading_makes_for_eager_coding.9f9caf652d41a32f9d06.md",
     "index.html": "/index.html",
-    "main.0c6b49ea.css.map": "/static/css/main.0c6b49ea.css.map",
-    "main.0373ad51.js.map": "/static/js/main.0373ad51.js.map",
+    "main.e5dfe260.css.map": "/static/css/main.e5dfe260.css.map",
+    "main.68ac7f01.js.map": "/static/js/main.68ac7f01.js.map",
     "453.ace21015.chunk.js.map": "/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c6b49ea.css",
-    "static/js/main.0373ad51.js"
+    "static/css/main.e5dfe260.css",
+    "static/js/main.68ac7f01.js"
   ]
 }
