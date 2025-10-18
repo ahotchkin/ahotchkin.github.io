@@ -1,77 +1,80 @@
-# portfolio
+# 👩‍💻 Allyson's Portfolio
 
+## ✨ Welcome\!
 
-------------
+This repository holds the source code for my professional portfolio. It is designed to be a central hub to showcase my skills, experience, and key projects.
 
+### 🚀 View my work at the [live site](https://www.allysonhotchkin.com)
 
+<br>
 
-# Getting Started with Create React App
+| Aspect | Details |
+| :--- | :--- |
+| **Focus** | Frontend Development |
+| **Contact** | allyson.hotchkin@gmail.com |
+| **LinkedIn** | [https://www.linkedin.com/in/allyrh/](https://www.linkedin.com/in/allyrh/) |
+| **Code Repo** | You're already here\! |
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-----
 
-## Available Scripts
+## 💡 About the Project
 
-In the project directory, you can run:
+This portfolio demonstrates my proficiency in **advanced React architecture** (specifically custom state management with Hooks), **build-time data processing**, and **modern, performance-focused CSS methodologies**.
 
-### `npm start`
+### Key Features:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+  * **Modular Component Design:** Built with React following a component-driven architecture for scalability, organizing distinct sections like Projects and Blog Posts into reusable, focused components.
+  * **Fully Responsive & Routed:** Features client-side routing (via React Router) for a seamless single-page experience, combined with a mobile-first responsive design using modern CSS for optimal viewing on any device.
+  * **Custom Data Sourcing (Blog):** Implements a bespoke blog system that demonstrates build-time data processing by dynamically loading and parsing local Markdown files via Webpack and `gray-matter`
+  * **Centralized State Management:** Utilizes React's useContext hook and a dedicated Provider to serve the parsed and sorted blog posts to any component, demonstrating a clean and scalable approach to managing application data.
+ 
+-----
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+This project was built using a minimal, modern stack:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Category | Technologies Used |
+| :--- | :--- |
+| **Framework** | React (v18+) |
+| **Styling** | Plain CSS (Component-Based Approach) |
+| **Tooling** | Create React App |
+| **Routing** | React Router DOM |
+| **Deployment** | GitHub Pages |
 
-### `npm run build`
+-----
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Technical Setup (For Developers)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To clone and inspect the project locally, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1.  **Clone the Repository**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```
+    git clone https://github.com/ahotchkin/ahotchkin.github.io.git
+    cd ahotchkin.github.io
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2.  **Install Dependencies**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3.  **Run the App**
 
-## Learn More
+    ```
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    The app runs in development mode at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-----
 
-### Code Splitting
+## 📄 License and Copyright
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This repository is **Unlicensed**. All source code and design elements are the **exclusive copyright of Allyson Hotchkin (© 2024)**. The code is provided solely for educational and portfolio review purposes.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**All rights are reserved.** Reproduction, modification, and redistribution of the code or assets are not permitted.
