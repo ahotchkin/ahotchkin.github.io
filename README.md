@@ -1,18 +1,16 @@
-# 🧑‍💻 Allyson's Portfolio
+# 👩‍💻 Allyson's Portfolio
 
 ## ✨ Welcome\!
 
 This repository holds the source code for my professional portfolio. It is designed to be a central hub to showcase my skills, experience, and key projects.
 
-**The best place to view my work is the live site:**
-
-## 🚀 [VIEW LIVE PORTFOLIO HERE](https://www.allysonhotchkin.com)
+#### 🚀 View my work at the [live site](https://www.allysonhotchkin.com)
 
 <br>
 
 | Aspect | Details |
 | :--- | :--- |
-| **Focus** | **Frontend Development** |
+| **Focus** | Frontend Development |
 | **Contact** | allyson.hotchkin@gmail.com |
 | **LinkedIn** | [https://www.linkedin.com/in/allyrh/](https://www.linkedin.com/in/allyrh/) |
 | **Code Repo** | You're already here\! |
@@ -38,11 +36,11 @@ This project was built using a minimal, modern stack:
 
 | Category | Technologies Used |
 | :--- | :--- |
-| **Framework** | **React** (v18+) |
-| **Styling** | **Plain CSS** (Component-Based Approach) |
-| **Tooling** | **Create React App** |
+| **Framework** | React (v18+) |
+| **Styling** | Plain CSS (Component-Based Approach) |
+| **Tooling** | Create React App |
 | **Routing** | React Router DOM |
-| **Deployment** | **GitHub Pages** |
+| **Deployment** | GitHub Pages |
 
 -----
 
