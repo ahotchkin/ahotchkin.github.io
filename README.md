@@ -4,7 +4,7 @@
 
 This repository holds the source code for my professional portfolio. It is designed to be a central hub to showcase my skills, experience, and key projects.
 
-#### 🚀 View my work at the [live site](https://www.allysonhotchkin.com)
+### 🚀 View my work at the [live site](https://www.allysonhotchkin.com)
 
 <br>
 
@@ -44,7 +44,7 @@ This project was built using a minimal, modern stack:
 
 -----
 
-## 📚 Technical Setup (For Developers)
+## ⚙️ Technical Setup (For Developers)
 
 To clone and inspect the project locally, follow these steps:
 
