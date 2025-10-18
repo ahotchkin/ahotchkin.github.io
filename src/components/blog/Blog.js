@@ -1,6 +1,9 @@
-import React, { useContext } from 'react';
-import { BlogContext } from '../../context/BlogContext';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+
+import { BlogContext } from '../../context/BlogContext';
+
+import '../../styles/blog.css';
 
 const Blog = () => {
   const { posts, loading, error } = useContext(BlogContext);

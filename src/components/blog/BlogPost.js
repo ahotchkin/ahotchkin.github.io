@@ -1,8 +1,11 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import rehypeRaw from 'rehype-raw';
+
 import { BlogContext } from '../../context/BlogContext';
+
+import '../../styles/blog.css';
 
 const  BlogPost = () => {
   const { posts, loading, error } = useContext(BlogContext);

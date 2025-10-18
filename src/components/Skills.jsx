@@ -1,3 +1,5 @@
+import '../styles/skills.css';
+
 const Skills = () => {
   return (
     <div>
