@@ -1,6 +1,8 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
+
 import ProjectData from './ProjectData';
+
+import '../../styles/project.css';
 
 const Project = () => {
   const { projectUrl } = useParams();

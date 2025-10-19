@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
+
+import '../styles/navbar.css';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +14,7 @@ const NavBar = () => {
         <HashLink smooth to="/#" className={location.pathname === '/' && !location.hash ? 'home-link current' : 'home-link'}>
           AH
         </HashLink>
-        <button className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+        <button className={`navbar-hamburger-menu ${isOpen ? 'open' : ''}`} onClick={() => setIsOpen(!isOpen)}>
           <div className="bar"></div>
         </button>
         <div className="navbar-right">

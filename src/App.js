@@ -1,13 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import React from 'react';
-import './App.css';
-import ScrollRestoration from './components/utils/ScrollRestoration';
+
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Project from './components/projects/Project';
-import { BlogProvider  } from "./context/BlogContext";
 import Blog from './components/blog/Blog';
 import BlogPost from './components/blog/BlogPost';
+import { BlogProvider  } from "./context/BlogContext";
+import ScrollRestoration from './components/utils/ScrollRestoration';
+
 import './styles/global.css';
 
 function App() {
