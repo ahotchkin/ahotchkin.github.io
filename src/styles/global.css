@@ -24,8 +24,8 @@
 
   /* Shadows & Radius */
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem;  /* 8px */
 }
 
 /* Base Reset/Setup */
@@ -58,7 +58,7 @@ h5 {
   font-weight: 700;
   font-size: 1em;
   padding-top: 1.25rem;
-  margin-bottom: -10px;
+  margin-bottom: -10px; /* px for baseline alignment */
 }
 
 sup {
@@ -79,7 +79,6 @@ code {
   font-size: 0.875rem;
   line-height: 1.6;
 }
-
 
 /* Base Link Styles */
 a:link, a:visited, a:focus, a:active {

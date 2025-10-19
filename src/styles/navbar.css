@@ -50,9 +50,10 @@
   }
 
   .navbar-hamburger-menu {
-    width: 40px;
-    height: 40px;
+    width: 40px; /* px for fixed touch target size */
+    height: 40px; /* px for fixed touch target size */
     display: flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
     border: none;
@@ -64,16 +65,16 @@
     border-radius: var(--radius-md);
   }
 
-  /* Unified bar styling into one block */
   .navbar-hamburger-menu .bar,
   .navbar-hamburger-menu .bar::before,
   .navbar-hamburger-menu .bar::after {
-    width: 30px;
-    height: 3px;
+    width: 30px; /* px for fixed icon size */
+    height: 3px; /* px for fixed icon size */
     background-color: var(--color-icon-gray);
     border-radius: 2px;
     position: relative;
-    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
   }
 
   .navbar-hamburger-menu .bar::before,
@@ -84,11 +85,11 @@
   }
 
   .navbar-hamburger-menu .bar::before {
-    top: -9.5px;
+    top: -9.5px; /* px for precise alignment */
   }
 
   .navbar-hamburger-menu .bar::after {
-    top: 9.5px;
+    top: 9.5px; /* px for precise alignment */
   }
 
   .navbar-hamburger-menu.open .bar {

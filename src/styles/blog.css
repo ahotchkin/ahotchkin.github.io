@@ -84,11 +84,10 @@ ul.blog-post-list li::before {
 
 .blog-img {
   display: block;
-  width: 100%;
   margin-bottom: 1.875rem;
 }
 
 .blog-post-subhead {
   font-size: 1.6em;
-  margin-top: -12px;
+  margin-top: -12px; /* px for baseline alignment */
 }

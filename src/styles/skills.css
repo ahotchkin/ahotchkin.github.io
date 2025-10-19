@@ -15,9 +15,9 @@
   font-size: 1.17em;
   color: var(--color-accent-primary);
   border-bottom: .5px solid var(--color-border-subtle);
-  padding-bottom: 0.5rem; 
-  margin-top: -3px;
-  margin-bottom: -5px;
+  padding-bottom: 0.35rem; 
+  margin-top: -3px; /* px for baseline alignment */
+  margin-bottom: -5px; /* px for baseline alignment */
   font-weight: 600;
 }
 
