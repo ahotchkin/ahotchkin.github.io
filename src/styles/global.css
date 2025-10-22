@@ -40,9 +40,8 @@ html {
 body {  
   font-family: 'Open Sans', Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--color-background);
-  max-width: var(--max-width-content);
-  margin: 0 auto;
   color: var(--color-text-main);
+  margin: 0;
 }
 
 /* Base Typography */
@@ -92,8 +91,11 @@ a:hover {
 
 /* General Layout Containers */
 .main-content {
+  max-width: var(--max-width-content);
+  margin: 0 auto; 
+  margin-top: 3.125rem;
+  margin-bottom: 5.125rem;
   padding: 0 3.75rem;
-  margin: 3.125rem 0;
   position: relative;
   overflow: hidden;
 }

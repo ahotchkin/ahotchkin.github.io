@@ -6,6 +6,7 @@ import Project from './components/projects/Project';
 import Blog from './components/blog/Blog';
 import BlogPost from './components/blog/BlogPost';
 import { BlogProvider  } from "./context/BlogContext";
+import Footer from './components/Footer';
 import ScrollRestoration from './components/utils/ScrollRestoration';
 
 import './styles/global.css';
@@ -33,6 +34,7 @@ function App() {
             </Routes>
           </BlogProvider>
         </div>
+        <Footer />
       </Router>
     </div>
   );
