@@ -1,13 +1,13 @@
 .skills-container {
-  padding: var(--spacing-md) var(--spacing-lg) 0 var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-xl) 0 var(--spacing-xl);
 }
 
 /* Adjust padding for mobile devices */
 @media (max-width: 500px) {
   .skills-container {
-    padding: var(--spacing-lg) 1.25rem 0.5rem 1.25rem;
-    margin-top: calc(-0.75 * var(--spacing-md)); 
-    margin-bottom: calc(-1 * var(--spacing-md));
+    padding: var(--spacing-xl) 1.25rem 0.5rem 1.25rem;
+    margin-top: calc(-0.75 * var(--spacing-lg)); 
+    margin-bottom: calc(-1 * var(--spacing-lg));
   } 
 }
 

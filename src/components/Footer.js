@@ -1,4 +1,7 @@
-import '../styles/footer.css'; 
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
+
+import '../styles/footer.css';
 
 function Footer() {
   return (
@@ -14,7 +17,7 @@ function Footer() {
             rel="noopener noreferrer"
             aria-label="Visit my GitHub profile"
           >
-            GitHub
+            <FaGithub size={25} />
           </a>
           <a 
             href="https://www.linkedin.com/in/allyrh/" 
@@ -22,9 +25,14 @@ function Footer() {
             rel="noopener noreferrer"
             aria-label="Visit my LinkedIn profile"
           >
-            LinkedIn
+            <FaLinkedin size={25} />
           </a>
-          <a href="mailto:allyson.hotchkin@gmail.com" aria-label="Send me an email">Contact</a>
+          <a
+            href="mailto:contact@allysonhotchkin.com"
+            aria-label="Send me an email"
+          >
+            <MdEmail size={25} />
+          </a>
         </div>
       </div>
     </footer>
