@@ -19,7 +19,9 @@ const BlogPreview = () => {
 
   if (latestBlogPosts.length === 0) {
     return (
-      <div className="text-center py-8 text-gray-600">No recent blog posts available.</div>
+      <div className="text-center py-8 text-gray-600">
+        No recent blog posts available.
+      </div>
     );
   }
 
@@ -28,7 +30,7 @@ const BlogPreview = () => {
       <h2>✏️ Latest Blog Posts</h2>
       <div className="blog-preview">
         <ul className="blog-post-list">
-          {latestBlogPosts.map(post => (
+          {latestBlogPosts.map((post) => (
             <li key={post.id} className="blog-post-item">
               <Link to={`/blog/${post.slug}`} className="blog-post-link">
                 {post.title}
@@ -37,15 +39,13 @@ const BlogPreview = () => {
             </li>
           ))}
         </ul>
-        <br/>
+        <br />
         <div>
-          <Link to="/blog">
-            View All Posts
-          </Link>
+          <Link to="/blog">View All Posts</Link>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default BlogPreview;

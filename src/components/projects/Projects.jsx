@@ -11,13 +11,19 @@ const Projects = () => {
         {ProjectData.map((project) => {
           return (
             <div className="project-grid-item" key={project.urlParam}>
-              <ProjectCard name={project.name} titleImage={project.titleImage} description={project.shortDescription} technologies={project.technologies} url={`/projects/${project.urlParam}`}/>
+              <ProjectCard
+                name={project.name}
+                titleImage={project.titleImage}
+                description={project.shortDescription}
+                technologies={project.technologies}
+                url={`/projects/${project.urlParam}`}
+              />
             </div>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Projects;

@@ -6,7 +6,9 @@ import '../../styles/project.css';
 
 const Project = () => {
   const { projectUrl } = useParams();
-  const project = ProjectData.find((project) => project.urlParam === projectUrl);
+  const project = ProjectData.find(
+    (project) => project.urlParam === projectUrl
+  );
 
   if (!project) {
     return <div>Project not found</div>;
@@ -15,7 +17,12 @@ const Project = () => {
   return (
     <div className="content-section">
       <h1 className="project-title-heading">{project.name}</h1>
-      <p className="project-github-link">View on <a target="_blank" rel="noopener noreferrer" href={project.githubUrl}>Github</a></p>
+      <p className="project-github-link">
+        View on{' '}
+        <a target="_blank" rel="noopener noreferrer" href={project.githubUrl}>
+          Github
+        </a>
+      </p>
       <div>
         <div key={project.titleImage} className="project-title-image">
           <img
@@ -27,9 +34,7 @@ const Project = () => {
       </div>
       <br />
       {project.longDescription && (
-        <div
-          dangerouslySetInnerHTML={{ __html: project.longDescription }}
-        />
+        <div dangerouslySetInnerHTML={{ __html: project.longDescription }} />
       )}
       <br />
       <br />
@@ -54,13 +59,13 @@ const Project = () => {
             src={`https://player.vimeo.com/video/${project.embedId}?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            title={project.videoTitle}>
-          </iframe>
+            title={project.videoTitle}
+          ></iframe>
         </div>
         <script src="https://player.vimeo.com/api/player.js"></script>
-      </div> 
+      </div>
     </div>
   );
-}
+};
 
 export default Project;

@@ -1,5 +1,5 @@
 .blog-preview {
-  padding: 0 0.4375rem; 
+  padding: 0 0.4375rem;
 }
 
 .blog-post-item {
@@ -34,7 +34,7 @@ ul.blog-post-list li {
 
 ul.blog-post-list li::before {
   color: var(--color-accent-primary);
-  content: "»";
+  content: '»';
   position: absolute;
   left: 0;
   top: 0;
@@ -52,13 +52,13 @@ ul.blog-post-list li::before {
 }
 
 .blog-year-header {
-  border-bottom: .5px solid var(--color-border-darker);
+  border-bottom: 0.5px solid var(--color-border-darker);
   padding: 1.25rem 0 0.625rem;
 }
 
 .blog-source-link,
 .blog-giphy-link {
-  font-size: .85em;
+  font-size: 0.85em;
 }
 
 .blog-giphy-link {

@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Project from './components/projects/Project';
 import Blog from './components/blog/Blog';
 import BlogPost from './components/blog/BlogPost';
-import { BlogProvider  } from "./context/BlogContext";
+import { BlogProvider } from './context/BlogContext';
 import Footer from './components/Footer';
 import ScrollRestoration from './components/utils/ScrollRestoration';
 
@@ -25,12 +25,15 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/projects/:projectUrl" element={<Project />} />
 
-              <Route path="/blog/*" element={
-                <Routes>
-                  <Route index element={<Blog />} />
-                  <Route path="/:slug" element={<BlogPost />} />
-                </Routes>
-              } />
+              <Route
+                path="/blog/*"
+                element={
+                  <Routes>
+                    <Route index element={<Blog />} />
+                    <Route path="/:slug" element={<BlogPost />} />
+                  </Routes>
+                }
+              />
             </Routes>
           </BlogProvider>
         </div>
