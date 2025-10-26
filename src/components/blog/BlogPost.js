@@ -7,7 +7,7 @@ import { BlogContext } from '../../context/BlogContext';
 
 import '../../styles/blog.css';
 
-const  BlogPost = () => {
+const BlogPost = () => {
   const { posts, loading, error } = useContext(BlogContext);
   const { slug } = useParams(); // Get the slug using useParams()
   const post = posts.find((p) => p.slug === slug);
@@ -29,14 +29,9 @@ const  BlogPost = () => {
       <h1>{post.title}</h1>
       {post.subhead && <h2 className="blog-post-subhead">{post.subhead}</h2>}
       <p className="blog-post-date">{post.formattedDate}</p>
-      <ReactMarkdown 
-        children={post.content} 
-        rehypePlugins={[rehypeRaw]}
-      />
+      <ReactMarkdown rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown>
     </div>
   );
-}
-
-
+};
 
 export default BlogPost;
