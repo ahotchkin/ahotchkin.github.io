@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Home from './components/Home';
@@ -30,7 +30,7 @@ function App() {
                 element={
                   <Routes>
                     <Route index element={<Blog />} />
-                    <Route path="/:slug" element={<BlogPost />} />
+                    <Route path=":slug" element={<BlogPost />} />
                   </Routes>
                 }
               />
