@@ -8,32 +8,32 @@ const ScrollToTop = () => {
   useLayoutEffect(() => {
     const hash = location.hash;
     const currentPathname = location.pathname;
-    
+
     const isPageChange = currentPathname !== prevPathname.current;
 
     let timeoutId;
 
     if (hash) {
       const targetElement = document.getElementById(hash.substring(1));
-      
+
       if (targetElement) {
         if (isPageChange) {
           timeoutId = setTimeout(() => {
-             targetElement.scrollIntoView({ behavior: 'auto' });
+            targetElement.scrollIntoView({ behavior: 'auto' });
           }, 0);
         } else {
           timeoutId = setTimeout(() => {
             targetElement.scrollIntoView({ behavior: 'smooth' });
-          }, 100); 
+          }, 100);
         }
-      }  
+      }
     } else {
       const scrollBehavior = isPageChange ? 'auto' : 'smooth';
 
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: scrollBehavior
+        behavior: scrollBehavior,
       });
     }
 
@@ -44,10 +44,9 @@ const ScrollToTop = () => {
         clearTimeout(timeoutId);
       }
     };
-
   }, [location.pathname, location.hash]);
 
   return null;
-}
+};
 
 export default ScrollToTop;

@@ -17,25 +17,25 @@ const Blog = () => {
     return <div>Error: {error.message}</div>;
   }
 
-  posts.forEach(post => {
+  posts.forEach((post) => {
     if (postsByYear.has(post.year)) {
       postsByYear.get(post.year).push(post);
     } else {
       postsByYear.set(post.year, [post]);
     }
-  })
+  });
 
   return (
     <div className="content-section">
       <h1>Blog Posts</h1>
-        {Array.from(postsByYear.entries()).map(([year, posts]) => (
+      {Array.from(postsByYear.entries()).map(([year, posts]) => (
         <div key={year}>
           <h2 className="blog-year-header">{year}</h2>
           <div>
             <ul className="blog-post-list">
-              {posts.map(post => (
+              {posts.map((post) => (
                 <li key={post.date} className="blog-post-item">
-                  <Link to={`/blog/${post.slug}`} className="blog-post-link"> 
+                  <Link to={`/blog/${post.slug}`} className="blog-post-link">
                     {post.title}
                     {post.subhead ? ` - ${post.subhead}` : ''}
                   </Link>
@@ -48,6 +48,6 @@ const Blog = () => {
       ))}
     </div>
   );
-}
+};
 
 export default Blog;

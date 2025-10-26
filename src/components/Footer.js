@@ -11,17 +11,17 @@ function Footer() {
           © {new Date().getFullYear()} Allyson Hotchkin. All rights reserved.
         </p>
         <div className="footer-links">
-          <a 
-            href="https://www.linkedin.com/in/allyrh/" 
-            target="_blank" 
+          <a
+            href="https://www.linkedin.com/in/allyrh/"
+            target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my LinkedIn profile"
           >
             <FaLinkedin size={25} />
           </a>
-          <a 
-            href="https://github.com/ahotchkin" 
-            target="_blank" 
+          <a
+            href="https://github.com/ahotchkin"
+            target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my GitHub profile"
           >
@@ -33,13 +33,13 @@ function Footer() {
           >
             <MdEmail size={25} />
           </a>
-          <a 
+          <a
             href="https://github.com/ahotchkin/ahotchkin.github.io/"
-            target="_blank" 
+            target="_blank"
             rel="noopener noreferrer"
             aria-label="View the source code for this portfolio site"
           >
-            <FaCode size={25} /> 
+            <FaCode size={25} />
           </a>
         </div>
       </div>

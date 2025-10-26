@@ -13,7 +13,12 @@ const Skills = () => {
             </div>
             <div>
               <p className="skills-category">Frameworks & Libraries</p>
-              <p className="skills-list"><span className="skills-subcategory">Front-End: </span>React, Redux, MobX, Quill ∙ <span className="skills-subcategory">Back-End: </span>Ruby on Rails</p>
+              <p className="skills-list">
+                <span className="skills-subcategory">Front-End: </span>React,
+                Redux, MobX, Quill ∙{' '}
+                <span className="skills-subcategory">Back-End: </span>Ruby on
+                Rails
+              </p>
             </div>
             <div>
               <p className="skills-category">Databases & ORMs</p>
@@ -21,11 +26,16 @@ const Skills = () => {
             </div>
             <div>
               <p className="skills-category">Testing & Development</p>
-              <p className="skills-list">Jest, Playwright, RSpec, Git, GitHub, Jenkins, Heroku</p>
+              <p className="skills-list">
+                Jest, Playwright, RSpec, Git, GitHub, Jenkins, Heroku
+              </p>
             </div>
             <div>
               <p className="skills-category">Methodologies</p>
-              <p className="skills-list">Object-Oriented Programming (OOP), MVC (Model-View-Controller), MVP (Model-View-Presenter)</p>
+              <p className="skills-list">
+                Object-Oriented Programming (OOP), MVC (Model-View-Controller),
+                MVP (Model-View-Presenter)
+              </p>
             </div>
             <div>
               <p className="skills-category">Editors</p>
@@ -35,7 +45,7 @@ const Skills = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Skills;
