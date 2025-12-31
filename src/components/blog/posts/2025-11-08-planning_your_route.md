@@ -61,7 +61,7 @@ Unlike `BrowserRouter`, `HashRouter` doesn't rely on the History API events to k
 
 The magic of the hash is that browsers ignore everything after the `#` when talking to a server. When a user visits `allysonhotchkin.com/#/blog`, the browser only asks GitHub Pages for the root (/). GitHub finds the `index.html` at the root, sends it over, and then React Router looks at the hash to figure out it needs to show the Blog component.
 
-To put it more simply, think of `BrowserRouter` as a personal stylist, and `HashRouter` as your standard department store. If you're looking for a t-shirt that can be found at the store, great, no problem, you're all set! But if you are looking for a red shirt with green polkadots and fur around the collar that can't be found in the store, your stylist can whip that up for you in no time.
+If I think back to my days in direct mail, it's like this: `BrowserRouter` is like asking someone to deliver a letter to a specific person at a specific desk in a massive office building, but also telling them they can't ask anyone for help when finding the recipient (because we're using a static host). If the mail delivery person (the server) doesn't have a directory, they’ll be forced to return the letter to the sender since they'll have no idea where to go. `HashRouter`, on the other hand, is like sending that same letter to the building's main lobby, but with a sticky note on the front that says 'Give this to Allyson in Room 404.' The mail delivery person only has to find the building and drop off the letter at the front desk (your React application); the sticky note handles the rest of the directions once it's inside.
 
 ### The Trade-off
 
