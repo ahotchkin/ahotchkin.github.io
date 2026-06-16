@@ -58,9 +58,14 @@ h3 {
   padding-top: 1.25rem;
 }
 
+h4 {
+  font-size: 1.0625em;
+  margin-bottom: -10px; /* px for baseline alignment */
+}
+
 h5 {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 0.975em;
   padding-top: 1.25rem;
   margin-bottom: -10px; /* px for baseline alignment */
 }
