@@ -7,7 +7,7 @@ permalink: i_got_skills_theyre_multiplying
 
 There is no doubt that AI has changed, and continues to change, the way we write code. My average workday is hardly recognizable compared to a couple of years ago.
 
-While some days I find myself missing the days of actually writing line after line of code, other days I find myself very excited by the things I can now accomplish in a short amount of time. Which leads me to asking the question: What can I get AI to do for me so I can direct my focus elsewhere? <i>Enter: The AI Skill</i>.
+While some days I find myself missing the days of actually writing line after line of code, other days I find myself very excited by the things I can now accomplish in a short amount of time. Which leads me to ask the question: What can I get AI to do for me so I can direct my focus elsewhere? <i>Enter: The AI Skill</i>.
 
 ### Define 'Skills'
 
